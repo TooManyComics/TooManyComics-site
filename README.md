@@ -21,6 +21,7 @@ two of these URLs become **permanent App Store Connect fields**
 | Page | Becomes | Status |
 |---|---|---|
 | `index.html` | Marketing / landing | Stub — copy drafted; needs screenshots, App Store badge + link, hero art |
+| `about.html` | The origin story (why I built it) | **REAL** (2026-08-23, Jim's story: thousands of comics, three questions, three requirements) |
 | `help.html` | The user guide (How To) | Stub — section skeleton only |
 | `faq.html` | FAQ | Stub — seed questions only |
 | `support.html` | **ASC Support URL** | Contact live (Info@BigBrainCorp.com); intro stub |

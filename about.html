@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Too Many Comics Privacy Policy</title>
+  <title>About Too Many Comics</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <meta name="description" content="What Too Many Comics collects, what it never sees, and what leaves your phone." />
-  <link rel="canonical" href="https://www.toomanycomics.app/privacy.html" />
+  <meta name="description" content="Thousands of comics, three questions — what do I have, where is it, what's it worth — and the app one collector built to answer them." />
+  <link rel="canonical" href="https://www.toomanycomics.app/about.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Too Many Comics Privacy Policy" />
-  <meta property="og:description" content="What Too Many Comics collects, what it never sees, and what leaves your phone." />
-  <meta property="og:url" content="https://www.toomanycomics.app/privacy.html" />
+  <meta property="og:title" content="About Too Many Comics" />
+  <meta property="og:description" content="Thousands of comics, three questions — what do I have, where is it, what's it worth — and the app one collector built to answer them." />
+  <meta property="og:url" content="https://www.toomanycomics.app/about.html" />
   <meta property="og:site_name" content="Too Many Comics" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -51,9 +51,11 @@
     .site-footer .spacer { margin-left: auto; }
   
     main h1 { font-size: 30px; margin: 8px 0 6px; }
-    main h2 { font-size: 20px; margin: 28px 0 8px; }
-    main p, main li { color: #4a4458; font-size: 15px; line-height: 1.6; }
-    .page-note { color: #786f8a; font-size: 13.5px; margin-top: 0; }
+    main .kicker { color: #786f8a; font-size: 15px; margin: 0 0 26px; }
+    main h2 { font-size: 20px; margin: 30px 0 8px; }
+    main p, main li { color: #4a4458; font-size: 15.5px; line-height: 1.65; }
+    .req { border-left: 4px solid #ffc933; padding: 2px 0 2px 16px; margin: 14px 0; }
+    .req strong { color: #16121f; }
   </style>
 </head>
 <body>
@@ -69,26 +71,58 @@
         <a href="/help.html">How&nbsp;To</a>
         <a href="/faq.html">FAQ</a>
         <a href="/support.html">Support</a>
-        <a href="/about.html">About</a>
+        <a href="/about.html" aria-current="page">About</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <h1>Privacy Policy</h1>
-    <p class="page-note">DRAFT STUB — this skeleton states the true architecture; it needs a full pass (and a review against the App Privacy questionnaire answers) before its URL is entered in App Store Connect.</p>
-    <h2>The short version</h2>
-    <p><em>STUB — your collection lives on your phone. There are no accounts. The backend never sees what you own.</em></p>
-    <h2>What never leaves your device</h2>
-    <p><em>STUB — the collection database, every stored photograph, Hot Books matching results, sale records.</em></p>
-    <h2>What is sent, and why</h2>
-    <p><em>STUB — the photograph being analyzed (processed, not retained); metadata for a re-price; an anonymous device token (App Attest — proves "a real iPhone running this app", identifies no person); token counts and credit events for billing integrity.</em></p>
-    <h2>What we store</h2>
-    <p><em>STUB — credit ledger keyed to the anonymous device identity; per-request token counts; no photographs, no collection data, no names, no emails.</em></p>
-    <h2>Purchases</h2>
-    <p><em>STUB — purchases are processed by Apple; we receive the signed transaction, never payment details.</em></p>
- 
+    <h1>Why I built Too Many Comics</h1>
+    <p class="kicker">A personal problem, solved the way a software developer solves things — then shared.</p>
+
+    <p>I have too many comics. Literally thousands of them — bagged, boarded, and well
+    cared for, but in a state of, let's call it, <em>disorganization</em>. For years I
+    struggled with the three questions every collector knows by heart: what exactly do I
+    have, where is it, and what is it worth?</p>
+
+    <p>So I looked for a comic book inventory app. What I found either didn't do what I
+    wanted — or did some of it, for a price. And I like free.</p>
+
+    <p>I'm a software developer by trade. So I did what developers do when the tool they
+    want doesn't exist: I built it, around three requirements that never changed.</p>
+
+    <div class="req"><p><strong>My entire inventory, on my phone, at any size.</strong>
+    Not a one-time cataloging project that goes stale in a month — an inventory that's
+    easy to keep RIGHT. Books move between boxes. Boxes move between shelves.
+    Disorganization always wants to creep back in, so fixing a record has to be as easy
+    as making one.</p></div>
+
+    <div class="req"><p><strong>AI does the tedious part.</strong> Point the camera,
+    talk, and let the AI recognize each book, assess its condition, and put a ballpark
+    value on it. Grading thousands of books by hand is the reason collections stay
+    disorganized in the first place.</p></div>
+
+    <div class="req"><p><strong>Selling has to be easy.</strong> A collection this size
+    isn't static. When it's time to let some books go, the inventory should hand me the
+    listing — not make me retype what it already knows.</p></div>
+
+    <p>Too Many Comics is that app. It turned out that building it for one collector
+    with too many comics made it useful to every collector with too many comics —
+    which, if we're honest, is all of us.</p>
+
+    <h2>The free part</h2>
+    <p>The app is free, and cataloging your collection is free. The AI features that
+    cost real money to run (recognition, grading, pricing) work on credits — with a
+    weekly free allowance that covers casual collecting, because a tool built by
+    someone who likes free shouldn't nickel-and-dime the people it was built for.
+    Credits are there for the big weekends, not the everyday.</p>
+
+    <h2>Who's behind it</h2>
+    <p>Too Many Comics is a <a href="https://bigbraincorp.com/">BigBrainCorp</a>
+    product — the same one-developer company behind OSSScan. Deep understanding,
+    elegant simplicity, amplified by AI.</p>
+
   </main>
 
   <footer class="site-footer">
