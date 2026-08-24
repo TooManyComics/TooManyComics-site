@@ -49,6 +49,13 @@
     .feature { border: 1px solid #e6e1f0; border-radius: 12px; padding: 20px; }
     .feature h3 { margin: 0 0 8px; font-size: 17px; }
     .feature p { margin: 0; color: #4a4458; font-size: 14.5px; line-height: 1.55; }
+    .fits { margin-top: 48px; border-top: 1px solid #e6e1f0; padding-top: 36px; }
+    .fits h2 { font-size: 26px; margin: 0 0 10px; text-align: center; }
+    .fits > p { color: #4a4458; font-size: 15.5px; line-height: 1.65; max-width: 720px; margin: 0 auto 14px; }
+    .fits .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px auto 18px; max-width: 780px; }
+    .fits .stat { text-align: center; border: 1px solid #e6e1f0; border-radius: 12px; padding: 16px 12px; }
+    .fits .stat .big { display: block; font-size: 24px; font-weight: 700; color: #3a1b6b; }
+    .fits .stat .small { font-size: 13px; color: #786f8a; }
     .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
                  font-size: 13px; color: #6b5310; margin: 28px 0 0; }
     .site-footer { background: #16121f; color: #b9b1c9; font-size: 13px; padding: 24px; }
@@ -120,6 +127,29 @@
         <p>A weekly free allowance covers casual scanning. Buy credits when you need a big
           weekend. No recurring anything.</p>
       </div>
+    </section>
+
+
+    <section class="fits" id="fit">
+      <h2>How does this all fit on my phone?</h2>
+      <p>Because the facts about a comic are tiny, and the app is smart about the photos.
+      A book's record (title, issue, grade, price, your comments, all of it) takes a few
+      kilobytes. The photographs are where the space goes, so every cover is sized on the
+      way to disk: sharp enough to see, search, zoom, and list on eBay, without hoarding
+      12-megapixel originals you'd never use.</p>
+      <div class="stats">
+        <div class="stat"><span class="big">~5 KB</span><span class="small">per book of facts. 100,000
+          books of titles, grades, prices, and comments is under half a gigabyte.</span></div>
+        <div class="stat"><span class="big">~0.5 MB</span><span class="small">per stored cover, sized
+          for seeing and selling, not archiving.</span></div>
+        <div class="stat"><span class="big">50,000</span><span class="small">books tested on older
+          iPhone hardware. It works great.</span></div>
+      </div>
+      <p>The philosophy: nobody buys a valuable book off a phone photograph. High-fidelity
+      photos matter when the AI grades a book, so those are taken at grading time and kept
+      at higher quality. For everything else, seeing and searching your whole collection
+      beats museum-quality copies of it. Space saver mode is the default; a Storage screen
+      in Settings shows exactly where your bytes go.</p>
     </section>
 
     <p class="stub-note"><strong>STUB:</strong> marketing copy is first-draft; screenshots, App
