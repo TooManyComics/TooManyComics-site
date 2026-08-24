@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Too Many Comics: Scan, Grade &amp; Track Your Comic Collection</title>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="description" content="Point your camera at a stack of comics and talk. Too Many Comics catalogs, AI-grades, and price-tracks your collection — and it never sees what you own." />
+  <link rel="canonical" href="https://www.toomanycomics.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Too Many Comics: Scan, Grade &amp; Track Your Comic Collection" />
+  <meta property="og:description" content="Point your camera at a stack of comics and talk. Too Many Comics catalogs, AI-grades, and price-tracks your collection — and it never sees what you own." />
+  <meta property="og:url" content="https://www.toomanycomics.app/" />
+  <meta property="og:image" content="https://www.toomanycomics.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Too Many Comics" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Too Many Comics: Scan, Grade &amp; Track Your Comic Collection" />
+  <meta name="twitter:description" content="Point your camera at a stack of comics and talk. Too Many Comics catalogs, AI-grades, and price-tracks your collection — and it never sees what you own." />
+  <meta name="twitter:image" content="https://www.toomanycomics.app/og-image.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+           color: #16121f; background: #fff; min-height: 100vh; display: flex; flex-direction: column; }
+    .site-header { background: linear-gradient(135deg, #1a0f2e 0%, #2b1650 60%, #3a1b6b 100%);
+                   border-bottom: 2px solid #ffc933; padding: 0 24px; }
+    .site-header-inner { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 14px; height: 64px; }
+    .site-header img.logo { height: 44px; width: 44px; border-radius: 10px; object-fit: contain; flex-shrink: 0;
+                            box-shadow: 0 0 0 2px #ffc933, 0 0 10px rgba(255,201,51,.4); }
+    .site-header-wordmark { display: flex; flex-direction: column; line-height: 1.1; }
+    .site-header-wordmark .brand-name { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 0.02em; }
+    .site-header-wordmark .brand-tagline { font-size: 11px; color: #ffc933; letter-spacing: 0.06em; text-transform: uppercase; }
+    .header-nav { margin-left: auto; display: flex; gap: 18px; align-items: center; }
+    .header-nav a { color: #e8e2f4; text-decoration: none; font-size: 14px; }
+    .header-nav a:hover, .header-nav a[aria-current="page"] { color: #ffc933; }
+    main { flex: 1; max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; width: 100%; }
+    .hero { text-align: center; padding: 32px 0 40px; }
+    .hero h1 { font-size: 40px; margin: 0 0 12px; line-height: 1.15; }
+    .hero p.lede { font-size: 19px; color: #4a4458; max-width: 640px; margin: 0 auto 28px; }
+    .cta { display: inline-block; background: #e5484d; color: #fff; font-weight: 600; padding: 13px 26px;
+           border-radius: 10px; text-decoration: none; font-size: 16px; }
+    .cta:hover { background: #c53a3f; }
+    .cta.secondary { background: transparent; color: #3a1b6b; border: 2px solid #3a1b6b; margin-left: 10px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 40px; }
+    .feature { border: 1px solid #e6e1f0; border-radius: 12px; padding: 20px; }
+    .feature h3 { margin: 0 0 8px; font-size: 17px; }
+    .feature p { margin: 0; color: #4a4458; font-size: 14.5px; line-height: 1.55; }
+    .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
+                 font-size: 13px; color: #6b5310; margin: 28px 0 0; }
+    .site-footer { background: #16121f; color: #b9b1c9; font-size: 13px; padding: 24px; }
+    .site-footer-inner { max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+    .site-footer a { color: #d9d2e8; text-decoration: none; margin-right: 14px; }
+    .site-footer a:hover { color: #ffc933; }
+    .site-footer .spacer { margin-left: auto; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="logo" src="/logo.png" alt="Too Many Comics logo" />
+      <div class="site-header-wordmark">
+        <span class="brand-name">Too Many Comics</span>
+        <span class="brand-tagline">Scan · Grade · Track</span>
+      </div>
+      <nav class="header-nav">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/help.html">How&nbsp;To</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Admit it. You have too many comics.</h1>
+      <p class="lede">Point your camera at a stack and talk. Too Many Comics catalogs every book,
+        grades condition with AI, flags the key issues, and keeps an eye on the news that moves
+        prices — while your collection never leaves your phone.</p>
+      <a class="cta" href="#">Download on the App&nbsp;Store</a>
+      <a class="cta secondary" href="/help.html">See how it works</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>📸 Scan by camera and voice</h3>
+        <p>Work through a long box hands-free: the camera spots each new cover, your voice adds
+          the notes, and the AI fills in title, issue, printing, key-issue status, and more.</p>
+      </div>
+      <div class="feature">
+        <h3>🔍 AI condition grading</h3>
+        <p>Advanced Grading walks the checks a grader walks — spine, corners, gloss, pages —
+          from your photographs, and prices at the honest end of the grade it can defend.</p>
+      </div>
+      <div class="feature">
+        <h3>🔥 Hot Books</h3>
+        <p>A daily sweep of comic-industry news, matched to the books you own — on your phone,
+          so nobody but you knows what's in your boxes.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Private by architecture</h3>
+        <p>Your collection lives on your device. The backend sees one photograph at a time and
+          keeps none of them. No account, no login, nothing to breach.</p>
+      </div>
+      <div class="feature">
+        <h3>💰 Sell with your records straight</h3>
+        <p>Mark books for sale, export eBay draft packs, track what sold and for how much —
+          your P&amp;L, not your marketplace's.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Credits, not subscriptions</h3>
+        <p>A weekly free allowance covers casual scanning. Buy credits when you need a big
+          weekend — no recurring anything.</p>
+      </div>
+    </section>
+
+    <p class="stub-note"><strong>STUB:</strong> marketing copy is first-draft; screenshots, App
+      Store badge/link, hero art, and final feature copy land before this page is public.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>© 2026 BigBrainCorp LLC</span>
+      <span class="spacer"></span>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/support.html">Support</a>
+      <a href="/release-notes.html">Release notes</a>
+      <a href="https://bigbraincorp.com/">A BigBrainCorp product</a>
+    </div>
+  </footer>
+</body>
+</html>
