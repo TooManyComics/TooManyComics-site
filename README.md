@@ -38,11 +38,16 @@ No toomanycomics.app mailboxes exist, deliberately: public contact is
 is the App Store Connect / registrar / internal contact. Same pattern
 as the parent site.
 
-## Missing binary assets (TODO before launch)
+## Binary assets
 
-`logo.png`, `favicon.ico`, `favicon-16.png`, `favicon-32.png`,
-`apple-touch-icon.png`, `og-image.png` (1200×630). The app's icon art
-is the obvious source. Pages reference these paths already.
+`logo.png` (256), `apple-touch-icon.png` (180), `favicon-32.png`,
+`favicon-16.png` — all derived 2026-08-23 from the app icon (the box
+of comics, `CBInventory/ios/.../AppIcon.appiconset/icon-1024.png`);
+re-derive with `sips -Z <size>` if the app icon changes.
+`favicon.ico` is currently a copy of the 32px PNG (all modern browsers
+content-sniff it; swap for a real multi-size .ico someday if it
+bothers anyone). Still TODO: `og-image.png` (1200×630 social card —
+the logo on the site's purple gradient would do).
 
 ## Hosting setup (once, when going live)
 
