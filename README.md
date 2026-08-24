@@ -62,6 +62,18 @@ and 320px (no sideways scroll at either):
 - **`sitemap.xml`** carries `lastmod`/`changefreq`/`priority` per URL,
   OSSScan's shape. Update `lastmod` when a page changes materially.
 
+## Screenshots (when they're shot)
+
+Comic covers in screenshots are somebody else's copyright, so the
+policy lives in Functions repo `docs/Phase2-Deploy.md` §4a. The short
+version: these go on OUR site, not into App Store Connect, so there is
+no App Review exposure; keep covers inside the phone frame and never
+as decorative banner art; use verified public domain Golden Age covers
+for the single-cover hero shots (Advanced Grading, detail,
+search-by-image); Jim's own photos are fine for grid and browse
+screens; swap the sample seeder's real series names first; and keep
+sources organized so any one image can be replaced in five minutes.
+
 ## Binary assets
 
 `logo.png` (256), `apple-touch-icon.png` (180), `favicon-32.png`,
