@@ -9,12 +9,20 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <meta name="description" content="Get help with Too Many Comics." />
+  <meta name="theme-color" content="#2b1650" />
   <link rel="canonical" href="https://www.toomanycomics.app/support.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Too Many Comics Support" />
   <meta property="og:description" content="Get help with Too Many Comics." />
   <meta property="og:url" content="https://www.toomanycomics.app/support.html" />
   <meta property="og:site_name" content="Too Many Comics" />
+  <meta property="og:image" content="https://www.toomanycomics.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Too Many Comics Support" />
+  <meta name="twitter:description" content="Get help with Too Many Comics." />
+  <meta name="twitter:image" content="https://www.toomanycomics.app/og-image.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -54,12 +62,55 @@
     main h2 { font-size: 20px; margin: 28px 0 8px; }
     main p, main li { color: #4a4458; font-size: 15px; line-height: 1.6; }
     .page-note { color: #786f8a; font-size: 13.5px; margin-top: 0; }
+
+    /* ── Mobile. Mobile-first would be the ideal; this site was written
+       desktop-first, so the phone rules live here at the end where source
+       order lets them win. Same approach as OSSScan-site. ── */
+    @media (max-width: 700px) {
+      .site-header { padding: 0 16px; }
+      .site-header-inner { height: auto; padding: 12px 0; flex-wrap: wrap; row-gap: 10px; }
+      .site-header img.logo { height: 38px; width: 38px; }
+      /* The nav drops to its own full-width row and wraps, rather than being
+         hidden: this is a content site, and a reader on a phone still needs to
+         reach How To, FAQ and Support. */
+      .header-nav { margin-left: 0; width: 100%; gap: 0 18px; flex-wrap: wrap; }
+      /* Tap targets, not text targets: 14px of text plus padding clears the
+         ~44px Apple asks for, which a bare 16px-tall link does not. */
+      .header-nav a { font-size: 14px; padding: 12px 0; }
+      main { padding: 28px 18px 48px; }
+      .hero { padding: 12px 0 30px; }
+      .hero h1 { font-size: 28px; }
+      .hero p.lede { font-size: 17px; }
+      /* Full-width taps beat side-by-side pills on a phone. */
+      .cta { display: block; width: 100%; text-align: center; }
+      .cta.secondary { margin-left: 0; margin-top: 10px; }
+      .features { grid-template-columns: 1fr; gap: 14px; }
+      .feature { padding: 16px 18px; }
+      .warning { padding: 18px 18px; }
+      .fits .stats { grid-template-columns: 1fr; gap: 12px; }
+      .scenario { padding: 18px 18px; }
+      .site-footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .site-footer .spacer { display: none; }
+      .site-footer a { display: inline-block; padding: 11px 0; margin: 0 16px 0 0; }
+      main h1 { font-size: 25px; }
+      main h2 { font-size: 18px; }
+      .fits h2 { font-size: 22px; }
+    }
+
+    /* Very narrow: the original SE, and any phone with Display Zoom on, which
+       renders at a 320px CSS viewport. Inert at 375px and above. */
+    @media (max-width: 374px) {
+      .site-header-wordmark .brand-tagline { display: none; }
+      .hero h1 { font-size: 24px; }
+      main { padding-left: 14px; padding-right: 14px; }
+      p a, li a { overflow-wrap: anywhere; }
+    }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <img class="logo" src="logo.png" alt="Too Many Comics logo" />
+      <img class="logo" src="logo.png" width="44" height="44" alt="Too Many Comics app icon: a long box of comics" />
       <div class="site-header-wordmark">
         <span class="brand-name">Too Many Comics</span>
         <span class="brand-tagline">Scan · Grade · Track</span>

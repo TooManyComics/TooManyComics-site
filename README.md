@@ -38,6 +38,30 @@ No toomanycomics.app mailboxes exist, deliberately: public contact is
 is the App Store Connect / registrar / internal contact. Same pattern
 as the parent site.
 
+## Mobile and SEO
+
+Same principles as `OSSScan-site`, verified in a real browser at 375px
+and 320px (no sideways scroll at either):
+
+- **Breakpoints at the end of each page's `<style>`**, where source
+  order lets them win: `max-width: 700px` for phones, `max-width:
+  374px` for the SE and Display Zoom.
+- **The nav wraps to its own row rather than hiding.** OSSScan hides
+  its nav links on phones because it keeps a Buy button; this is a
+  content site, so a phone reader still needs How To, FAQ and Support.
+- **Tap targets**: nav and footer links carry vertical padding to
+  ~40px. Bare text links measured 16px, which is not tappable.
+- **Per page**: exactly one `<h1>`, canonical URL, description, full
+  Open Graph and Twitter card, `theme-color`, and explicit logo
+  width/height so nothing shifts as it loads.
+- **Structured data**: `MobileApplication` on the home page,
+  `FAQPage` on the FAQ. The FAQ schema is generated from the ANSWERED
+  questions only, since publishing a stub as an answer would be both
+  wrong and a rich-results risk. No `aggregateRating` anywhere: there
+  are no ratings yet, and inventing them invites a manual action.
+- **`sitemap.xml`** carries `lastmod`/`changefreq`/`priority` per URL,
+  OSSScan's shape. Update `lastmod` when a page changes materially.
+
 ## Binary assets
 
 `logo.png` (256), `apple-touch-icon.png` (180), `favicon-32.png`,
@@ -46,8 +70,8 @@ of comics, `CBInventory/ios/.../AppIcon.appiconset/icon-1024.png`);
 re-derive with `sips -Z <size>` if the app icon changes.
 `favicon.ico` is currently a copy of the 32px PNG (all modern browsers
 content-sniff it; swap for a real multi-size .ico someday if it
-bothers anyone). Still TODO: `og-image.png` (1200×630 social card —
-the logo on the site's purple gradient would do).
+bothers anyone). `og-image.png` is the 1200x630 social card: the app
+icon padded onto the brand purple with `sips`.
 
 ## Hosting setup (once, when going live)
 

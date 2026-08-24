@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <meta name="description" content="Point your camera at a stack of comics and talk. Too Many Comics catalogs, AI-grades, and price-tracks your collection. It never sees what you own." />
+  <meta name="theme-color" content="#2b1650" />
   <link rel="canonical" href="https://www.toomanycomics.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Too Many Comics: Scan, Grade &amp; Track Your Comic Collection" />
@@ -22,6 +23,27 @@
   <meta name="twitter:title" content="Too Many Comics: Scan, Grade &amp; Track Your Comic Collection" />
   <meta name="twitter:description" content="Point your camera at a stack of comics and talk. Too Many Comics catalogs, AI-grades, and price-tracks your collection. It never sees what you own." />
   <meta name="twitter:image" content="https://www.toomanycomics.app/og-image.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Too Many Comics",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "iOS",
+  "url": "https://www.toomanycomics.app/",
+  "description": "Catalog, AI-grade, and track a comic book collection from your phone. Camera and voice capture, barcode labels, box audits, kiosk and auction exports, and a daily comic news feed matched to the books you own.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BigBrainCorp LLC",
+    "url": "https://bigbraincorp.com/"
+  }
+}
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -68,12 +90,55 @@
     .site-footer a { color: #d9d2e8; text-decoration: none; margin-right: 14px; }
     .site-footer a:hover { color: #ffc933; }
     .site-footer .spacer { margin-left: auto; }
+
+    /* ── Mobile. Mobile-first would be the ideal; this site was written
+       desktop-first, so the phone rules live here at the end where source
+       order lets them win. Same approach as OSSScan-site. ── */
+    @media (max-width: 700px) {
+      .site-header { padding: 0 16px; }
+      .site-header-inner { height: auto; padding: 12px 0; flex-wrap: wrap; row-gap: 10px; }
+      .site-header img.logo { height: 38px; width: 38px; }
+      /* The nav drops to its own full-width row and wraps, rather than being
+         hidden: this is a content site, and a reader on a phone still needs to
+         reach How To, FAQ and Support. */
+      .header-nav { margin-left: 0; width: 100%; gap: 0 18px; flex-wrap: wrap; }
+      /* Tap targets, not text targets: 14px of text plus padding clears the
+         ~44px Apple asks for, which a bare 16px-tall link does not. */
+      .header-nav a { font-size: 14px; padding: 12px 0; }
+      main { padding: 28px 18px 48px; }
+      .hero { padding: 12px 0 30px; }
+      .hero h1 { font-size: 28px; }
+      .hero p.lede { font-size: 17px; }
+      /* Full-width taps beat side-by-side pills on a phone. */
+      .cta { display: block; width: 100%; text-align: center; }
+      .cta.secondary { margin-left: 0; margin-top: 10px; }
+      .features { grid-template-columns: 1fr; gap: 14px; }
+      .feature { padding: 16px 18px; }
+      .warning { padding: 18px 18px; }
+      .fits .stats { grid-template-columns: 1fr; gap: 12px; }
+      .scenario { padding: 18px 18px; }
+      .site-footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .site-footer .spacer { display: none; }
+      .site-footer a { display: inline-block; padding: 11px 0; margin: 0 16px 0 0; }
+      main h1 { font-size: 25px; }
+      main h2 { font-size: 18px; }
+      .fits h2 { font-size: 22px; }
+    }
+
+    /* Very narrow: the original SE, and any phone with Display Zoom on, which
+       renders at a 320px CSS viewport. Inert at 375px and above. */
+    @media (max-width: 374px) {
+      .site-header-wordmark .brand-tagline { display: none; }
+      .hero h1 { font-size: 24px; }
+      main { padding-left: 14px; padding-right: 14px; }
+      p a, li a { overflow-wrap: anywhere; }
+    }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <img class="logo" src="logo.png" alt="Too Many Comics logo" />
+      <img class="logo" src="logo.png" width="44" height="44" alt="Too Many Comics app icon: a long box of comics" />
       <div class="site-header-wordmark">
         <span class="brand-name">Too Many Comics</span>
         <span class="brand-tagline">Scan · Grade · Track</span>
