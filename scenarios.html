@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Too Many Comics</title>
+  <title>Too Many Comics Scenarios</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <meta name="description" content="Thousands of comics, three questions — what do I have, where is it, what's it worth — and the app one collector built to answer them." />
-  <link rel="canonical" href="https://www.toomanycomics.app/about.html" />
+  <meta name="description" content="Real collector moments — the convention kiosk, the back-issue bin 'do I own this?' — and how Too Many Comics changes them with AI." />
+  <link rel="canonical" href="https://www.toomanycomics.app/scenarios.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="About Too Many Comics" />
-  <meta property="og:description" content="Thousands of comics, three questions — what do I have, where is it, what's it worth — and the app one collector built to answer them." />
-  <meta property="og:url" content="https://www.toomanycomics.app/about.html" />
+  <meta property="og:title" content="Too Many Comics Scenarios" />
+  <meta property="og:description" content="Real collector moments — the convention kiosk, the back-issue bin 'do I own this?' — and how Too Many Comics changes them with AI." />
+  <meta property="og:url" content="https://www.toomanycomics.app/scenarios.html" />
   <meta property="og:site_name" content="Too Many Comics" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -52,10 +52,14 @@
   
     main h1 { font-size: 30px; margin: 8px 0 6px; }
     main .kicker { color: #786f8a; font-size: 15px; margin: 0 0 26px; }
-    main h2 { font-size: 20px; margin: 30px 0 8px; }
-    main p, main li { color: #4a4458; font-size: 15.5px; line-height: 1.65; }
-    .req { border-left: 4px solid #ffc933; padding: 2px 0 2px 16px; margin: 14px 0; }
-    .req strong { color: #16121f; }
+    .scenario { border: 1px solid #e6e1f0; border-radius: 14px; padding: 24px 26px; margin: 22px 0; }
+    .scenario h2 { font-size: 21px; margin: 0 0 4px; }
+    .scenario .setting { color: #786f8a; font-size: 13.5px; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 14px; }
+    .scenario p { color: #4a4458; font-size: 15.5px; line-height: 1.65; }
+    .scenario .how { border-top: 1px solid #efe9f8; margin-top: 16px; padding-top: 12px; font-size: 14px; color: #4a4458; }
+    .scenario .how strong { color: #16121f; }
+    .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
+                 font-size: 13px; color: #6b5310; margin: 28px 0 0; }
   </style>
 </head>
 <body>
@@ -69,60 +73,62 @@
       <nav class="header-nav">
         <a href="/">Home</a>
         <a href="/help.html">How&nbsp;To</a>
-        <a href="/scenarios.html">Scenarios</a>
+        <a href="/scenarios.html" aria-current="page">Scenarios</a>
         <a href="/faq.html">FAQ</a>
         <a href="/support.html">Support</a>
-        <a href="/about.html" aria-current="page">About</a>
+        <a href="/about.html">About</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <h1>Why I built Too Many Comics</h1>
-    <p class="kicker">A personal problem, solved the way a software developer solves things — then shared.</p>
+    <h1>Scenarios</h1>
+    <p class="kicker">Real moments from a collector's life, and how Too Many Comics changes them.
+      These aren't hypotheticals — every one comes from using the app with a real collection.</p>
 
-    <p>I have too many comics. Literally thousands of them — bagged, boarded, and well
-    cared for, but in a state of, let's call it, <em>disorganization</em>. For years I
-    struggled with the three questions every collector knows by heart: what exactly do I
-    have, where is it, and what is it worth?</p>
+    <div class="scenario">
+      <p class="setting">The convention table</p>
+      <h2>Thirty years of people rummaging through my boxes</h2>
+      <p>I spent the 90s at comic conventions — on both sides of the table. Not much has
+      changed since: the wall of comics, the boxes and boxes of books to dig through. It's
+      exciting for the first hour. Then it's a line of strangers thumbing through your
+      well-cared-for books, and every flip of a bagged book is a small gamble with its
+      condition.</p>
+      <p>Too Many Comics generates a <strong>kiosk</strong> from my inventory: a
+      self-contained, searchable website of my show stock that runs on a laptop with no
+      internet at all — which matters, because convention-hall Wi-Fi is a rumor. Buyers
+      search by title, issue, publisher, or creator, see every cover big, and come to me
+      when they've found something. Nobody rummages. The books stay in their bags, and I
+      stay in the conversation that actually matters — the sale.</p>
+      <p>Better: I can hand my show inventory to a buyer's own phone. A share file sent
+      from my app lands in their Too Many Comics app as a browsable collection — they can
+      search my stock from across the hall.</p>
+      <p class="how"><strong>Behind it:</strong> the kiosk export is generated by the app —
+      static files, works offline, updates by dropping in a new export. Phone-to-phone
+      sharing rides AirDrop. Your full collection stays private; you choose what the show
+      inventory contains.</p>
+    </div>
 
-    <p>So I looked for a comic book inventory app. What I found either didn't do what I
-    wanted — or did some of it, for a price. And I like free.</p>
+    <div class="scenario">
+      <p class="setting">The back-issue bin</p>
+      <h2>Wait — do I already own this?</h2>
+      <p>Every collector knows the moment: you find a book you like, and then comes the
+      question that has ruined a thousand purchases — do I already have this one? Or worse:
+      I know I own <em>an</em> issue of this run… is it this one?</p>
+      <p>I open the app and search — by typing, or by pointing the camera at the cover.
+      The answer is specific: I own this exact printing, and in what condition. Or I own
+      this issue but in a different printing — which is the difference between a $25 book
+      and a $600 book. Or I don't own it, but here's every issue of that run I do have.
+      My entire collection is in my pocket, current, every time.</p>
+      <p class="how"><strong>Behind it:</strong> search-by-image identifies the cover with
+      AI, then answers from the inventory on your phone — the lookup never leaves your
+      device, and it distinguishes printings and variants, not just titles.</p>
+    </div>
 
-    <p>I'm a software developer by trade. So I did what developers do when the tool they
-    want doesn't exist: I built it, around three requirements that never changed.</p>
-
-    <div class="req"><p><strong>My entire inventory, on my phone, at any size.</strong>
-    Not a one-time cataloging project that goes stale in a month — an inventory that's
-    easy to keep RIGHT. Books move between boxes. Boxes move between shelves.
-    Disorganization always wants to creep back in, so fixing a record has to be as easy
-    as making one.</p></div>
-
-    <div class="req"><p><strong>AI does the tedious part.</strong> Point the camera,
-    talk, and let the AI recognize each book, assess its condition, and put a ballpark
-    value on it. Grading thousands of books by hand is the reason collections stay
-    disorganized in the first place.</p></div>
-
-    <div class="req"><p><strong>Selling has to be easy.</strong> A collection this size
-    isn't static. When it's time to let some books go, the inventory should hand me the
-    listing — not make me retype what it already knows.</p></div>
-
-    <p>Too Many Comics is that app. It turned out that building it for one collector
-    with too many comics made it useful to every collector with too many comics —
-    which, if we're honest, is all of us.</p>
-
-    <h2>The free part</h2>
-    <p>The app is free, and cataloging your collection is free. The AI features that
-    cost real money to run (recognition, grading, pricing) work on credits — with a
-    weekly free allowance that covers casual collecting, because a tool built by
-    someone who likes free shouldn't nickel-and-dime the people it was built for.
-    Credits are there for the big weekends, not the everyday.</p>
-
-    <h2>Who's behind it</h2>
-    <p>Too Many Comics is a <a href="https://bigbraincorp.com/">BigBrainCorp</a>
-    product — the same one-developer company behind OSSScan. Deep understanding,
-    elegant simplicity, amplified by AI.</p>
+    <p class="stub-note"><strong>GROWING:</strong> more scenarios land here as they're
+      written — the estate/insurance inventory, the buying-a-collection evaluation, the
+      "what moved this week" Hot Books morning.</p>
 
   </main>
 
