@@ -20,15 +20,15 @@ two of these URLs become **permanent App Store Connect fields**
 
 | Page | Becomes | Status |
 |---|---|---|
-| `index.html` | Marketing / landing | Stub — copy drafted; needs screenshots, App Store badge + link, hero art |
-| `about.html` | The origin story (why I built it) | **REAL** (2026-08-23, Jim's story: thousands of comics, three questions, three requirements) |
-| `scenarios.html` | Collector scenarios (life-with-the-app stories) | **REAL** (2026-08-23: the convention kiosk, the back-issue-bin own-check; both grounded in built features — the ~/Kiosk export and search-by-image). Grows as scenarios are written |
-| `help.html` | The user guide (How To) | Stub — section skeleton only |
-| `faq.html` | FAQ | Stub — seed questions only |
+| `index.html` | Marketing / landing | **Mostly real**: hero, the eight key features, the organized-collecting warning, and the measured storage section. Still needs screenshots, the App Store badge + link, and hero art |
+| `scenarios.html` | Collector scenarios | **REAL**, seven stories, all grounded in built features (kiosk, Scan a Stack, evaluations, dealer transfer, box audit, auction pack, search-by-image) |
+| `about.html` | The origin story | **REAL**: thousands of comics, three questions, three requirements, plus the BigBrainCorp mission verbatim |
+| `faq.html` | FAQ | **Part real**: capacity, grading accuracy, and pricing answered; privacy and accounts still stubs |
 | `support.html` | **ASC Support URL** | Contact live (Info@BigBrainCorp.com); intro stub |
-| `privacy.html` | **ASC Privacy Policy URL** | DRAFT skeleton — accurate architecture, needs full pass before ASC |
-| `terms.html` | Terms / EULA | Stub — Apple-standard-vs-custom decision pending |
-| `release-notes.html` | Changelog | Stub — starts real at first TestFlight build |
+| `help.html` | The user guide (How To) | Stub, section skeleton only |
+| `privacy.html` | **ASC Privacy Policy URL** | DRAFT skeleton: accurate architecture, needs a full pass before ASC |
+| `terms.html` | Terms / EULA | Stub; Apple-standard-vs-custom decision pending |
+| `release-notes.html` | Changelog | Stub, starts real at the first TestFlight build |
 | `blog/` | Same as OSSScan-site | Empty |
 
 ## Contacts
