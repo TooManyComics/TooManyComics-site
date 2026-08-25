@@ -59,6 +59,16 @@ and 320px (no sideways scroll at either):
   questions only, since publishing a stub as an answer would be both
   wrong and a rich-results risk. No `aggregateRating` anywhere: there
   are no ratings yet, and inventing them invites a manual action.
+- **Keyword targeting** (2026-08-24): titles and descriptions aim at
+  *comic book inventory app*, *comic collection app*, *catalog comic
+  collection* and neighbours, NOT at the bare phrase "too many
+  comics". The .com is an unrelated comics podcast with years of
+  indexed content; that fight is unwinnable and unnecessary, because
+  the queries that convert (comic inventory app, comic collection
+  tracker) are ones a podcast does not compete for at all. The home
+  page H1 stays Jim's brand line; a keyword-bearing H2 above the
+  feature grid carries the phrase instead, so voice and search each
+  get what they need.
 - **`sitemap.xml`** carries `lastmod`/`changefreq`/`priority` per URL,
   OSSScan's shape. Update `lastmod` when a page changes materially.
 
