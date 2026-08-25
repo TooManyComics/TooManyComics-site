@@ -79,6 +79,20 @@
     .fits .stat { text-align: center; border: 1px solid #e6e1f0; border-radius: 12px; padding: 16px 12px; }
     .fits .stat .big { display: block; font-size: 24px; font-weight: 700; color: #3a1b6b; }
     .fits .stat .small { font-size: 13px; color: #786f8a; }
+    .scenarios-teaser { margin-top: 48px; border-top: 1px solid #e6e1f0; padding-top: 36px; }
+    .scenarios-teaser h2 { font-size: 24px; margin: 0 0 8px; text-align: center; }
+    .teaser-lede { color: #4a4458; font-size: 15.5px; line-height: 1.6; max-width: 620px;
+                   margin: 0 auto 24px; text-align: center; }
+    .scen-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+    a.scen { display: block; border: 1px solid #e6e1f0; border-radius: 10px; padding: 14px 16px;
+             text-decoration: none; background: #fff; }
+    a.scen:hover { border-color: #ffc933; background: #fffdf6; }
+    .scen-when { display: block; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase;
+                 color: #786f8a; margin-bottom: 4px; }
+    .scen-what { display: block; font-size: 15.5px; font-weight: 600; color: #3a1b6b; line-height: 1.35; }
+    .teaser-more { text-align: center; margin: 22px 0 0; font-size: 15.5px; }
+    .teaser-more a { color: #e5484d; font-weight: 600; text-decoration: none; }
+    .teaser-more a:hover { text-decoration: underline; }
     .warning { margin: 40px auto 0; max-width: 760px; background: #fffaf0; border: 2px solid #ffc933;
                border-radius: 14px; padding: 22px 26px; }
     .warning h3 { margin: 0 0 8px; font-size: 18px; color: #16121f; }
@@ -117,6 +131,8 @@
       .feature { padding: 16px 18px; }
       .warning { padding: 18px 18px; }
       .fits .stats { grid-template-columns: 1fr; gap: 12px; }
+      .scen-grid { grid-template-columns: 1fr; }
+      .scenarios-teaser h2 { font-size: 20px; }
       .scenario { padding: 18px 18px; }
       .site-footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
       .site-footer .spacer { display: none; }
@@ -218,6 +234,51 @@
       </div>
     </section>
 
+
+    <section class="scenarios-teaser">
+      <h2>What this looks like in real life</h2>
+      <p class="teaser-lede">Nine moments from a collector's and a dealer's life, and how
+        the app changes them. Every one is real: no hypotheticals.</p>
+      <div class="scen-grid">
+        <a class="scen" href="scenarios.html#convention-table">
+          <span class="scen-when">The convention table</span>
+          <span class="scen-what">Your table becomes a mobile comic book store</span>
+        </a>
+        <a class="scen" href="scenarios.html#selling-a-stack">
+          <span class="scen-when">The stack and the offer</span>
+          <span class="scen-what">&ldquo;I'll give you eighty bucks for these.&rdquo;</span>
+        </a>
+        <a class="scen" href="scenarios.html#buying-a-stack">
+          <span class="scen-when">The other side of the table</span>
+          <span class="scen-what">&ldquo;Would you want to buy these?&rdquo;</span>
+        </a>
+        <a class="scen" href="scenarios.html#dealer-to-dealer">
+          <span class="scen-when">Dealer to dealer</span>
+          <span class="scen-what">Selling to someone who speaks the same language</span>
+        </a>
+        <a class="scen" href="scenarios.html#among-friends">
+          <span class="scen-when">Among friends</span>
+          <span class="scen-what">The book I didn't need, but Todd did</span>
+        </a>
+        <a class="scen" href="scenarios.html#after-the-show">
+          <span class="scen-when">After the show</span>
+          <span class="scen-what">Getting the boxes back to the truth</span>
+        </a>
+        <a class="scen" href="scenarios.html#listing-desk">
+          <span class="scen-when">The listing desk</span>
+          <span class="scen-what">Selling a few. To make room for more, of course.</span>
+        </a>
+        <a class="scen" href="scenarios.html#back-issue-bin">
+          <span class="scen-when">The back-issue bin</span>
+          <span class="scen-what">Wait. Do I already own this?</span>
+        </a>
+        <a class="scen" href="scenarios.html#hot-books">
+          <span class="scen-when">The morning check</span>
+          <span class="scen-what">Buzz is what moves a book overnight</span>
+        </a>
+      </div>
+      <p class="teaser-more"><a href="scenarios.html">Read all nine scenarios</a></p>
+    </section>
 
     <section class="warning">
       <h3>⚠️ One honest warning</h3>

@@ -72,6 +72,18 @@ and 320px (no sideways scroll at either):
 - **`sitemap.xml`** carries `lastmod`/`changefreq`/`priority` per URL,
   OSSScan's shape. Update `lastmod` when a page changes materially.
 
+## The home page's scenario teaser
+
+`index.html` carries a nine-item teaser linking into `scenarios.html`
+by anchor. The anchors are stable, human-readable slugs on each
+`div.scenario` (`#convention-table`, `#hot-books`, and so on), chosen
+by hand rather than derived from headlines so that rewording a
+headline cannot break a link.
+
+The teaser was GENERATED from scenarios.html so the two agreed on the
+day it was built. They can drift: **if you add, remove, or retitle a
+scenario, update the teaser and the "Read all nine" count to match.**
+
 ## Screenshots (when they're shot)
 
 Comic covers in screenshots are somebody else's copyright, so the
