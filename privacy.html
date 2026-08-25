@@ -61,6 +61,8 @@
     main h1 { font-size: 30px; margin: 8px 0 6px; }
     main h2 { font-size: 20px; margin: 28px 0 8px; }
     main p, main li { color: #4a4458; font-size: 15px; line-height: 1.6; }
+    main ul { color: #4a4458; font-size: 15px; line-height: 1.6; padding-left: 22px; }
+    main li { margin-bottom: 7px; }
     .page-note { color: #786f8a; font-size: 13.5px; margin-top: 0; }
 
     /* ── Mobile. Mobile-first would be the ideal; this site was written
@@ -128,19 +130,125 @@
 
   <main>
 
+
     <h1>Privacy Policy</h1>
-    <p class="page-note">DRAFT STUB: this skeleton states the true architecture; it needs a full pass (and a review against the App Privacy questionnaire answers) before its URL is entered in App Store Connect.</p>
+    <p class="page-note">Effective 2026-08-24. Too Many Comics is published by
+    BigBrainCorp LLC.</p>
+
     <h2>The short version</h2>
-    <p><em>STUB: your collection lives on your phone. There are no accounts. The backend never sees what you own.</em></p>
-    <h2>What never leaves your device</h2>
-    <p><em>STUB: the collection database, every stored photograph, Hot Books matching results, sale records.</em></p>
-    <h2>What is sent, and why</h2>
-    <p><em>STUB: the photograph being analyzed (processed, not retained); metadata for a re-price; an anonymous device token (App Attest: proves "a real iPhone running this app", identifies no person); token counts and credit events for billing integrity.</em></p>
-    <h2>What we store</h2>
-    <p><em>STUB: credit ledger keyed to the anonymous device identity; per-request token counts; no photographs, no collection data, no names, no emails.</em></p>
-    <h2>Purchases</h2>
-    <p><em>STUB: purchases are processed by Apple; we receive the signed transaction, never payment details.</em></p>
- 
+    <p>Your comic collection lives on your phone. There are no accounts and no
+    logins, so we do not know who you are. We never receive a list of what you
+    own, what it is worth, or what you sold. The only thing that leaves your
+    device is an individual photograph you ask us to analyze, along with any
+    comments you attached to it, and we do not keep those photographs.</p>
+    <p>The app contains no analytics, no advertising, no crash reporting, and no
+    third-party tracking code of any kind.</p>
+
+    <h2>There is no account</h2>
+    <p>Too Many Comics has no sign-up, no login, no password, and no profile. We
+    never ask for your name, email address, phone number, date of birth, or
+    location, so we do not have them.</p>
+    <p>To stop strangers from running up our AI bill, the app proves it is a
+    genuine copy running on a real iPhone, using Apple's App Attest. That
+    produces an anonymous key that is generated inside your device's secure
+    hardware and never leaves it. We store the resulting public identifier so we
+    can keep track of a credit balance. It is a random string. It is not linked
+    to your Apple ID, your name, or anything else about you, and it cannot be
+    used to identify you.</p>
+
+    <h2>What stays on your device</h2>
+    <p>All of it, essentially:</p>
+    <ul>
+      <li>Every photograph you take, at full quality.</li>
+      <li>Your entire inventory: titles, issues, grades, prices, boxes,
+        collections, comments, and notes.</li>
+      <li>Your sale records, purchase prices, and profit and loss figures.</li>
+      <li>Which books you own, which is why Hot Books matches industry news
+        against your collection <em>on your phone</em>. The news feed is the
+        same for everyone; the matching happens locally, so the result never
+        travels back to us.</li>
+    </ul>
+    <p>This data is not synced to any BigBrainCorp server. If you want a copy or
+    a backup, the app's export and backup features hand it to you directly.</p>
+
+    <h2>What is sent to our servers, and why</h2>
+    <p>Only when you ask for AI analysis, and only what that analysis needs:</p>
+    <ul>
+      <li><strong>The photograph being analyzed</strong>, resized for upload.
+        For Advanced Grading this may be several photographs of the same
+        book.</li>
+      <li><strong>Comments you attached</strong>, typed or spoken, since those
+        are how you correct and guide the analysis. Spoken comments are
+        transcribed on your device by iOS; we receive text, never audio.</li>
+      <li><strong>Existing details of the book</strong> when you ask for a
+        correction or a re-price, so the analysis can improve on what it said
+        before instead of starting over.</li>
+      <li><strong>Your anonymous device token</strong>, so we can check your
+        credit balance.</li>
+    </ul>
+    <p>We use these to produce the result and return it. <strong>We do not store
+    your photographs.</strong> They are processed and discarded.</p>
+
+    <h2>What we do store</h2>
+    <p>All of it keyed to the anonymous identifier described above, never to
+    you:</p>
+    <ul>
+      <li><strong>Your credit balance</strong> and a short recent-activity list,
+        so the app can show you where your credits went.</li>
+      <li><strong>Usage counts per request</strong>: a timestamp, which
+        operation ran, which AI model answered, and how many tokens it used.
+        This is how we reconcile our own bill and notice if somebody is abusing
+        the service. It records a truncated form of the anonymous identifier and
+        nothing about the comic.</li>
+      <li><strong>Rate limiting counters</strong>, so no single device can run
+        away with the service.</li>
+      <li><strong>The attested public key</strong> for your installation, and a
+        counter that prevents replay.</li>
+      <li><strong>A count of content-filter refusals</strong> per installation.
+        If a device repeatedly submits material the AI service refuses, that
+        matters to our standing with our provider. We store a count, not the
+        content.</li>
+      <li><strong>Redeemed purchase identifiers</strong>, so a credit pack
+        cannot be redeemed twice.</li>
+    </ul>
+    <p>None of this includes your photographs, your comics, your collection, or
+    any personal detail about you.</p>
+
+    <h2>Who else is involved</h2>
+    <p><strong>Microsoft Azure</strong> hosts our service and provides the AI
+    that analyzes your photographs, through Azure OpenAI. Your photograph and
+    comments are processed there under Microsoft's terms. Microsoft's service
+    can retain inputs for a limited period for abuse monitoring; it does not use
+    them to train models.</p>
+    <p><strong>Apple</strong> handles every purchase. We never see your payment
+    details, billing address, or Apple ID. We receive only a signed confirmation
+    that a specific credit pack was bought, which is what tells us to add the
+    credits. Apple's App Attest also provides the anonymous device
+    verification described above.</p>
+    <p>We do not sell, rent, or share your data with anyone else, because we do
+    not have anything worth selling.</p>
+
+    <h2>Children</h2>
+    <p>Too Many Comics is not directed at children under 13, and we do not
+    knowingly collect information from them. We do not knowingly collect
+    information from anyone, which is rather the point.</p>
+
+    <h2>Your control</h2>
+    <p>Delete the app and your collection is gone, because it only ever lived on
+    your device. Back it up first if you want to keep it. What remains on our
+    side is the anonymous credit balance and the usage counts, which contain
+    nothing that identifies you. If you would like that record deleted anyway,
+    write to us and we will remove it; note that this also removes any credits
+    you have purchased.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes we will update the effective date at the top and
+    post the new version here. Material changes will be called out in the app's
+    release notes.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy, or a deletion request:
+    <a href="mailto:Info@BigBrainCorp.com">Info@BigBrainCorp.com</a>.</p>
   </main>
 
   <footer class="site-footer">

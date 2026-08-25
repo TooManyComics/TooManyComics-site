@@ -26,8 +26,8 @@ two of these URLs become **permanent App Store Connect fields**
 | `faq.html` | FAQ | **Part real**: capacity, grading accuracy, and pricing answered; privacy and accounts still stubs |
 | `support.html` | **ASC Support URL** | Contact live (Info@BigBrainCorp.com); intro stub |
 | `help.html` | The user guide (How To) | Stub, section skeleton only |
-| `privacy.html` | **ASC Privacy Policy URL** | DRAFT skeleton: accurate architecture, needs a full pass before ASC |
-| `terms.html` | Terms / EULA | Stub; Apple-standard-vs-custom decision pending |
+| `privacy.html` | **ASC Privacy Policy URL** | **REAL** (2026-08-24): written against what the code actually does, verified claim by claim. Worth a lawyer's read before launch; the App Privacy questionnaire answers must match it |
+| `terms.html` | Terms / EULA | Stub, and OPTIONAL: Apple's Standard EULA governs by default. Kept for the estimates disclaimer and credit terms |
 | `release-notes.html` | Changelog | Stub, starts real at the first TestFlight build |
 | `blog/` | Same as OSSScan-site | Empty |
 
