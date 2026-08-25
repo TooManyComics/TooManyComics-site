@@ -21,8 +21,7 @@ two of these URLs become **permanent App Store Connect fields**
 | Page | Becomes | Status |
 |---|---|---|
 | `index.html` | Marketing / landing | **Mostly real**: hero, the eight key features, the organized-collecting warning, and the measured storage section. Still needs screenshots, the App Store badge + link, and hero art |
-| `scenarios.html` | Collector scenarios | **LAUNCH BLOCKER:** the buying scenario ("Would you want to buy these?") describes **Evaluate a stack**, which is DESIGNED but not yet built (app repo `docs/features/evaluations-and-offers.md`). The page promises no hypotheticals, so that feature must ship before the site goes public, or the paragraph must come out. Everything else on the page is built. |
-| _(scenarios, cont.)_ | | **REAL**, seven stories, all grounded in built features (kiosk, Scan a Stack, evaluations, dealer transfer, box audit, auction pack, search-by-image) |
+| `scenarios.html` | Collector scenarios | Seven stories. Six are grounded in built features (kiosk, Scan a Stack, dealer transfer, box audit, auction pack, search-by-image). **LAUNCH BLOCKER on the seventh:** the buying scenario describes **Evaluate a stack**, DESIGNED but not built (app repo `docs/features/evaluations-and-offers.md`). The page promises no hypotheticals, so that feature ships before the site goes public or the paragraph comes out. |
 | `about.html` | The origin story | **REAL**: thousands of comics, three questions, three requirements, plus the BigBrainCorp mission verbatim |
 | `faq.html` | FAQ | **Part real**: capacity, grading accuracy, and pricing answered; privacy and accounts still stubs |
 | `support.html` | **ASC Support URL** | Contact live (Info@BigBrainCorp.com); intro stub |
