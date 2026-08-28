@@ -66,6 +66,17 @@
     .scen-pager a { color: #3a1b6b; text-decoration: none; font-weight: 600; }
     .scen-pager a:hover { color: #e5484d; }
 
+    /* ── The audit's steps, three mini phones in a row. Same CSS-bezel idea
+       as .phone elsewhere, scaled down so a row fits the column. ── */
+    .phone-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 26px 0; }
+    .phone-strip figure { margin: 0; }
+    .phone-strip img { display: block; width: 100%; height: auto; border-radius: 22px;
+                       border: 6px solid #16121f; background: #16121f;
+                       box-shadow: 0 0 0 1px #3a3345, 0 10px 22px rgba(22,18,31,.18); }
+    .phone-strip figcaption { font-size: 12px; color: #6b6278; text-align: center;
+                              margin-top: 8px; line-height: 1.4; }
+    @media (max-width: 700px) { .phone-strip { grid-template-columns: 1fr 1fr; } }
+
     /* ── Scenarios dropdown: a no-JS <details> menu ── */
     .nav-dd { position: relative; }
     .nav-dd summary { list-style: none; cursor: pointer; color: #e8e2f4; font-size: 14px; }
@@ -162,12 +173,46 @@
       recorded here but never got scanned. Every discrepancy lands in an
       <strong>Inventory Issues</strong> list that persists, so nothing depends on your
       memory of the weekend.</p>
+      <div class="phone-strip">
+        <figure>
+          <img src="../images/scenarios/after-the-show-1.jpg" width="750" height="1624" loading="lazy"
+               alt="A box screen's menu with Audit box among the actions." />
+          <figcaption>Every box's menu has the audit.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/scenarios/after-the-show-2.jpg" width="750" height="1624" loading="lazy"
+               alt="An audit of box CB-1 mid-scan: the camera reading a Silver Surfer label, with 5 here, 0 arriving, and 107 unseen." />
+          <figcaption>Run the scanner down the box: 5 here, 107 unseen.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/scenarios/after-the-show-3.jpg" width="750" height="1624" loading="lazy"
+               alt="The audit summary: 5 books confirmed in CB-1, and a Not seen list of 107 books with their short codes." />
+          <figcaption>Finish: what's confirmed, and what never got scanned.</figcaption>
+        </figure>
+      </div>
       <p>Then you work the list. A misfiled book gets moved to where it belongs, or kept
       where it is with the record updated to match. A missing book you classify: it turns
       out it sold, or it walked away. Both are things worth knowing, and they mean
       different things to your records. And the app is smart about it: a book flagged
       missing from one box that shows up in a later box's audit resolves itself. A few
       audits later your inventory is perfect again.</p>
+      <div class="phone-strip">
+        <figure>
+          <img src="../images/scenarios/after-the-show-4.jpg" width="750" height="1624" loading="lazy"
+               alt="The collections menu showing Review inventory issues with a count of 107." />
+          <figcaption>The issues wait in one place, counted.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/scenarios/after-the-show-5.jpg" width="750" height="1624" loading="lazy"
+               alt="The Inventory Issues list: books each tagged Missing from CB-1 with the date, with covers, grades, and values." />
+          <figcaption>Every discrepancy, named and dated.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/scenarios/after-the-show-6.jpg" width="750" height="1624" loading="lazy"
+               alt="Resolving a selected book on the issues list, with actions to clear the issue, undo a sale, mark it sold, or delete it." />
+          <figcaption>Work the list: clear it, mark it sold, or let it go.</figcaption>
+        </figure>
+      </div>
       <p class="how"><strong>Behind it:</strong> the audit reads the same QR labels the
       show table uses, with a checklist mode for unlabeled books and hand entry by short
       code. Issues are tagged on the records themselves, so they survive until you
