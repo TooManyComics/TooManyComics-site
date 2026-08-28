@@ -66,6 +66,24 @@
     .scen-pager a { color: #3a1b6b; text-decoration: none; font-weight: 600; }
     .scen-pager a:hover { color: #e5484d; }
 
+    /* ── The listing workbench: a browser-window card, full width. ── */
+    .screen { margin: 26px 0; }
+    .screen img { display: block; width: 100%; height: auto; border-radius: 12px;
+                  border: 1px solid #d8d2e4; box-shadow: 0 12px 28px rgba(22,18,31,.15); }
+    .screen figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                         margin-top: 9px; line-height: 1.45; }
+
+    /* ── The phone-side journey, four mini phones in a row. Same CSS-bezel
+       idea as .phone elsewhere, scaled down so four fit the column. ── */
+    .phone-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0; }
+    .phone-strip figure { margin: 0; }
+    .phone-strip img { display: block; width: 100%; height: auto; border-radius: 22px;
+                       border: 6px solid #16121f; background: #16121f;
+                       box-shadow: 0 0 0 1px #3a3345, 0 10px 22px rgba(22,18,31,.18); }
+    .phone-strip figcaption { font-size: 12px; color: #6b6278; text-align: center;
+                              margin-top: 8px; line-height: 1.4; }
+    @media (max-width: 700px) { .phone-strip { grid-template-columns: 1fr 1fr; } }
+
     /* ── Scenarios dropdown: a no-JS <details> menu ── */
     .nav-dd { position: relative; }
     .nav-dd summary { list-style: none; cursor: pointer; color: #e8e2f4; font-size: 14px; }
@@ -162,11 +180,39 @@
       auction houses to choose, honest condition descriptions already drafted from the
       grading. When I'm done it generates the eBay upload file, and the photo folders are
       numbered to match, ready to drag into each listing.</p>
+      <figure class="screen">
+        <img src="../images/scenarios/listing-desk-5.jpg" width="1326" height="758" loading="lazy"
+             alt="The Auction Drafts workbench in a browser: eBay settings, a card for The Incredible Hulk #393 with a drafted listing title and condition description, a $4 price, and buttons to download the eBay CSV and export changes back." />
+        <figcaption>The workbench: titles and honest condition notes already drafted, the eBay CSV one
+          click away, and every change exported back to the phone.</figcaption>
+      </figure>
       <p>Then the part that keeps me honest: the page exports my changes back, and one
       tap syncs them into inventory. The For Sale tab shows exactly which books are
       listed where, so a book that's live at auction can't quietly go back in a box and
       get sold twice. The app even warns me if I try to sell a book somewhere else while
       a listing is still up. Stay organized!</p>
+      <div class="phone-strip">
+        <figure>
+          <img src="../images/scenarios/listing-desk-1.jpg" width="750" height="1624" loading="lazy"
+               alt="The For Sale dialog listing The Incredible Hulk #393 on eBay at $4, prefilled from its Instant Ballpark estimate." />
+          <figcaption>List it: price prefilled, marketplace chosen.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/scenarios/listing-desk-2.jpg" width="750" height="1624" loading="lazy"
+               alt="The For Sale tab showing the Hulk with an eBay $4 listing pill, its estimate, and its box." />
+          <figcaption>The For Sale tab wears the listing pill.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/scenarios/listing-desk-3.jpg" width="750" height="1624" loading="lazy"
+               alt="The For Sale tab's menu, with Export auction pack among the actions." />
+          <figcaption>One menu item makes the pack.</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/scenarios/listing-desk-4.jpg" width="750" height="1624" loading="lazy"
+               alt="The auction pack export sheet: one draft to create, zero listings to end, eBay, $4 total asking." />
+          <figcaption>The pack knows what's new and what's live.</figcaption>
+        </figure>
+      </div>
       <p class="how"><strong>Behind it:</strong> the pack is self-contained and runs
       offline in any browser. The phone ships raw book facts and photos; the page holds
       the marketplace know-how. Listings carry states (pending, live, ending) shown as
