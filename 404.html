@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found | Too Many Comics</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#2b1650" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+           color: #16121f; background: #fff; min-height: 100vh; display: flex; flex-direction: column; }
+    .site-header { background: linear-gradient(135deg, #1a0f2e 0%, #2b1650 60%, #3a1b6b 100%);
+                   border-bottom: 2px solid #ffc933; padding: 0 24px; }
+    .site-header-inner { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 14px; height: 64px; }
+    .site-header img.logo { height: 44px; width: 44px; border-radius: 10px; object-fit: contain; flex-shrink: 0;
+                            box-shadow: 0 0 0 2px #ffc933, 0 0 10px rgba(255,201,51,.4); }
+    .site-header-wordmark { display: flex; flex-direction: column; line-height: 1.1; }
+    .site-header-wordmark .brand-name { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 0.02em; }
+    .site-header-wordmark .brand-tagline { font-size: 11px; color: #ffc933; letter-spacing: 0.06em; text-transform: uppercase; }
+    .header-nav { margin-left: auto; display: flex; gap: 18px; align-items: center; }
+    .header-nav a { color: #e8e2f4; text-decoration: none; font-size: 14px; }
+    .header-nav a:hover, .header-nav a[aria-current="page"] { color: #ffc933; }
+    main { flex: 1; max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; width: 100%; }
+    .site-footer { background: #16121f; color: #b9b1c9; font-size: 13px; padding: 24px; }
+    .site-footer-inner { max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+    .site-footer a { color: #d9d2e8; text-decoration: none; margin-right: 14px; }
+    .site-footer a:hover { color: #ffc933; }
+    .site-footer .spacer { margin-left: auto; }
+    main { text-align: center; padding-top: 72px; }
+    main h1 { font-size: 34px; margin: 0 0 10px; }
+    main p { color: #4a4458; font-size: 16px; line-height: 1.6; max-width: 480px; margin: 0 auto 26px; }
+    .cta { display: inline-block; background: #e5484d; color: #fff; font-weight: 600; padding: 13px 26px;
+           border-radius: 10px; text-decoration: none; font-size: 16px; }
+    .cta:hover { background: #c53a3f; }
+    /* ── Mobile. Mobile-first would be the ideal; this site was written
+       desktop-first, so the phone rules live here at the end where source
+       order lets them win. Same approach as OSSScan-site. ── */
+    @media (max-width: 700px) {
+      .site-header { padding: 0 16px; }
+      .site-header-inner { height: auto; padding: 12px 0; flex-wrap: wrap; row-gap: 10px; }
+      .site-header img.logo { height: 38px; width: 38px; }
+      .header-nav { margin-left: 0; width: 100%; gap: 0 18px; flex-wrap: wrap; }
+      .header-nav a { font-size: 14px; padding: 12px 0; }
+      main { padding: 28px 18px 48px; }
+      .scen-grid { grid-template-columns: 1fr; }
+      .scen-pager { flex-direction: column; }
+      .site-footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .site-footer .spacer { display: none; }
+      .site-footer a { display: inline-block; padding: 11px 0; margin: 0 16px 0 0; }
+      main h1 { font-size: 25px; }
+      main h2 { font-size: 18px; }
+    }
+
+    /* Very narrow: the original SE, and any phone with Display Zoom on, which
+       renders at a 320px CSS viewport. Inert at 375px and above. */
+    @media (max-width: 374px) {
+      .site-header-wordmark .brand-tagline { display: none; }
+      main { padding-left: 14px; padding-right: 14px; }
+      p a, li a { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="logo" src="/logo-128.png" width="44" height="44" alt="Too Many Comics app icon: a long box of comics" />
+      <div class="site-header-wordmark">
+        <span class="brand-name">Too Many Comics</span>
+        <span class="brand-tagline">Scan · Grade · Track</span>
+      </div>
+      <nav class="header-nav">
+        <a href="/">Home</a>
+        <a href="/help.html">How&nbsp;To</a>
+        <a href="/scenarios.html">Scenarios</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>This page got misfiled.</h1>
+    <p>It happens to the best-run long boxes. The page you're after isn't at this
+      address; it may have moved, or the link had a typo.</p>
+    <a class="cta" href="/">Back to the front of the box</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>© 2026 BigBrainCorp LLC</span>
+      <span class="spacer"></span>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/support.html">Support</a>
+      <a href="/release-notes.html">Release notes</a>
+      <a href="https://bigbraincorp.com/">A BigBrainCorp product</a>
+    </div>
+  </footer>
+</body>
+</html>

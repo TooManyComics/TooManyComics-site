@@ -63,7 +63,7 @@
     main p, main li { color: #4a4458; font-size: 15px; line-height: 1.6; }
     main ul { color: #4a4458; font-size: 15px; line-height: 1.6; padding-left: 22px; }
     main li { margin-bottom: 7px; }
-    .page-note { color: #786f8a; font-size: 13.5px; margin-top: 0; }
+    .page-note { color: #6b6278; font-size: 13.5px; margin-top: 0; }
 
     /* ── Mobile. Mobile-first would be the ideal; this site was written
        desktop-first, so the phone rules live here at the end where source
@@ -107,20 +107,56 @@
       main { padding-left: 14px; padding-right: 14px; }
       p a, li a { overflow-wrap: anywhere; }
     }
+      /* ── Scenarios dropdown: a no-JS <details> menu ── */
+    .nav-dd { position: relative; }
+    .nav-dd summary { list-style: none; cursor: pointer; color: #e8e2f4; font-size: 14px; }
+    .nav-dd summary::-webkit-details-marker { display: none; }
+    .nav-dd summary::after { content: " \25be"; font-size: 10px; }
+    .nav-dd summary:hover, .nav-dd[open] summary, .nav-dd summary.current { color: #ffc933; }
+    .nav-dd-menu { position: absolute; left: 0; top: calc(100% + 12px); background: #241242;
+                   border: 1px solid #ffc933; border-radius: 10px; padding: 8px; width: 300px; z-index: 50;
+                   box-shadow: 0 12px 28px rgba(0,0,0,.35); }
+    .nav-dd-menu a { display: block; padding: 8px 10px; border-radius: 6px; font-size: 13.5px;
+                     color: #e8e2f4; text-decoration: none; }
+    .nav-dd-menu a:hover { background: #3a1b6b; color: #ffc933; }
+    .nav-dd-menu a.all { font-weight: 600; border-bottom: 1px solid #47307a; border-radius: 6px 6px 0 0;
+                         margin-bottom: 6px; padding-bottom: 10px; }
+    @media (max-width: 700px) {
+      .nav-dd { width: 100%; }
+      .nav-dd summary { padding: 12px 0; }
+      .nav-dd-menu { position: static; width: 100%; margin: 2px 0 10px; }
+      .nav-dd-menu a { padding: 10px 10px; }
+    }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <img class="logo" src="logo.png" width="44" height="44" alt="Too Many Comics app icon: a long box of comics" />
+      <img class="logo" src="logo-128.png" width="44" height="44" alt="Too Many Comics app icon: a long box of comics" />
       <div class="site-header-wordmark">
         <span class="brand-name">Too Many Comics</span>
         <span class="brand-tagline">Scan · Grade · Track</span>
       </div>
       <nav class="header-nav">
-        <a href="index.html">Home</a>
+        <a href="./">Home</a>
         <a href="help.html">How&nbsp;To</a>
-        <a href="scenarios.html">Scenarios</a>
+        <details class="nav-dd">
+          <summary>Scenarios</summary>
+          <div class="nav-dd-menu">
+            <a class="all" href="scenarios.html">All scenarios</a>
+            <a href="scenarios/convention-table.html">The convention table</a>
+            <a href="scenarios/selling-a-stack.html">The stack and the offer</a>
+            <a href="scenarios/buying-a-stack.html">The other side of the table</a>
+            <a href="scenarios/curiosity-stack.html">No deal in sight</a>
+            <a href="scenarios/collection-call.html">The phone call</a>
+            <a href="scenarios/dealer-to-dealer.html">Dealer to dealer</a>
+            <a href="scenarios/among-friends.html">Among friends</a>
+            <a href="scenarios/after-the-show.html">After the show</a>
+            <a href="scenarios/listing-desk.html">The listing desk</a>
+            <a href="scenarios/back-issue-bin.html">The back-issue bin</a>
+            <a href="scenarios/hot-books.html">The morning check</a>
+          </div>
+        </details>
         <a href="faq.html">FAQ</a>
         <a href="support.html">Support</a>
         <a href="about.html">About</a>

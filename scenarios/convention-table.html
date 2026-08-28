@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sell Comics at a Convention with a Searchable Kiosk | Too Many Comics</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <meta name="description" content="Turn a convention table into a searchable comic book store: an offline kiosk of your show stock, prices that update everywhere at once, and no price stickers ever again." />
+  <meta name="theme-color" content="#2b1650" />
+  <link rel="canonical" href="https://www.toomanycomics.app/scenarios/convention-table.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sell Comics at a Convention with a Searchable Kiosk | Too Many Comics" />
+  <meta property="og:description" content="Turn a convention table into a searchable comic book store: an offline kiosk of your show stock, prices that update everywhere at once, and no price stickers ever again." />
+  <meta property="og:url" content="https://www.toomanycomics.app/scenarios/convention-table.html" />
+  <meta property="og:site_name" content="Too Many Comics" />
+  <meta property="og:image" content="https://www.toomanycomics.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sell Comics at a Convention with a Searchable Kiosk | Too Many Comics" />
+  <meta name="twitter:description" content="Turn a convention table into a searchable comic book store: an offline kiosk of your show stock, prices that update everywhere at once, and no price stickers ever again." />
+  <meta name="twitter:image" content="https://www.toomanycomics.app/og-image.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.toomanycomics.app/" },
+    { "@type": "ListItem", "position": 2, "name": "Scenarios", "item": "https://www.toomanycomics.app/scenarios.html" },
+    { "@type": "ListItem", "position": 3, "name": "The convention table", "item": "https://www.toomanycomics.app/scenarios/convention-table.html" }
+  ]
+}
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+           color: #16121f; background: #fff; min-height: 100vh; display: flex; flex-direction: column; }
+    .site-header { background: linear-gradient(135deg, #1a0f2e 0%, #2b1650 60%, #3a1b6b 100%);
+                   border-bottom: 2px solid #ffc933; padding: 0 24px; }
+    .site-header-inner { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 14px; height: 64px; }
+    .site-header img.logo { height: 44px; width: 44px; border-radius: 10px; object-fit: contain; flex-shrink: 0;
+                            box-shadow: 0 0 0 2px #ffc933, 0 0 10px rgba(255,201,51,.4); }
+    .site-header-wordmark { display: flex; flex-direction: column; line-height: 1.1; }
+    .site-header-wordmark .brand-name { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 0.02em; }
+    .site-header-wordmark .brand-tagline { font-size: 11px; color: #ffc933; letter-spacing: 0.06em; text-transform: uppercase; }
+    .header-nav { margin-left: auto; display: flex; gap: 18px; align-items: center; }
+    .header-nav a { color: #e8e2f4; text-decoration: none; font-size: 14px; }
+    .header-nav a:hover, .header-nav a[aria-current="page"] { color: #ffc933; }
+    main { flex: 1; max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; width: 100%; }
+    .site-footer { background: #16121f; color: #b9b1c9; font-size: 13px; padding: 24px; }
+    .site-footer-inner { max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+    .site-footer a { color: #d9d2e8; text-decoration: none; margin-right: 14px; }
+    .site-footer a:hover { color: #ffc933; }
+    .site-footer .spacer { margin-left: auto; }
+
+    main h1 { font-size: 30px; margin: 8px 0 16px; line-height: 1.2; }
+    .setting { color: #6b6278; font-size: 13.5px; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 6px; }
+    main p { color: #4a4458; font-size: 15.5px; line-height: 1.65; }
+    .how { border-top: 1px solid #efe9f8; margin-top: 20px; padding-top: 14px; font-size: 14px; }
+    .how strong { color: #16121f; }
+    .scen-pager { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between;
+                  margin-top: 36px; border-top: 1px solid #e6e1f0; padding-top: 18px; font-size: 14.5px; }
+    .scen-pager a { color: #3a1b6b; text-decoration: none; font-weight: 600; }
+    .scen-pager a:hover { color: #e5484d; }
+
+    /* ── Scenarios dropdown: a no-JS <details> menu ── */
+    .nav-dd { position: relative; }
+    .nav-dd summary { list-style: none; cursor: pointer; color: #e8e2f4; font-size: 14px; }
+    .nav-dd summary::-webkit-details-marker { display: none; }
+    .nav-dd summary::after { content: " \25be"; font-size: 10px; }
+    .nav-dd summary:hover, .nav-dd[open] summary, .nav-dd summary.current { color: #ffc933; }
+    .nav-dd-menu { position: absolute; left: 0; top: calc(100% + 12px); background: #241242;
+                   border: 1px solid #ffc933; border-radius: 10px; padding: 8px; width: 300px; z-index: 50;
+                   box-shadow: 0 12px 28px rgba(0,0,0,.35); }
+    .nav-dd-menu a { display: block; padding: 8px 10px; border-radius: 6px; font-size: 13.5px;
+                     color: #e8e2f4; text-decoration: none; }
+    .nav-dd-menu a:hover { background: #3a1b6b; color: #ffc933; }
+    .nav-dd-menu a.all { font-weight: 600; border-bottom: 1px solid #47307a; border-radius: 6px 6px 0 0;
+                         margin-bottom: 6px; padding-bottom: 10px; }
+    @media (max-width: 700px) {
+      .nav-dd { width: 100%; }
+      .nav-dd summary { padding: 12px 0; }
+      .nav-dd-menu { position: static; width: 100%; margin: 2px 0 10px; }
+      .nav-dd-menu a { padding: 10px 10px; }
+    }
+
+    /* ── Mobile. Mobile-first would be the ideal; this site was written
+       desktop-first, so the phone rules live here at the end where source
+       order lets them win. Same approach as OSSScan-site. ── */
+    @media (max-width: 700px) {
+      .site-header { padding: 0 16px; }
+      .site-header-inner { height: auto; padding: 12px 0; flex-wrap: wrap; row-gap: 10px; }
+      .site-header img.logo { height: 38px; width: 38px; }
+      .header-nav { margin-left: 0; width: 100%; gap: 0 18px; flex-wrap: wrap; }
+      .header-nav a { font-size: 14px; padding: 12px 0; }
+      main { padding: 28px 18px 48px; }
+      .scen-grid { grid-template-columns: 1fr; }
+      .scen-pager { flex-direction: column; }
+      .site-footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .site-footer .spacer { display: none; }
+      .site-footer a { display: inline-block; padding: 11px 0; margin: 0 16px 0 0; }
+      main h1 { font-size: 25px; }
+      main h2 { font-size: 18px; }
+    }
+
+    /* Very narrow: the original SE, and any phone with Display Zoom on, which
+       renders at a 320px CSS viewport. Inert at 375px and above. */
+    @media (max-width: 374px) {
+      .site-header-wordmark .brand-tagline { display: none; }
+      main { padding-left: 14px; padding-right: 14px; }
+      p a, li a { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="logo" src="../logo-128.png" width="44" height="44" alt="Too Many Comics app icon: a long box of comics" />
+      <div class="site-header-wordmark">
+        <span class="brand-name">Too Many Comics</span>
+        <span class="brand-tagline">Scan · Grade · Track</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../">Home</a>
+        <a href="../help.html">How&nbsp;To</a>
+        <details class="nav-dd">
+          <summary class="current">Scenarios</summary>
+          <div class="nav-dd-menu">
+            <a class="all" href="../scenarios.html">All scenarios</a>
+            <a href="convention-table.html" aria-current="page">The convention table</a>
+            <a href="selling-a-stack.html">The stack and the offer</a>
+            <a href="buying-a-stack.html">The other side of the table</a>
+            <a href="curiosity-stack.html">No deal in sight</a>
+            <a href="collection-call.html">The phone call</a>
+            <a href="dealer-to-dealer.html">Dealer to dealer</a>
+            <a href="among-friends.html">Among friends</a>
+            <a href="after-the-show.html">After the show</a>
+            <a href="listing-desk.html">The listing desk</a>
+            <a href="back-issue-bin.html">The back-issue bin</a>
+            <a href="hot-books.html">The morning check</a>
+          </div>
+        </details>
+        <a href="../faq.html">FAQ</a>
+        <a href="../support.html">Support</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="setting">The convention table</p>
+    <h1>Your table becomes a mobile comic book store</h1>
+      <p>I spent the 90s at comic conventions, on both sides of the table. Not much has
+      changed since: the wall of comics, the boxes and boxes of books to dig through. It's
+      exciting for the first hour. Then it's a line of strangers thumbing through your
+      well-cared-for books, and every flip of a bagged book is a small gamble with its
+      condition.</p>
+      <p>Too Many Comics generates a <strong>kiosk</strong> from my inventory: a
+      self-contained, searchable website of my show stock. Put it on a laptop, or better,
+      on a big touchscreen at the end of the table, and the booth becomes a mobile comic
+      book store. Buyers search by title, issue, publisher, or creator, see every cover
+      big, and come to me when they have found something. It runs with no internet at all,
+      which matters, because convention hall Wi-Fi is a rumor.</p>
+      <p>I can also post my show inventory for attendees to pull into their own Too Many
+      Comics app. Now they browse my stock on their own phone, from across the hall or
+      from the hotel that night, asking prices included.</p>
+      <p>And the kiosk answers two different questions, not one. The show inventory
+      answers "what do you have with you?" But I can publish my whole store collection
+      too, so a buyer who strikes out in the boxes on the table can still find the book
+      back at the shop and we can arrange it. The stock at the table stops being the
+      limit of what I can sell that weekend.</p>
+      <p>That last part quietly kills my least favorite chore. No price stickers. No
+      re-stickering the whole box when the market moves or I decide to run a show special.
+      Prices live in one place, I change them once, and every screen showing my stock
+      catches up at the same moment. Nobody rummages, the books stay in their bags, and I
+      stay in the conversation that actually matters: the sale.</p>
+      <p class="how"><strong>Behind it:</strong> the kiosk export is generated by the app:
+      static files, works offline, updates by dropping in a new export. Phone to phone
+      sharing rides AirDrop and the app's own share format. Your full collection stays
+      private; you choose what goes in the show inventory and which fields ride along.</p>
+    <nav class="scen-pager" aria-label="More scenarios">
+      <a href="../scenarios.html">All scenarios</a>
+      <a href="selling-a-stack.html">The stack and the offer &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>© 2026 BigBrainCorp LLC</span>
+      <span class="spacer"></span>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="../support.html">Support</a>
+      <a href="../release-notes.html">Release notes</a>
+      <a href="https://bigbraincorp.com/">A BigBrainCorp product</a>
+    </div>
+  </footer>
+</body>
+</html>
