@@ -157,6 +157,16 @@
       .nav-dd-menu { position: static; width: 100%; margin: 2px 0 10px; }
       .nav-dd-menu a { padding: 10px 10px; }
     }
+
+    /* ── App screenshot in a CSS phone bezel ── */
+    .phone { float: right; width: 270px; margin: 8px 0 20px 28px; }
+    .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
+                 border: 10px solid #16121f; background: #16121f;
+                 box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
+    .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                        margin: 10px auto 0; max-width: 240px; line-height: 1.45; }
+    main::after { content: ""; display: block; clear: both; }
+    @media (max-width: 700px) { .phone { float: none; margin: 20px auto; } }
   </style>
 </head>
 <body>
@@ -228,6 +238,11 @@
     pretend to. What it does is help you decide, quickly and cheaply, which books are
     worth sending to one.</p>
     <h2>Are the price estimates live market prices?</h2>
+    <figure class="phone">
+      <img src="images/ballpark-value.png" width="750" height="1624" loading="lazy"
+           alt="The Instant Ballpark panel for Green Lantern #49: a six-dollar estimate with its reasoning, its Aug 13 date, and the disclaimer that AI estimates are based on historical market data." />
+      <figcaption>Every estimate wears its date, its reasoning, and its disclaimer.</figcaption>
+    </figure>
     <p>No, and the app says so out loud. AI estimates are based on historical market
     data and may not reflect current events, so every price carries its "last updated"
     date and that standing disclaimer. Treat them as ballparks: they're excellent at

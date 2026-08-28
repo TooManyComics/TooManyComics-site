@@ -60,9 +60,17 @@
     .header-nav a { color: #e8e2f4; text-decoration: none; font-size: 14px; }
     .header-nav a:hover, .header-nav a[aria-current="page"] { color: #ffc933; }
     main { flex: 1; max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; width: 100%; }
-    .hero { text-align: center; padding: 32px 0 40px; }
+    .hero { display: flex; align-items: center; gap: 44px; text-align: left; padding: 32px 0 40px; }
+    .hero-copy { flex: 1; }
     .hero h1 { font-size: 40px; margin: 0 0 12px; line-height: 1.15; }
-    .hero p.lede { font-size: 19px; color: #4a4458; max-width: 640px; margin: 0 auto 28px; }
+    .hero p.lede { font-size: 19px; color: #4a4458; max-width: 640px; margin: 0 0 28px; }
+    /* ── App screenshot in a CSS phone bezel ── */
+    .phone { flex-shrink: 0; width: 250px; margin: 0; }
+    .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
+                 border: 10px solid #16121f; background: #16121f;
+                 box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
+    .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                        margin: 10px auto 0; max-width: 240px; line-height: 1.45; }
     .cta { display: inline-block; background: #e5484d; color: #fff; font-weight: 600; padding: 13px 26px;
            border-radius: 10px; text-decoration: none; font-size: 16px; }
     .cta:hover { background: #c53a3f; }
@@ -122,7 +130,8 @@
          ~44px Apple asks for, which a bare 16px-tall link does not. */
       .header-nav a { font-size: 14px; padding: 12px 0; }
       main { padding: 28px 18px 48px; }
-      .hero { padding: 12px 0 30px; }
+      .hero { padding: 12px 0 30px; flex-direction: column; text-align: center; gap: 22px; }
+      .hero .phone { width: 220px; margin: 6px auto 0; }
       .hero h1 { font-size: 28px; }
       .hero p.lede { font-size: 17px; }
       /* Full-width taps beat side-by-side pills on a phone. */
@@ -211,14 +220,21 @@
 
   <main>
     <section class="hero">
-      <h1>&ldquo;Too many comics&rdquo; was never the problem.</h1>
-      <p class="lede">I think I have too many comics. But my real problem was never the number.
-        It was not having a good inventory of what I have, where it is, and what it's worth.
-        If you're like me, Too Many Comics was made for you: point your camera at a stack and
-        talk, and it catalogs every book, grades condition with AI, and keeps your whole
-        collection in your pocket.</p>
-      <span class="cta soon">Coming soon to the App&nbsp;Store</span>
-      <a class="cta secondary" href="help.html">See how it works</a>
+      <div class="hero-copy">
+        <h1>&ldquo;Too many comics&rdquo; was never the problem.</h1>
+        <p class="lede">I think I have too many comics. But my real problem was never the number.
+          It was not having a good inventory of what I have, where it is, and what it's worth.
+          If you're like me, Too Many Comics was made for you: point your camera at a stack and
+          talk, and it catalogs every book, grades condition with AI, and keeps your whole
+          collection in your pocket.</p>
+        <span class="cta soon">Coming soon to the App&nbsp;Store</span>
+        <a class="cta secondary" href="help.html">See how it works</a>
+      </div>
+      <figure class="phone">
+        <img src="images/capture-screen.jpg" width="750" height="1624" fetchpriority="high"
+             alt="The capture screen photographing a copy of Werewolf by Night #13, with Voice scan and One at a time modes and the destination box picked." />
+        <figcaption>One tap per book. The AI does the rest.</figcaption>
+      </figure>
     </section>
 
     <h2 class="section-head">A comic book inventory app built for real collections</h2>
