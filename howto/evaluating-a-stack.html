@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Evaluate a Stack of Comics | Too Many Comics</title>
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <meta name="description" content="How to evaluate a stack of comics you don't own yet: scan them, see what you already have and what the market says, then buy them into inventory or walk away." />
+  <meta name="theme-color" content="#2b1650" />
+  <link rel="canonical" href="https://www.toomanycomics.app/howto/evaluating-a-stack.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="How to Evaluate a Stack of Comics | Too Many Comics" />
+  <meta property="og:description" content="How to evaluate a stack of comics you don't own yet: scan them, see what you already have and what the market says, then buy them into inventory or walk away." />
+  <meta property="og:url" content="https://www.toomanycomics.app/howto/evaluating-a-stack.html" />
+  <meta property="og:site_name" content="Too Many Comics" />
+  <meta property="og:image" content="https://www.toomanycomics.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Evaluate a Stack of Comics | Too Many Comics" />
+  <meta name="twitter:description" content="How to evaluate a stack of comics you don't own yet: scan them, see what you already have and what the market says, then buy them into inventory or walk away." />
+  <meta name="twitter:image" content="https://www.toomanycomics.app/og-image.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.toomanycomics.app/" },
+    { "@type": "ListItem", "position": 2, "name": "How To", "item": "https://www.toomanycomics.app/help.html" },
+    { "@type": "ListItem", "position": 3, "name": "Evaluating a stack", "item": "https://www.toomanycomics.app/howto/evaluating-a-stack.html" }
+  ]
+}
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+           color: #16121f; background: #fff; min-height: 100vh; display: flex; flex-direction: column; }
+    .site-header { background: linear-gradient(135deg, #1a0f2e 0%, #2b1650 60%, #3a1b6b 100%);
+                   border-bottom: 2px solid #ffc933; padding: 0 24px; }
+    .site-header-inner { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 14px; height: 64px; }
+    .site-header img.logo { height: 44px; width: 44px; border-radius: 10px; object-fit: contain; flex-shrink: 0;
+                            box-shadow: 0 0 0 2px #ffc933, 0 0 10px rgba(255,201,51,.4); }
+    .site-header-wordmark { display: flex; flex-direction: column; line-height: 1.1; }
+    .site-header-wordmark .brand-name { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 0.02em; }
+    .site-header-wordmark .brand-tagline { font-size: 11px; color: #ffc933; letter-spacing: 0.06em; text-transform: uppercase; }
+    .header-nav { margin-left: auto; display: flex; gap: 18px; align-items: center; }
+    .header-nav a { color: #e8e2f4; text-decoration: none; font-size: 14px; }
+    .header-nav a:hover, .header-nav a[aria-current="page"] { color: #ffc933; }
+    main { flex: 1; max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; width: 100%; }
+    .site-footer { background: #16121f; color: #b9b1c9; font-size: 13px; padding: 24px; }
+    .site-footer-inner { max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+    .site-footer a { color: #d9d2e8; text-decoration: none; margin-right: 14px; }
+    .site-footer a:hover { color: #ffc933; }
+    .site-footer .spacer { margin-left: auto; }
+
+    main h1 { font-size: 30px; margin: 8px 0 16px; line-height: 1.2; }
+    main h2 { font-size: 20px; margin: 28px 0 8px; }
+    .setting { color: #6b6278; font-size: 13.5px; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 6px; }
+    main p, main li { color: #4a4458; font-size: 15.5px; line-height: 1.65; }
+    main ul { margin: 0 0 16px; padding-left: 24px; }
+    main li { margin: 6px 0; }
+    main a { color: #3a1b6b; }
+    main a:hover { color: #e5484d; }
+    .how { border-top: 1px solid #efe9f8; margin-top: 20px; padding-top: 14px; font-size: 14px; }
+    .how strong { color: #16121f; }
+    .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
+                 font-size: 13px; color: #6b5310; margin: 28px 0 0; }
+    .scen-pager { clear: both; display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between;
+                  margin-top: 36px; border-top: 1px solid #e6e1f0; padding-top: 18px; font-size: 14.5px; }
+    .scen-pager a { color: #3a1b6b; text-decoration: none; font-weight: 600; }
+    .scen-pager a:hover { color: #e5484d; }
+
+    /* ── Scenarios dropdown: a no-JS <details> menu ── */
+    .nav-dd { position: relative; }
+    .nav-dd summary { list-style: none; cursor: pointer; color: #e8e2f4; font-size: 14px; }
+    .nav-dd summary::-webkit-details-marker { display: none; }
+    .nav-dd summary::after { content: " \25be"; font-size: 10px; }
+    .nav-dd summary:hover, .nav-dd[open] summary, .nav-dd summary.current { color: #ffc933; }
+    .nav-dd-menu { position: absolute; left: 0; top: calc(100% + 12px); background: #241242;
+                   border: 1px solid #ffc933; border-radius: 10px; padding: 8px; width: 300px; z-index: 50;
+                   box-shadow: 0 12px 28px rgba(0,0,0,.35); }
+    .nav-dd-menu a { display: block; padding: 8px 10px; border-radius: 6px; font-size: 13.5px;
+                     color: #e8e2f4; text-decoration: none; }
+    .nav-dd-menu a:hover { background: #3a1b6b; color: #ffc933; }
+    .nav-dd-menu a.all { font-weight: 600; border-bottom: 1px solid #47307a; border-radius: 6px 6px 0 0;
+                         margin-bottom: 6px; padding-bottom: 10px; }
+    @media (max-width: 700px) {
+      .nav-dd { width: 100%; }
+      .nav-dd summary { padding: 12px 0; }
+      .nav-dd-menu { position: static; width: 100%; margin: 2px 0 10px; }
+      .nav-dd-menu a { padding: 10px 10px; }
+    }
+
+    /* ── Mobile. Mobile-first would be the ideal; this site was written
+       desktop-first, so the phone rules live here at the end where source
+       order lets them win. Same approach as OSSScan-site. ── */
+    @media (max-width: 700px) {
+      .site-header { padding: 0 16px; }
+      .site-header-inner { height: auto; padding: 12px 0; flex-wrap: wrap; row-gap: 10px; }
+      .site-header img.logo { height: 38px; width: 38px; }
+      .header-nav { margin-left: 0; width: 100%; gap: 0 18px; flex-wrap: wrap; }
+      .header-nav a { font-size: 14px; padding: 12px 0; }
+      main { padding: 28px 18px 48px; }
+      .scen-pager { flex-direction: column; }
+      .site-footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .site-footer .spacer { display: none; }
+      .site-footer a { display: inline-block; padding: 11px 0; margin: 0 16px 0 0; }
+      main h1 { font-size: 25px; }
+      main h2 { font-size: 18px; }
+    }
+
+    /* Very narrow: the original SE, and any phone with Display Zoom on, which
+       renders at a 320px CSS viewport. Inert at 375px and above. */
+    @media (max-width: 374px) {
+      .site-header-wordmark .brand-tagline { display: none; }
+      main { padding-left: 14px; padding-right: 14px; }
+      p a, li a { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="logo" src="../logo-128.png" width="44" height="44" alt="Too Many Comics app icon: a long box of comics" />
+      <div class="site-header-wordmark">
+        <span class="brand-name">Too Many Comics</span>
+        <span class="brand-tagline">Scan · Grade · Track</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../">Home</a>
+        <details class="nav-dd">
+          <summary class="current">How&nbsp;To</summary>
+          <div class="nav-dd-menu">
+            <a class="all" href="../help.html">All how-tos</a>
+            <a href="scanning-your-first-box.html">Scanning your first box</a>
+            <a href="credits.html">Credits and the weekly allowance</a>
+            <a href="ballpark-values.html">Ballpark values</a>
+            <a href="advanced-grading.html">Advanced Grading</a>
+            <a href="hot-books.html">Hot Books</a>
+            <a href="barcoding-your-books.html">Barcoding your books</a>
+            <a href="keeping-inventory-accurate.html">Keeping your inventory accurate</a>
+            <a href="evaluating-a-stack.html" aria-current="page">Evaluating a stack</a>
+            <a href="selling-and-exporting.html">Selling and exporting</a>
+            <a href="admin-review-and-kiosk.html">The Admin Review and the Kiosk</a>
+            <a href="sharing-backup-restore.html">Sharing, backup, and restore</a>
+          </div>
+        </details>
+        <details class="nav-dd">
+          <summary>Scenarios</summary>
+          <div class="nav-dd-menu">
+            <a class="all" href="../scenarios.html">All scenarios</a>
+            <a href="../scenarios/convention-table.html">The convention table</a>
+            <a href="../scenarios/selling-a-stack.html">The stack and the offer</a>
+            <a href="../scenarios/buying-a-stack.html">The other side of the table</a>
+            <a href="../scenarios/curiosity-stack.html">No deal in sight</a>
+            <a href="../scenarios/collection-call.html">The phone call</a>
+            <a href="../scenarios/dealer-to-dealer.html">Dealer to dealer</a>
+            <a href="../scenarios/among-friends.html">Among friends</a>
+            <a href="../scenarios/after-the-show.html">After the show</a>
+            <a href="../scenarios/listing-desk.html">The listing desk</a>
+            <a href="../scenarios/back-issue-bin.html">The back-issue bin</a>
+            <a href="../scenarios/professional-grading.html">The grading decision</a>
+            <a href="../scenarios/hot-books.html">The morning check</a>
+          </div>
+        </details>
+        <a href="../faq.html">FAQ</a>
+        <a href="../support.html">Support</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="setting">How To</p>
+    <h1>Evaluating a stack</h1>
+    <p>Evaluate a Stack is for books you do <em>not</em> own yet. Someone sets a
+    pile in front of you: a back-issue bin, the far side of your own table, a
+    seller's kitchen counter. You want to know what the pile is and what it is
+    worth before any money moves, and you want to find out without promising
+    anything.</p>
+
+    <h2>Scan the pile</h2>
+    <p>Open <strong>Evaluate a Stack</strong> and photograph the books, one per
+    cover, while the conversation carries on. The app identifies each book and the
+    list fills itself in. Two answers arrive for every book. First, whether you
+    already own it, printings and conditions distinguished: that lookup is your own
+    inventory answering, so it lands instantly and costs nothing. Second, what the
+    market says, priced as a batch when you ask for it: Auto ballpark prices each
+    book as it is identified, or the Ballpark button prices the finished stack in
+    one pass for less. Until you buy, the books stay in their own holding area,
+    never mixed into your collection or its searches.</p>
+
+    <h2>Buy them, or walk away</h2>
+    <p>The evaluation ends in one step either way. Shake hands and it is easy to
+    buy them: one action brings the whole stack into your inventory, photographed,
+    identified, and priced from the moment it became yours. Or pass, and throw the
+    evaluation away: nothing is recorded, and their books were never yours to
+    clean up after.</p>
+
+    <h2>Not the same as Scan a Stack</h2>
+    <p>The names are close; the jobs are not. <strong>Scan a Stack</strong> reads
+    the barcode labels on books you already own: a local answer, no AI involved,
+    always free. <strong>Evaluate a Stack</strong> identifies strangers from their
+    covers, which is AI work, so it spends credits like any other identification.
+    That is worth remembering at a long bin: flip past the books you can dismiss on
+    sight and spend credits only on the ones still in the running. The
+    <a href="credits.html">credits guide</a> has the arithmetic.</p>
+
+    <p class="how"><strong>See it in real life:</strong> a dealer prices a stack
+    across the table in
+    <a href="../scenarios/buying-a-stack.html">The other side of the table</a>,
+    a maybe-deal stays a maybe in
+    <a href="../scenarios/curiosity-stack.html">No deal in sight</a>, a bin gets
+    triaged in <a href="../scenarios/back-issue-bin.html">The back-issue bin</a>,
+    and a whole garage lands on a desk in
+    <a href="../scenarios/collection-call.html">The phone call</a>.</p>
+
+    <p class="stub-note"><strong>COMING:</strong> screenshots of an evaluation
+    mid-scan and the buy step land here; the scenarios carry real ones today.</p>
+
+    <nav class="scen-pager" aria-label="More how-tos">
+      <a href="keeping-inventory-accurate.html">&larr; Keeping your inventory accurate</a>
+      <a href="../help.html">All how-tos</a>
+      <a href="selling-and-exporting.html">Selling and exporting &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>© 2026 BigBrainCorp LLC</span>
+      <span class="spacer"></span>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="../support.html">Support</a>
+      <a href="../release-notes.html">Release notes</a>
+      <a href="https://bigbraincorp.com/">A BigBrainCorp product</a>
+    </div>
+  </footer>
+</body>
+</html>
