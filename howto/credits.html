@@ -119,6 +119,16 @@
       main { padding-left: 14px; padding-right: 14px; }
       p a, li a { overflow-wrap: anywhere; }
     }
+
+    /* ── App screenshot in a CSS phone bezel ── */
+    .phone { float: right; width: 270px; margin: 8px 0 20px 28px; }
+    .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
+                 border: 10px solid #16121f; background: #16121f;
+                 box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
+    .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                        margin: 10px auto 0; max-width: 240px; line-height: 1.45; }
+    main::after { content: ""; display: block; clear: both; }
+    @media (max-width: 700px) { .phone { float: none; margin: 20px auto; } }
   </style>
 </head>
 <body>
@@ -208,6 +218,13 @@
         says so and does not charge you for news already on the screen.</li>
     </ul>
 
+    <figure class="phone">
+      <img src="../images/credits-screen.png" width="750" height="1624" loading="lazy"
+           alt="The Credits screen: a weekly free allowance shown as 0 of 20 that recharges every week, 381 purchased credits that never expire, and three credit packs from $4.99 to $49.99 with per-credit prices and bulk bonuses." />
+      <figcaption>One battery tap: your allowance, your purchased credits, the packs,
+        and where every credit went.</figcaption>
+    </figure>
+
     <h2>The weekly allowance</h2>
     <p>Every week you get a free allowance of credits, sized to cover casual
     collecting: the new books you picked up, a stack from a sale, the occasional
@@ -222,9 +239,11 @@
     from the Usage screen and the balance catches up.</p>
 
     <h2>The usage meter</h2>
-    <p>The Usage screen is the meter: your current balance and a recent-activity list
-    showing exactly where your credits went, operation by operation. If a number ever
-    surprises you, the answer is on that list, not in your memory.</p>
+    <p>Tap the battery in the app and the meter opens: your current balance and a
+    recent-activity list showing exactly where your credits went, operation by
+    operation. Actions that spend credits are marked with a spark throughout the app,
+    so you always know before you tap. If a number ever surprises you, the answer is
+    on that list, not in your memory.</p>
 
     <p class="how"><strong>See it in real life:</strong> watch a dealer spend nothing
     until it counts in
@@ -234,8 +253,8 @@
     sweep against tomorrow's free one in
     <a href="../scenarios/hot-books.html">The morning check</a>.</p>
 
-    <p class="stub-note"><strong>COMING:</strong> a screenshot of the Usage screen and
-    the current pack prices land here. Prices are set at launch, not before.</p>
+    <p class="stub-note"><strong>NOTE:</strong> the pack prices in the screenshot are
+    pre-launch. Final prices are set at launch, not before.</p>
 
     <nav class="scen-pager" aria-label="More how-tos">
       <a href="scanning-your-first-box.html">&larr; Scanning your first box</a>
