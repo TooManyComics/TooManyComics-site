@@ -62,6 +62,15 @@
     main h2 { font-size: 20px; margin: 28px 0 8px; }
     main p, main li { color: #4a4458; font-size: 15px; line-height: 1.6; }
     .page-note { color: #6b6278; font-size: 13.5px; margin-top: 0; }
+    main .kicker { color: #6b6278; font-size: 15px; margin: 0 0 26px; }
+    .scen-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+    a.scen { display: block; border: 1px solid #e6e1f0; border-radius: 10px; padding: 14px 16px;
+             text-decoration: none; background: #fff; }
+    a.scen:hover { border-color: #ffc933; background: #fffdf6; }
+    .scen-when { display: block; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase;
+                 color: #6b6278; margin-bottom: 4px; }
+    .scen-what { display: block; font-size: 16px; font-weight: 600; color: #3a1b6b; line-height: 1.35; }
+    .scen-teaser { display: block; margin-top: 6px; font-size: 13.5px; color: #4a4458; line-height: 1.5; }
 
     /* ── Mobile. Mobile-first would be the ideal; this site was written
        desktop-first, so the phone rules live here at the end where source
@@ -86,6 +95,7 @@
       .cta.secondary { margin-left: 0; margin-top: 10px; }
       .features { grid-template-columns: 1fr; gap: 14px; }
       .feature { padding: 16px 18px; }
+      .scen-grid { grid-template-columns: 1fr; }
       .warning { padding: 18px 18px; }
       .fits .stats { grid-template-columns: 1fr; gap: 12px; }
       .scenario { padding: 18px 18px; }
@@ -137,7 +147,18 @@
       </div>
       <nav class="header-nav">
         <a href="./">Home</a>
-        <a href="help.html" aria-current="page">How&nbsp;To</a>
+        <details class="nav-dd">
+          <summary class="current">How&nbsp;To</summary>
+          <div class="nav-dd-menu">
+            <a class="all" href="help.html" aria-current="page">All how-tos</a>
+            <a href="howto/scanning-your-first-box.html">Scanning your first box</a>
+            <a href="howto/credits.html">Credits and the weekly allowance</a>
+            <a href="howto/advanced-grading.html">Advanced Grading</a>
+            <a href="howto/hot-books.html">Hot Books</a>
+            <a href="howto/selling-and-exporting.html">Selling and exporting</a>
+            <a href="howto/sharing-backup-restore.html">Sharing, backup, and restore</a>
+          </div>
+        </details>
         <details class="nav-dd">
           <summary>Scenarios</summary>
           <div class="nav-dd-menu">
@@ -166,20 +187,46 @@
   <main>
 
     <h1>How to use Too Many Comics</h1>
-    <p class="page-note">The user guide. Each section below becomes a full walkthrough with screenshots.</p>
-    <h2>Scanning your first box</h2>
-    <p><em>STUB: capture modes: Scan (voice bulk) vs One-at-a-time; how the camera detects a new book; spoken comments; the review flow.</em></p>
-    <h2>Credits and the weekly allowance</h2>
-    <p><em>STUB: what costs credits and what's free; the weekly allowance; buying packs; the usage meter.</em></p>
-    <h2>Advanced Grading</h2>
-    <p><em>STUB: when to use it, what photos to take, how the checklist and grade range work, why an ordinary scan carries no price.</em></p>
-    <h2>Hot Books</h2>
-    <p><em>STUB: the daily sweep, matching against your collection, the paid sweep button, why matching happens on your phone.</em></p>
-    <h2>Selling and exporting</h2>
-    <p><em>STUB: mark for sale, eBay draft packs, sold books and the P&amp;L, CSV export.</em></p>
-    <h2>Sharing, backup, and restore</h2>
-    <p><em>STUB: AirDrop a set of books to another user; whole-device backup zips; import and merge.</em></p>
- 
+    <p class="kicker">The user guide, one job at a time. Each guide is its own page: plain
+      steps, in order, with the reasons attached. Pick the thing you are trying to do.</p>
+
+    <div class="scen-grid">
+      <a class="scen" href="howto/scanning-your-first-box.html">
+        <span class="scen-when">Start here</span>
+        <span class="scen-what">Scanning your first box</span>
+        <span class="scen-teaser">Two capture modes, spoken comments, and the review that makes every record right.</span>
+      </a>
+      <a class="scen" href="howto/credits.html">
+        <span class="scen-when">The meter</span>
+        <span class="scen-what">Credits and the weekly allowance</span>
+        <span class="scen-teaser">What spends credits, what never does, and where every credit went.</span>
+      </a>
+      <a class="scen" href="howto/advanced-grading.html">
+        <span class="scen-when">The close look</span>
+        <span class="scen-what">Advanced Grading</span>
+        <span class="scen-teaser">Eight photos, sixteen checks, and a grade range with the evidence drawn on.</span>
+      </a>
+      <a class="scen" href="howto/hot-books.html">
+        <span class="scen-when">The morning sweep</span>
+        <span class="scen-what">Hot Books</span>
+        <span class="scen-teaser">Comic news matched to your own boxes, on your own phone.</span>
+      </a>
+      <a class="scen" href="howto/selling-and-exporting.html">
+        <span class="scen-when">Letting books go</span>
+        <span class="scen-what">Selling and exporting</span>
+        <span class="scen-teaser">From For Sale to eBay draft to sold, with the P&amp;L kept honest.</span>
+      </a>
+      <a class="scen" href="howto/sharing-backup-restore.html">
+        <span class="scen-when">Keeping it safe</span>
+        <span class="scen-what">Sharing, backup, and restore</span>
+        <span class="scen-teaser">AirDrop books to another collector, back up everything, restore anywhere.</span>
+      </a>
+    </div>
+
+    <p class="stub-note"><strong>GROWING:</strong> more how-tos land here as the app
+      settles: labels and box audits, the kiosk, and the Admin view each earn a guide
+      of their own.</p>
+
   </main>
 
   <footer class="site-footer">
