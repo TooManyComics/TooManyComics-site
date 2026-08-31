@@ -66,6 +66,32 @@
     main a:hover { color: #e5484d; }
     .how { border-top: 1px solid #efe9f8; margin-top: 20px; padding-top: 14px; font-size: 14px; }
     .how strong { color: #16121f; }
+
+    /* ── Screenshots reused from the scenarios, by URL rather than copy:
+       one file, however many pages tell its story. ── */
+    .phone { width: 250px; margin: 26px auto; }
+    .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
+                 border: 10px solid #16121f; background: #16121f;
+                 box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
+    .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                        margin: 10px auto 0; max-width: 240px; line-height: 1.45; }
+    .phone-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+                   margin: 26px auto; max-width: 860px; }
+    .phone-strip.pair { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+    .phone-strip figure { margin: 0; }
+    .phone-strip img { display: block; width: 100%; height: auto; border-radius: 22px;
+                       border: 6px solid #16121f; background: #16121f;
+                       box-shadow: 0 0 0 1px #3a3345, 0 10px 22px rgba(22,18,31,.18); }
+    .phone-strip figcaption { font-size: 12px; color: #6b6278; text-align: center;
+                              margin-top: 8px; line-height: 1.4; }
+    .screen { margin: 26px 0; }
+    .screen img { display: block; width: 100%; height: auto; border-radius: 12px;
+                  border: 1px solid #d8d2e4; box-shadow: 0 12px 28px rgba(22,18,31,.15); }
+    .screen figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                         margin-top: 9px; line-height: 1.45; }
+    @media (max-width: 700px) {
+      .phone-strip, .phone-strip.pair { grid-template-columns: 1fr; max-width: 280px; }
+    }
     .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
                  font-size: 13px; color: #6b5310; margin: 28px 0 0; }
     .scen-pager { clear: both; display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between;
@@ -208,6 +234,19 @@
     <a href="keeping-inventory-accurate.html">accuracy guide</a> covers that
     half.</p>
 
+    <div class="phone-strip pair">
+      <figure>
+        <img src="../images/scenarios/dealer-to-dealer-1.png" width="750" height="1624" loading="lazy"
+             alt="The label section of a book's record: a QR code named 7A9-52-A386, described as the copy's permanent identity, with Label attached toggled on and a Print label button." />
+        <figcaption>The label: this copy's permanent identity, on the bag, never the book.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/scenarios/selling-a-stack-1.jpg" width="750" height="1624" loading="lazy"
+             alt="Scan a Stack reading the QR labels on two bagged Silver Surfer books: 2 books, asking $12, each book listed with its grade, short code, and box." />
+        <figcaption>Labels at work: two read, $12 asking, no rummaging.</figcaption>
+      </figure>
+    </div>
+
     <p class="how"><strong>See it in real life:</strong> a stack totals itself
     before the customer finishes the sentence in
     <a href="../scenarios/selling-a-stack.html">The stack and the offer</a>, a label
@@ -216,9 +255,6 @@
     same codes put the boxes back to truth in
     <a href="../scenarios/after-the-show.html">After the show</a>.</p>
 
-    <p class="stub-note"><strong>COMING:</strong> screenshots of a label sheet, a
-    labeled bag, and Scan a Stack mid-read land here. The labels exist; the
-    pictures of them do not yet.</p>
 
     <nav class="scen-pager" aria-label="More how-tos">
       <a href="hot-books.html">&larr; Hot Books</a>

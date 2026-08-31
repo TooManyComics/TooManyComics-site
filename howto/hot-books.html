@@ -66,6 +66,32 @@
     main a:hover { color: #e5484d; }
     .how { border-top: 1px solid #efe9f8; margin-top: 20px; padding-top: 14px; font-size: 14px; }
     .how strong { color: #16121f; }
+
+    /* ── Screenshots reused from the scenarios, by URL rather than copy:
+       one file, however many pages tell its story. ── */
+    .phone { width: 250px; margin: 26px auto; }
+    .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
+                 border: 10px solid #16121f; background: #16121f;
+                 box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
+    .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                        margin: 10px auto 0; max-width: 240px; line-height: 1.45; }
+    .phone-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+                   margin: 26px auto; max-width: 860px; }
+    .phone-strip.pair { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+    .phone-strip figure { margin: 0; }
+    .phone-strip img { display: block; width: 100%; height: auto; border-radius: 22px;
+                       border: 6px solid #16121f; background: #16121f;
+                       box-shadow: 0 0 0 1px #3a3345, 0 10px 22px rgba(22,18,31,.18); }
+    .phone-strip figcaption { font-size: 12px; color: #6b6278; text-align: center;
+                              margin-top: 8px; line-height: 1.4; }
+    .screen { margin: 26px 0; }
+    .screen img { display: block; width: 100%; height: auto; border-radius: 12px;
+                  border: 1px solid #d8d2e4; box-shadow: 0 12px 28px rgba(22,18,31,.15); }
+    .screen figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                         margin-top: 9px; line-height: 1.45; }
+    @media (max-width: 700px) {
+      .phone-strip, .phone-strip.pair { grid-template-columns: 1fr; max-width: 280px; }
+    }
     .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
                  font-size: 13px; color: #6b5310; margin: 28px 0 0; }
     .scen-pager { clear: both; display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between;
@@ -224,14 +250,17 @@
     estimates, which are built from historical market data: the estimate knows what a
     book has been worth, and Hot Books tells you when this morning changed that.</p>
 
+    <figure class="phone">
+      <img src="../images/scenarios/hot-books-1.png" width="750" height="1624" loading="lazy"
+           alt="The Hot Books screen: a Shang-Chi spin-off story from The Direct, mapped to three key issues including Tales of Suspense #50, first appearance of the Mandarin." />
+      <figcaption>One story from the morning sweep, mapped to the key issues it actually moves.</figcaption>
+    </figure>
+
     <p class="how"><strong>See it in real life:</strong>
     <a href="../scenarios/hot-books.html">The morning check</a> follows one sweep from
     a headline to the right key issues, including the first live morning where it
     mapped real news correctly on the first try.</p>
 
-    <p class="stub-note"><strong>COMING:</strong> a screenshot of the Hot Books screen
-    with a badged morning landing here. The one in the scenario is real; this page
-    gets its own.</p>
 
     <nav class="scen-pager" aria-label="More how-tos">
       <a href="advanced-grading.html">&larr; Advanced Grading</a>

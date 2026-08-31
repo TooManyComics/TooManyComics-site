@@ -66,6 +66,32 @@
     main a:hover { color: #e5484d; }
     .how { border-top: 1px solid #efe9f8; margin-top: 20px; padding-top: 14px; font-size: 14px; }
     .how strong { color: #16121f; }
+
+    /* ── Screenshots reused from the scenarios, by URL rather than copy:
+       one file, however many pages tell its story. ── */
+    .phone { width: 250px; margin: 26px auto; }
+    .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
+                 border: 10px solid #16121f; background: #16121f;
+                 box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
+    .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                        margin: 10px auto 0; max-width: 240px; line-height: 1.45; }
+    .phone-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+                   margin: 26px auto; max-width: 860px; }
+    .phone-strip.pair { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+    .phone-strip figure { margin: 0; }
+    .phone-strip img { display: block; width: 100%; height: auto; border-radius: 22px;
+                       border: 6px solid #16121f; background: #16121f;
+                       box-shadow: 0 0 0 1px #3a3345, 0 10px 22px rgba(22,18,31,.18); }
+    .phone-strip figcaption { font-size: 12px; color: #6b6278; text-align: center;
+                              margin-top: 8px; line-height: 1.4; }
+    .screen { margin: 26px 0; }
+    .screen img { display: block; width: 100%; height: auto; border-radius: 12px;
+                  border: 1px solid #d8d2e4; box-shadow: 0 12px 28px rgba(22,18,31,.15); }
+    .screen figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                         margin-top: 9px; line-height: 1.45; }
+    @media (max-width: 700px) {
+      .phone-strip, .phone-strip.pair { grid-template-columns: 1fr; max-width: 280px; }
+    }
     .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
                  font-size: 13px; color: #6b5310; margin: 28px 0 0; }
     .scen-pager { clear: both; display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between;
@@ -209,6 +235,12 @@
     sight and spend credits only on the ones still in the running. The
     <a href="credits.html">credits guide</a> has the arithmetic.</p>
 
+    <figure class="phone">
+      <img src="../images/scenarios/buying-a-stack-2.jpg" width="750" height="1624" loading="lazy"
+           alt="Evaluate a Stack mid-session: a Silver Surfer book under the camera, a running Mine total of $22, rows reading You own 1, VF $6, and a Ballpark 3 books button." />
+      <figcaption>The ownership match answers first: &ldquo;Mine $22&rdquo; before a single credit is spent on pricing.</figcaption>
+    </figure>
+
     <p class="how"><strong>See it in real life:</strong> a dealer prices a stack
     across the table in
     <a href="../scenarios/buying-a-stack.html">The other side of the table</a>,
@@ -218,8 +250,6 @@
     and a whole garage lands on a desk in
     <a href="../scenarios/collection-call.html">The phone call</a>.</p>
 
-    <p class="stub-note"><strong>COMING:</strong> screenshots of an evaluation
-    mid-scan and the buy step land here; the scenarios carry real ones today.</p>
 
     <nav class="scen-pager" aria-label="More how-tos">
       <a href="keeping-inventory-accurate.html">&larr; Keeping your inventory accurate</a>
