@@ -66,6 +66,17 @@
     main a:hover { color: #e5484d; }
     .how { border-top: 1px solid #efe9f8; margin-top: 20px; padding-top: 14px; font-size: 14px; }
     .how strong { color: #16121f; }
+
+    /* ── Two mini phones side by side: the ask and the answer. ── */
+    .phone-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+                   margin: 26px auto; max-width: 560px; }
+    .phone-strip figure { margin: 0; }
+    .phone-strip img { display: block; width: 100%; height: auto; border-radius: 22px;
+                       border: 6px solid #16121f; background: #16121f;
+                       box-shadow: 0 0 0 1px #3a3345, 0 10px 22px rgba(22,18,31,.18); }
+    .phone-strip figcaption { font-size: 12px; color: #6b6278; text-align: center;
+                              margin-top: 8px; line-height: 1.4; }
+    @media (max-width: 700px) { .phone-strip { grid-template-columns: 1fr; max-width: 280px; } }
     .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
                  font-size: 13px; color: #6b5310; margin: 28px 0 0; }
     .scen-pager { clear: both; display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between;
@@ -185,9 +196,22 @@
     <p>You can ballpark a single book from its record when one book is the
     question. But the feature earns its keep in bulk: price a whole stack or a
     whole box in one pass, which is also the thrifty way to do it, because
-    estimates are charged by the batch rather than by the book. Bulk for the sweep,
-    individual for the follow-up, and nothing is spent until you say so. The
-    <a href="credits.html">credits guide</a> has the arithmetic.</p>
+    estimates are charged by the batch rather than by the book: one credit prices
+    ten books in a bulk run. Bulk for the sweep, individual for the follow-up, and
+    nothing is spent until you say so. The
+    <a href="credits.html">credits guide</a> has the rest of the arithmetic.</p>
+    <div class="phone-strip">
+      <figure>
+        <img src="../images/ballpark-values-1.jpg" width="750" height="1624" loading="lazy"
+             alt="Selection mode in box CB-4: books checked, and the bulk actions menu open with Instant Ballpark among Print labels, Move to box, and List for sale." />
+        <figcaption>Select the books, open the menu, tap Instant Ballpark.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/ballpark-values-2.jpg" width="750" height="1624" loading="lazy"
+             alt="The same box after the run: Avengers, Incredible Hulk, and Werewolf by Night issues each wearing a ballpark value like ~$20 or ~$15." />
+        <figcaption>The box comes back wearing its numbers.</figcaption>
+      </figure>
+    </div>
 
     <h2>A second, smarter look</h2>
     <p>A ballpark run is more than a price lookup. It hands your books to an
@@ -215,10 +239,6 @@
     <a href="../scenarios/selling-a-stack.html">The stack and the offer</a>, and
     the <a href="../faq.html">FAQ's pricing answer</a> shows the estimate panel,
     date and disclaimer included.</p>
-
-    <p class="stub-note"><strong>COMING:</strong> screenshots of a bulk run and a
-    single book's estimate land here; the FAQ carries the estimate panel
-    today.</p>
 
     <nav class="scen-pager" aria-label="More how-tos">
       <a href="credits.html">&larr; Credits and the weekly allowance</a>
