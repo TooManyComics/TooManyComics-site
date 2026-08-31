@@ -73,6 +73,16 @@
     .scen-pager a { color: #3a1b6b; text-decoration: none; font-weight: 600; }
     .scen-pager a:hover { color: #e5484d; }
 
+    /* ── App screenshots, framed as a phone. The bezel is CSS so every
+       screenshot gets the same device look without editing images. ── */
+    .phone { float: right; width: 290px; margin: 8px 0 20px 28px; }
+    .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
+                 border: 10px solid #16121f; background: #16121f;
+                 box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
+    .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                        margin: 10px auto 0; max-width: 260px; line-height: 1.45; }
+    @media (max-width: 700px) { .phone { float: none; margin: 20px auto; } }
+
     /* ── Scenarios dropdown: a no-JS <details> menu ── */
     .nav-dd { position: relative; }
     .nav-dd summary { list-style: none; cursor: pointer; color: #e8e2f4; font-size: 14px; }
@@ -181,6 +191,11 @@
     Set the box on a table, open the capture screen, and pick the destination box the
     books will be recorded into. Then choose how you want to work.</p>
 
+    <figure class="phone">
+      <img src="../images/capture-screen.jpg" width="750" height="1624" loading="lazy"
+           alt="The capture screen photographing a copy of Werewolf by Night #13, with the Voice scan and One at a time modes, the destination box picked, and the shutter ready." />
+      <figcaption>The capture screen: collection and box chosen up top, modes below, one tap per book.</figcaption>
+    </figure>
     <h2>Two capture modes</h2>
     <p><strong>Voice scan</strong> is the bulk mode, and it listens the whole time.
     Everything you say lands as a comment on the book you are viewing. When you deal
@@ -226,8 +241,8 @@
     a whole garage collection on a dealer's desk in
     <a href="../scenarios/collection-call.html">The phone call</a>.</p>
 
-    <p class="stub-note"><strong>COMING:</strong> screenshots of the capture screen,
-    both modes, and the review land here. The steps above are final; the pictures are
+    <p class="stub-note"><strong>COMING:</strong> screenshots of a Voice scan
+    mid-flight and the review land here. The steps above are final; those pictures are
     not taken yet.</p>
 
     <nav class="scen-pager" aria-label="More how-tos">
