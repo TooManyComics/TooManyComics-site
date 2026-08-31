@@ -218,12 +218,16 @@
     </figure>
     <p>While a book is on screen in a Voice scan, talk to it. A spoken comment attaches
     to that book and rides along with its photo, and it does two different jobs.</p>
-    <p>The first is helping the AI identify the book. The screenshot's
+    <p>The first is helping the AI get the book right. The screenshot's
     &ldquo;Silver Surfer volume three&rdquo; is a real example: a Silver Surfer #18
-    exists in the 1968 series <em>and</em> the 1987 one, they are different books with
-    different values, and the cover alone can leave that ambiguous. Three spoken words
-    settle it. &ldquo;Newsstand edition&rdquo; and &ldquo;second printing&rdquo; do
-    the same kind of work.</p>
+    exists in the 1968 series <em>and</em> the 1987 one, and they are different books
+    with different values. Comments like &ldquo;newsstand edition&rdquo; or
+    &ldquo;second printing&rdquo; fill their fields the moment the scan runs. Volume
+    gets more careful handling: the scan deliberately records <em>no</em> volume,
+    because cover-reading AIs are notorious for inventing one, so your three words
+    ride with the book and the series-aware pricing step applies them. That is why a
+    freshly scanned record can show Volume as &ldquo;&mdash;&rdquo; while the
+    ballpark that follows still prices the right series, and says so.</p>
     <p>The second is recording what only you know. &ldquo;Signed by the artist&rdquo;,
     &ldquo;water stain on the back cover&rdquo;, &ldquo;from Dad's collection&rdquo;:
     facts like these attach to the book and stay with it. Your phone transcribes
