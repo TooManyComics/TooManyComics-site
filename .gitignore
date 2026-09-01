@@ -1,6 +1,6 @@
 .DS_Store
-# Raw screenshot drops are Jim's inbox, named in CamelCase; the site's
-# processed assets are lowercase-hyphenated. Only the processed tier is
-# tracked and deployed.
-images/[A-Z]*
-images/originals/
+# NOTE: do not ignore raws by case pattern here. macOS git honors
+# core.ignorecase, so images/[A-Z]* also matched every lowercase asset
+# and silently kept new site images out of git (admin-review.jpg,
+# 2026-09-01). The real guard is the one-copy policy: a raw drop is
+# deleted the moment its processed asset exists.
