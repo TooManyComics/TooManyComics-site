@@ -1,0 +1,6 @@
+.DS_Store
+# Raw screenshot drops are Jim's inbox, named in CamelCase; the site's
+# processed assets are lowercase-hyphenated. Only the processed tier is
+# tracked and deployed.
+images/[A-Z]*
+images/originals/
