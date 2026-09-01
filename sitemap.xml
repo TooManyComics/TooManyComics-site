@@ -177,7 +177,13 @@
   </url>
 
   <url>
-    <loc>https://www.toomanycomics.app/howto/admin-review-and-kiosk.html</loc>
+    <loc>https://www.toomanycomics.app/howto/admin-review.html</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.toomanycomics.app/howto/kiosk.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

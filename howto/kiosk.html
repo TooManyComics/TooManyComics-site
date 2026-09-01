@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sharing, Backup, and Restore | Too Many Comics</title>
+  <title>The Browser Kiosk: Your Collection as a Store | Too Many Comics</title>
   <link rel="icon" href="../favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png" />
   <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
-  <meta name="description" content="How to send comics to another Too Many Comics user, share whole collections that stay separate from theirs, back up your entire inventory as one archive, and restore or merge it later." />
+  <meta name="description" content="Export a searchable, browsable page of your collection: a portable comic book store for shows that runs offline, or the big-screen way to admire what you own at home." />
   <meta name="theme-color" content="#2b1650" />
-  <link rel="canonical" href="https://www.toomanycomics.app/howto/sharing-backup-restore.html" />
+  <link rel="canonical" href="https://www.toomanycomics.app/howto/kiosk.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sharing, Backup, and Restore | Too Many Comics" />
-  <meta property="og:description" content="How to send comics to another Too Many Comics user, share whole collections that stay separate from theirs, back up your entire inventory as one archive, and restore or merge it later." />
-  <meta property="og:url" content="https://www.toomanycomics.app/howto/sharing-backup-restore.html" />
+  <meta property="og:title" content="The Browser Kiosk: Your Collection as a Store | Too Many Comics" />
+  <meta property="og:description" content="Export a searchable, browsable page of your collection: a portable comic book store for shows that runs offline, or the big-screen way to admire what you own at home." />
+  <meta property="og:url" content="https://www.toomanycomics.app/howto/kiosk.html" />
   <meta property="og:site_name" content="Too Many Comics" />
   <meta property="og:image" content="https://www.toomanycomics.app/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sharing, Backup, and Restore | Too Many Comics" />
-  <meta name="twitter:description" content="How to send comics to another Too Many Comics user, share whole collections that stay separate from theirs, back up your entire inventory as one archive, and restore or merge it later." />
+  <meta name="twitter:title" content="The Browser Kiosk: Your Collection as a Store | Too Many Comics" />
+  <meta name="twitter:description" content="Export a searchable, browsable page of your collection: a portable comic book store for shows that runs offline, or the big-screen way to admire what you own at home." />
   <meta name="twitter:image" content="https://www.toomanycomics.app/og-image.png" />
   <script type="application/ld+json">
 {
@@ -30,7 +30,7 @@
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.toomanycomics.app/" },
     { "@type": "ListItem", "position": 2, "name": "How To", "item": "https://www.toomanycomics.app/help.html" },
-    { "@type": "ListItem", "position": 3, "name": "Sharing, backup, and restore", "item": "https://www.toomanycomics.app/howto/sharing-backup-restore.html" }
+    { "@type": "ListItem", "position": 3, "name": "The Browser Kiosk", "item": "https://www.toomanycomics.app/howto/kiosk.html" }
   ]
 }
   </script>
@@ -66,23 +66,32 @@
     main a:hover { color: #e5484d; }
     .how { border-top: 1px solid #efe9f8; margin-top: 20px; padding-top: 14px; font-size: 14px; }
     .how strong { color: #16121f; }
-    /* ── App screenshot in a CSS phone bezel, floated beside the text. ── */
-    .phone { float: right; width: 270px; margin: 8px 0 20px 28px; }
+
+    /* ── Screenshots reused from the scenarios, by URL rather than copy:
+       one file, however many pages tell its story. ── */
+    .phone { width: 250px; margin: 26px auto; }
     .phone img { display: block; width: 100%; height: auto; border-radius: 34px;
                  border: 10px solid #16121f; background: #16121f;
                  box-shadow: 0 0 0 2px #3a3345, 0 16px 34px rgba(22,18,31,.22); }
     .phone figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
-                        margin: 10px auto 0; max-width: 250px; line-height: 1.45; }
-    @media (max-width: 700px) { .phone { float: none; margin: 20px auto; } }
-    .phone-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
-                   margin: 26px auto; max-width: 560px; }
+                        margin: 10px auto 0; max-width: 240px; line-height: 1.45; }
+    .phone-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+                   margin: 26px auto; max-width: 860px; }
+    .phone-strip.pair { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
     .phone-strip figure { margin: 0; }
     .phone-strip img { display: block; width: 100%; height: auto; border-radius: 22px;
                        border: 6px solid #16121f; background: #16121f;
                        box-shadow: 0 0 0 1px #3a3345, 0 10px 22px rgba(22,18,31,.18); }
     .phone-strip figcaption { font-size: 12px; color: #6b6278; text-align: center;
                               margin-top: 8px; line-height: 1.4; }
-    @media (max-width: 700px) { .phone-strip { grid-template-columns: 1fr; max-width: 280px; } }
+    .screen { margin: 26px 0; }
+    .screen img { display: block; width: 100%; height: auto; border-radius: 12px;
+                  border: 1px solid #d8d2e4; box-shadow: 0 12px 28px rgba(22,18,31,.15); }
+    .screen figcaption { font-size: 12.5px; color: #6b6278; text-align: center;
+                         margin-top: 9px; line-height: 1.45; }
+    @media (max-width: 700px) {
+      .phone-strip, .phone-strip.pair { grid-template-columns: 1fr; max-width: 280px; }
+    }
     .stub-note { background: #fff8e1; border: 1px dashed #d4a017; border-radius: 8px; padding: 10px 14px;
                  font-size: 13px; color: #6b5310; margin: 28px 0 0; }
     .scen-pager { clear: both; display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between;
@@ -154,15 +163,14 @@
             <a class="all" href="../help.html">All how-tos</a>
             <a href="scanning-your-first-box.html">Scanning your first box</a>
             <a href="ballpark-values.html">Ballpark values</a>
-            <a href="admin-review.html">The Admin Review</a>
+            <a href="kiosk.html" aria-current="page">The Admin Review and the Kiosk</a>
             <a href="advanced-grading.html">Advanced Grading</a>
             <a href="barcoding-your-books.html">Barcoding your books</a>
             <a href="keeping-inventory-accurate.html">Keeping your inventory accurate</a>
             <a href="evaluating-a-stack.html">Evaluating a stack</a>
             <a href="selling-and-exporting.html">Selling and exporting</a>
-            <a href="kiosk.html">The Browser Kiosk</a>
             <a href="hot-books.html">Hot Books</a>
-            <a href="sharing-backup-restore.html" aria-current="page">Sharing, backup, and restore</a>
+            <a href="sharing-backup-restore.html">Sharing, backup, and restore</a>
             <a href="credits.html">Credits and the weekly allowance</a>
           </div>
         </details>
@@ -193,138 +201,42 @@
 
   <main>
     <p class="setting">How To</p>
-    <h1>Sharing, backup, and restore</h1>
-    <p>Your collection lives on your phone and nowhere else. That is the privacy
-    promise, and it comes with a responsibility: moving books between people, and
-    keeping a copy safe, are jobs the app hands to you directly instead of doing
-    behind your back. Here is how each one works.</p>
+    <h1>The Browser Kiosk</h1>
+    <p>Some exports are for working. This one is for showing. <strong>Export
+    Browser Kiosk</strong> builds a searchable, browsable page of your collection:
+    every cover big, search by title, issue, publisher, or creator. At a show it
+    is a portable comic book store: put it on a laptop or a big touchscreen and
+    buyers browse your stock without a single bag leaving its box. At home it is
+    something simpler and just as good: your collection on the big monitor,
+    searchable and admirable, for the evenings when you just want to look at what
+    you own. The kiosk runs from static files with no internet at all, which is
+    exactly what a convention hall's Wi-Fi calls for.</p>
+    <figure class="screen">
+      <img src="../images/scenarios/convention-table-1.jpg" width="1328" height="1232" loading="lazy"
+           alt="The kiosk landing page for a store called Heroes and Villains Comics Unlimited: 703 books, a featured New Warriors cover, a search box, and a collection to browse." />
+      <figcaption>The kiosk's front door: 703 books, searchable, running from static files with no internet.</figcaption>
+    </figure>
 
-    <h2>Send books to another user</h2>
-    <p>Select any set of books and send them to another Too Many Comics user:
-    AirDrop is the quick road between iPhones, and a file exchange or email carries
-    them just as well. They land in the recipient's Inbox with everything you know about them:
-    photos, metadata, condition, the works. One tap adds them to their inventory. If
-    the handoff is a sale, your records show it on your side at the same moment.</p>
-    <p>The labels come along too. The barcode on each bag names the book, and the
-    buyer's app takes over those barcodes with the transfer: their scanner recognizes
-    the same labels from then on, for their audits and their show table. No peeling,
-    no relabeling, no re-photographing. The import even checks for label collisions,
-    so two collectors' labeling systems can meet without stepping on each other.</p>
-    <p>On the receiving side, the import sheet asks one question before anything
-    lands, and it will not proceed until you answer it: how far do you trust the
-    sender's records? A share carries the sender's claims, including grades and
-    prices they may have set themselves, so keeping them is a choice, not a
-    default. Three answers, in rising distrust: <strong>Keep everything</strong>
-    (their data arrives as recorded, marked as theirs), <strong>Clear their
-    pricing</strong> (their AI prices go; their grades stay, and it costs nothing:
-    run your own Instant Ballpark whenever you like), or <strong>Clear pricing and
-    grades</strong> (everything appraisal-shaped goes, and every book with a photo
-    is re-scanned by your own AI, on your credits, with the cost shown before you
-    commit). Whichever you pick, their asking prices survive: that is their offer,
-    and what you negotiate against.</p>
-    <div class="phone-strip">
-      <figure>
-        <img src="../images/airdrop-receive-1.jpg" width="750" height="1624" loading="lazy"
-             alt="An arrived .cbshare file on the receiving phone, named TooManyComics-My Collection with a date stamp, 2 megabytes, and a Too Many Comics open button at the bottom." />
-        <figcaption>The AirDrop arrives; one tap opens it straight into Too Many
-          Comics.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/airdrop-receive-2.jpg" width="750" height="1624" loading="lazy"
-             alt="The Import sheet: 5 books shared from My Collection, and an orange section reading The sender's appraisals, choose to import, with three options: Keep everything, Clear their pricing, Clear pricing and grades. The Import button is disabled until one is picked." />
-        <figcaption>The trust question, asked before anything lands: Import stays
-          off until you answer.</figcaption>
-      </figure>
-    </div>
+    <h2>A snapshot, on purpose</h2>
+    <p>The kiosk changes nothing and asks nothing. It is exactly as current as the
+    moment you exported it, refreshed by dropping in a new export, and that is a
+    feature: a browsing customer cannot edit your records, and a dead network
+    cannot take your booth down. Every card carries its copy's label QR, so a
+    book on the kiosk screen can be scanned with the phone, where the live
+    inventory answers whether that copy is still here. The export is free, like
+    every export: it never spends credits.</p>
 
-    <h2>Share a whole collection</h2>
-    <p>A collection can travel the same way, by AirDrop, a file exchange, or
-    email, and it arrives as
-    its own collection under Friends and Clients: browsable, searchable, cover photos
-    included, and never confused with the recipient's own inventory. Send a refreshed
-    copy later and it updates the one they have rather than creating a second.
-    Nothing syncs on its own: a collection arrives because its owner sent it, every
-    time.</p>
+    <p class="how"><strong>See it in real life:</strong> the kiosk runs a booth all
+    weekend, answers a buyer's question, and survives a sold book in
+    <a href="../scenarios/convention-table.html">The convention table</a>. The
+    working half of the big-screen story, the
+    <a href="admin-review.html">Admin Review</a>, has its own guide.</p>
 
-    <h2>Export, four ways</h2>
-    <p>Select books (or open a whole box or collection) and Export is one menu item
-    away. The sheet offers four formats, and each explains itself as you pick:</p>
-    <ul>
-      <li><strong>Books (.cbshare)</strong>: the importable one, for another Too Many
-        Comics user. Covers ride along, and it AirDrops straight into their app.</li>
-      <li><strong>List (CSV)</strong>: a plain spreadsheet, for someone without the
-        app, and the format to reach for when you want the data itself: hand it to an
-        AI agent to reshape, or import it into another application.</li>
-      <li><strong>Kiosk (web)</strong> and <strong>Admin review</strong>: the
-        <a href="kiosk.html">browsable storefront</a> and the
-        <a href="admin-review.html">big-screen review desk</a>, each covered in
-        its own guide.</li>
-    </ul>
-    <p>Below the format sits the field checklist: what you don't check doesn't leave
-    the phone. Unchecked fields are blanked, and leaving Box unchecked flattens the
-    export into one collection, so your shelf layout stays yours.</p>
-    <div class="phone-strip">
-      <figure>
-        <img src="../images/export-1.jpg" width="750" height="1624" loading="lazy"
-             alt="Selection mode with three books checked and the menu open on Export 3 selected." />
-        <figcaption>Select the books; Export is one menu item away.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/export-2.jpg" width="750" height="1624" loading="lazy"
-             alt="The Export sheet: four formats with Books .cbshare chosen, its explainer, and the field checklist of eleven toggles with All and Reset." />
-        <figcaption>Pick a format, then pick the fields: nothing unchecked leaves
-          the phone.</figcaption>
-      </figure>
-    </div>
-
-    <h2>Back up everything</h2>
-    <p>The whole-device backup packs your entire world into one zip: every record,
-    every photo, every box, the sale history, all of it. The app hands you the file
-    and you keep it where you keep files: the Files app, a computer, a cloud you
-    chose yourself. Because nothing is synced to our servers, this backup is the copy
-    that exists outside your phone, so make one on a schedule you'd be comfortable
-    explaining to yourself after losing the phone. And always back up before deleting
-    the app: delete it and the collection is gone, because it only ever lived on your
-    device.</p>
-    <p>Two things Settings says plainly that are worth repeating here. Your photos
-    are <em>not</em> in your iCloud backup, so the backup zip is the only copy of
-    them that exists off the phone. And the app never backs up by itself, because
-    the file goes only where you choose: instead, set <strong>Remind me to back
-    up</strong> to the cadence you want, and when a backup is overdue a banner says
-    so right on the Collections screen, with the backup one tap away.</p>
-    <div class="phone-strip">
-      <figure>
-        <img src="../images/settings-backup.jpg" width="750" height="1624" loading="lazy"
-             alt="The Settings screen's Backup section: Back up all (export), Restore from backup, a Remind me to back up cadence set to Weekly, and a note that photos are not in the iCloud backup and the app never backs up by itself." />
-        <figcaption>Settings owns the exits: back up, restore, and a reminder so
-          &ldquo;later&rdquo; gets a date.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/backup-reminder.jpg" width="750" height="1624" loading="lazy"
-             alt="The Collections screen with an amber banner reading Backup due, last was Aug 21, 2026, and a Back up button, above a fifty-thousand-book library." />
-        <figcaption>The reminder in the wild: backup due, one tap to make one.</figcaption>
-      </figure>
-    </div>
-
-    <h2>Restore and merge</h2>
-    <p>Restoring is the same door in reverse: import the backup zip and the collection
-    comes back, records and photos and boxes intact. Imports merge rather than blindly
-    pile on: every book and label carries its permanent identity, and the import
-    checks what is already there, so bringing a backup into a phone that has moved on
-    updates the story instead of doubling the books.</p>
-
-    <p class="how"><strong>See it in real life:</strong> a stack changes owners,
-    labels and all, in
-    <a href="../scenarios/dealer-to-dealer.html">Dealer to dealer</a>. Shared
-    collections run want lists and consignments in
-    <a href="../scenarios/among-friends.html">Among friends</a>, and a seller an hour
-    away emails their garage onto a dealer's desk in
-    <a href="../scenarios/collection-call.html">The phone call</a>.</p>
 
     <nav class="scen-pager" aria-label="More how-tos">
-      <a href="hot-books.html">&larr; Hot Books</a>
+      <a href="selling-and-exporting.html">&larr; Selling and exporting</a>
       <a href="../help.html">All how-tos</a>
-      <a href="credits.html">Credits and the weekly allowance &rarr;</a>
+      <a href="hot-books.html">Hot Books &rarr;</a>
     </nav>
   </main>
 
