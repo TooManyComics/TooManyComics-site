@@ -117,10 +117,10 @@ delete the raw. One copy per picture.
 | File | Pages | What is stale | Shoot |
 |---|---|---|---|
 | `admin-review.jpg` | admin how-to | **Done 2026-09-07**: 1,279 books, consistent titles, the new filter row, the side panel on All-Star Comics #63 | The how-to still has no paragraph on series rows |
-| `after-the-show-1.jpg` | after-the-show scenario | "BATMAN" under "Fantastic Four" and "Green Lantern" | Box menu open over a box list, Audit box visible |
-| `after-the-show-3.jpg` | after-the-show scenario, accuracy how-to | Not-seen list mixes "BATMAN #515" with "Green Lantern #49" | Audit summary on a big box, so the not-seen list is long (the scenario tells a 107-book story) |
-| `after-the-show-5.jpg` | after-the-show scenario | "BATMAN" row at the bottom of the issues list | Inventory Issues list with covers, grades, values |
-| `after-the-show-6.jpg` | after-the-show scenario, accuracy how-to | Every row reads "BATMAN" | The resolve menu (Clear issue, Undo sale, Mark sold, Delete) over a selected issue |
+| `after-the-show-1.jpg` | after-the-show scenario | **Done 2026-09-07** | |
+| `after-the-show-3.jpg` | after-the-show scenario, accuracy how-to | **Done 2026-09-07**: CB-2, 115 confirmed, 3 not seen (and -2 retaken with it) | |
+| `after-the-show-5.jpg` | after-the-show scenario | **Done 2026-09-07** | |
+| `after-the-show-6.jpg` | after-the-show scenario, accuracy how-to | **Done 2026-09-07** | |
 | `ballpark-run-1.jpg` | ballpark how-to | "The Tomb of Dracula" then "THE TOMB OF DRACULA", "Marvel Comics Group" then "MARVEL" | A freshly scanned box, graded, unpriced |
 | `barcoding-1.jpg` | barcoding how-to | "WEREWOLF BY NIGHT" rows behind the menu | Box menu open with Print box labels and Mark box as labeled |
 | `backup-reminder.jpg` | sharing how-to | "WEREWOLF BY NIGHT" above "Werewolf By Night", and a 50,000-book test library | Collections screen with the Backup due banner; a real collection behind it |
