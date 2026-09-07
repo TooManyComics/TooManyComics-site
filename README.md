@@ -123,7 +123,7 @@ delete the raw. One copy per picture.
 | `after-the-show-3.jpg` (was -6) | after-the-show scenario, accuracy how-to | **Done 2026-09-07** | |
 | `ballpark-run-1.jpg` | ballpark how-to | **Done 2026-09-07**: the whole loop reshot as -1 to -6 on CB-8; -2 retaken without the debug rows | |
 | `barcoding-1.jpg` | barcoding how-to | **Done 2026-09-07**: CB-11, with -2 and -3 reshot alongside (109 labels, four sheets) | |
-| `backup-reminder.jpg` | sharing how-to | "WEREWOLF BY NIGHT" above "Werewolf By Night", and a 50,000-book test library | Collections screen with the Backup due banner; a real collection behind it |
+| `backup-reminder.jpg` | sharing how-to | **Done 2026-09-07**: the banner over the Boxes tab, from the older phone (828 × 1792, resized to 750 × 1623) | |
 | `convention-table-2.jpg` | convention-table scenario | Kiosk cards read "THE TOMB OF DRACULA", publishers "MARVEL COMICS GROUP" and "MARVEL" | Desktop: re-export the kiosk (it also gained label QR codes on 2026-08-29), search "Tomb", screenshot |
 | `export-1.jpg` | sharing how-to | "KNIGHT · MARVEL COMICS GROUP" beside "Meta-morpho The Element Man" | Selection mode, three checked, menu open on Export 3 selected |
 | `voice-scan-1.jpg` | scanning how-to | Not stale, just 360 × 778: the weakest file on the site | Voice scan mid-session, New comic badge, a spoken comment transcribed under the book |
