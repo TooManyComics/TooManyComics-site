@@ -126,7 +126,7 @@ delete the raw. One copy per picture.
 | `backup-reminder.jpg` | sharing how-to | **Done 2026-09-07**: the banner over the Boxes tab, from the older phone (828 × 1792, resized to 750 × 1623) | |
 | `convention-table-2.jpg` | convention-table scenario | **Done 2026-09-07**: an Avengers search, with -1 reshot alongside (1,073 books) and two new how-to figures, `kiosk-grid.jpg` and `kiosk-update.jpg` | |
 | `export-1.jpg` | sharing how-to | **Done 2026-09-07**: four Inhumans checked, with -2 reshot alongside | |
-| `voice-scan-1.jpg` | scanning how-to | Not stale, just 360 × 778: the weakest file on the site | Voice scan mid-session, New comic badge, a spoken comment transcribed under the book |
+| `voice-scan-1.jpg` | scanning how-to | **Done 2026-09-07** | |
 
 Close calls that stayed: `ballpark-run-3/4/5` showed only the "The Tomb of
 Dracula" rows behind their sheets (since reshot with the loop anyway) and
