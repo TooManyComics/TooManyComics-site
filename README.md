@@ -124,7 +124,7 @@ delete the raw. One copy per picture.
 | `ballpark-run-1.jpg` | ballpark how-to | **Done 2026-09-07**: the whole loop reshot as -1 to -6 on CB-8; -2 retaken without the debug rows | |
 | `barcoding-1.jpg` | barcoding how-to | **Done 2026-09-07**: CB-11, with -2 and -3 reshot alongside (109 labels, four sheets) | |
 | `backup-reminder.jpg` | sharing how-to | **Done 2026-09-07**: the banner over the Boxes tab, from the older phone (828 × 1792, resized to 750 × 1623) | |
-| `convention-table-2.jpg` | convention-table scenario | Kiosk cards read "THE TOMB OF DRACULA", publishers "MARVEL COMICS GROUP" and "MARVEL" | Desktop: re-export the kiosk (it also gained label QR codes on 2026-08-29), search "Tomb", screenshot |
+| `convention-table-2.jpg` | convention-table scenario | **Done 2026-09-07**: an Avengers search, with -1 reshot alongside (1,073 books) and two new how-to figures, `kiosk-grid.jpg` and `kiosk-update.jpg` | |
 | `export-1.jpg` | sharing how-to | "KNIGHT · MARVEL COMICS GROUP" beside "Meta-morpho The Element Man" | Selection mode, three checked, menu open on Export 3 selected |
 | `voice-scan-1.jpg` | scanning how-to | Not stale, just 360 × 778: the weakest file on the site | Voice scan mid-session, New comic badge, a spoken comment transcribed under the book |
 
