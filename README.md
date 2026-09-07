@@ -142,7 +142,7 @@ app fix will simply make the next retake read differently.
 | `ballpark-run-4.jpg` | ballpark how-to | The run in progress, "Priced 20 of 110" | |
 | `ballpark-run-5.jpg` | ballpark how-to | The finished run with the total | |
 | `ballpark-run-6.jpg` | ballpark how-to | A record after the run: grading service, grade, grader, Instant Ballpark | |
-| `ballpark-value.png` | FAQ | The Instant Ballpark panel with reasoning, date, and disclaimer | The disclaimer line in `ComicDetailView` has an em dash; fix first, it is the point of the picture |
+| `ballpark-value.png` | FAQ | The Instant Ballpark panel with reasoning, date, and disclaimer | |
 
 ### C. Advanced Grading (`scenarios/professional-grading`, `howto/advanced-grading`)
 
