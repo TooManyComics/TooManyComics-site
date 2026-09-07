@@ -128,10 +128,10 @@ delete the raw. One copy per picture.
 | `export-1.jpg` | sharing how-to | **Done 2026-09-07**: four Inhumans checked, with -2 reshot alongside | |
 | `voice-scan-1.jpg` | scanning how-to | Not stale, just 360 × 778: the weakest file on the site | Voice scan mid-session, New comic badge, a spoken comment transcribed under the book |
 
-Close calls that stay: `ballpark-run-3/4/5` show only the "The Tomb of
-Dracula" rows behind their sheets; `back-issue-bin-1` shows three
-"Action Comics" rows (its caption's "841 books" is out of date, the
-picture is not); `after-the-show-4` is a menu with no titles.
+Close calls that stayed: `ballpark-run-3/4/5` showed only the "The Tomb of
+Dracula" rows behind their sheets (since reshot with the loop anyway) and
+`after-the-show-4` is a menu with no titles. `back-issue-bin-1` was retaken
+on 2026-09-07 for its count (841 to 1,279) rather than its casing.
 
 ## Binary assets
 
