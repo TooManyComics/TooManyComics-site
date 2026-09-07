@@ -102,9 +102,10 @@ Every phone screenshot on the site except `credits-screen.png` was taken
 with **Display Zoom on** (the 750 × 1624 ratio is the tell; a regular
 15 Pro frame lands at 750 × 1626). Regular zoom shows more of each screen
 per frame and matches the App Store set, and several screens have new
-copy since these were shot (the em-dash sweep). The six desktop shots
-(`admin-review`, `barcoding-3`, `convention-table-1/2/3`, `listing-desk-5`)
-are unaffected and stay.
+copy since these were shot (the em-dash sweep). Five desktop shots
+(`barcoding-3`, `convention-table-1/2/3`, `listing-desk-5`) are
+unaffected and stay; `admin-review.jpg` is a retake for a different
+reason (section I).
 
 **How each retake lands:** Display Zoom off, shoot, AirDrop the original
 to Downloads, hand over the IMG number. Processing is: resize to 750
@@ -215,6 +216,12 @@ clean. A retake made before the fix bakes the old text into the site.
 | `back-issue-bin-1.png` | scenario | All Comics with the collection picker, search, filter chips, and the book count | Caption says 841 books; the count is now about 1,275, so the caption and the alt change. Fix `ComicBrowseView` first |
 | `hot-books-1.png` | scenario, how-to | Hot Books, one story mapped to its key issues and a matched owned book | **Reuse store 08** (the Lanterns story). Caption and alt describe the Shang-Chi story; rewrite. Fix `HotBooksView` first if a fresh shot is wanted |
 | `credits-screen.png` | FAQ, credits how-to | Done 2026-09-07 from store 10 | |
+
+### I. Admin review (`howto/admin-review`), desktop
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `admin-review.jpg` | admin how-to | Export Admin review from the app, open the page in a Mac browser, screenshot the grid with a series row open | The page changed on 2026-09-07 (series rows that rename a volume, scope by publisher, show how spellings differ, and outline the covers that would change). Not a phone frame: capture at the browser's size, then resize to about 1400 wide like the current file. Check the how-to's prose against the new rows; it may need a paragraph |
 
 ## Binary assets
 
