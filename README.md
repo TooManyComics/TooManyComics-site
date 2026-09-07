@@ -120,31 +120,26 @@ regular zoom on public-domain books; downscaling them to 750 wide is a
 retake for free. Where the page's copy quotes numbers from the old
 picture, the copy changes with it (noted per row).
 
-**Fix the copy before the camera comes out.** These screens still carry
-em dashes in user-visible strings (counts are string literals per file):
-`BatchPricingSheet` 13, `ComicDetailView` 17, `ShowSaleView` 10,
-`ReviewHomeView` 9, `BoxAuditView` 7, `ComicBrowseView` 6, `SellSheet` 5,
-`LabelPrintSheet` 4, `ExportSheet` 4, `HotBooksView` 4, `SettingsView` 4,
-`SellDialog` 3, `ImportOptionsSheet` 3, `BackupSettingsSection` 3. The
-app-wide count is 207; the capture flow and the grading sheet are already
-clean. A retake made before the fix bakes the old text into the site.
+**Em dashes in app strings are not a gate for these retakes** (Jim,
+2026-09-07). Some screens still show them; shoot anyway, and any later
+app fix will simply make the next retake read differently.
 
 ### A. Capture and review (`howto/scanning-your-first-box`, `index`)
 
 | File | Pages | Shoot | Notes |
 |---|---|---|---|
 | `capture-screen.jpg` | index hero, scanning how-to | **Reuse store 01** (Fight Comics #1 under the camera, box "Golden Age") | Alt and caption on both pages name Werewolf by Night #13; change to Fight Comics #1 |
-| `voice-scan-1.jpg` | scanning how-to | Voice scan mid-session: New comic badge, a spoken comment transcribed beneath the book | Only 360 × 778 today, the weakest file on the site. Status line now reads "Saved. Will analyze when online." |
-| `capture-review.png` | scanning how-to | A book's record right after capture: collection and box, then the Identity fields | Alt text carries an em dash of its own; rewrite it |
+| `voice-scan-1.jpg` | scanning how-to | Voice scan mid-session: New comic badge, a spoken comment transcribed beneath the book | Only 360 × 778 today, the weakest file on the site. |
+| `capture-review.png` | scanning how-to | A book's record right after capture: collection and box, then the Identity fields | |
 | `zoom-in.jpg` | scanning how-to | Full-screen photo viewer, "Cover, photo 1 of 1" | A Fight Comics cover keeps the page consistent with the new hero |
 
 ### B. Ballpark values (`howto/ballpark-values`, `faq`)
 
 | File | Pages | Shoot | Notes |
 |---|---|---|---|
-| `ballpark-run-1.jpg` | ballpark how-to | A freshly scanned box, graded but unpriced | Fix `BatchPricingSheet` first |
-| `ballpark-run-3.jpg` | ballpark how-to | The Instant Ballpark Value sheet with N selected and the Estimate button | Same |
-| `ballpark-run-4.jpg` | ballpark how-to | The run in progress, "Priced 20 of 110" | The batch note under the bar has an em dash today |
+| `ballpark-run-1.jpg` | ballpark how-to | A freshly scanned box, graded but unpriced |  |
+| `ballpark-run-3.jpg` | ballpark how-to | The Instant Ballpark Value sheet with N selected and the Estimate button | |
+| `ballpark-run-4.jpg` | ballpark how-to | The run in progress, "Priced 20 of 110" | |
 | `ballpark-run-5.jpg` | ballpark how-to | The finished run with the total | |
 | `ballpark-run-6.jpg` | ballpark how-to | A record after the run: grading service, grade, grader, Instant Ballpark | |
 | `ballpark-value.png` | FAQ | The Instant Ballpark panel with reasoning, date, and disclaimer | The disclaimer line in `ComicDetailView` has an em dash; fix first, it is the point of the picture |
@@ -153,15 +148,15 @@ clean. A retake made before the fix bakes the old text into the site.
 
 | File | Pages | Shoot | Notes |
 |---|---|---|---|
-| `professional-grading-1.jpg` | scenario | The intro: 16-point checklist, the views that help most | Intro copy changed in the em-dash sweep |
-| `professional-grading-2.jpg` | scenario | The sheet with only the cover attached and its warning | Warning copy changed |
+| `professional-grading-1.jpg` | scenario | The intro: 16-point checklist, the views that help most | |
+| `professional-grading-2.jpg` | scenario | The sheet with only the cover attached and its warning | |
 | `professional-grading-3.jpg` | scenario | Retaking the cover photo, square in frame | Camera frame |
 | `professional-grading-4.jpg` | scenario | Long-press menu, Use as Cover | |
 | `professional-grading-5.jpg` | scenario | Photographing the back cover | Camera frame |
 | `professional-grading-6.jpg` | scenario | Photographing an interior page | Camera frame |
 | `professional-grading-7.jpg` | scenario | Close-up of the corner crease | Camera frame |
 | `professional-grading-8.jpg` | scenario, how-to | Eight photos attached, Start assessment | |
-| `professional-grading-9.jpg` | scenario, how-to | The verdict | **Reuse store 03** (keeps the em-dash caption by decision) |
+| `professional-grading-9.jpg` | scenario, how-to | The verdict | **Reuse store 03** |
 | `professional-grading-10.jpg` | scenario | Assessed checks: spine, corners, creases | Regular zoom fits more rows per frame; 10 to 12 may collapse to two frames |
 | `professional-grading-11.jpg` | scenario | Surface, discoloration, writing | |
 | `professional-grading-12.jpg` | scenario | Staples, bindery, pages, restoration | |
@@ -173,10 +168,10 @@ clean. A retake made before the fix bakes the old text into the site.
 | File | Pages | Shoot | Notes |
 |---|---|---|---|
 | `barcoding-1.jpg` | barcoding how-to | A box's menu open: Export, Report, Audit box, Print box labels… | |
-| `barcoding-2.jpg` | barcoding how-to | The label sheet dialog | Fix `LabelPrintSheet` first |
-| `dealer-to-dealer-1.png` | scenario, barcoding how-to | The Label section of a record: QR, short code, Label attached, Print label | The explainer under the code has an em dash today |
+| `barcoding-2.jpg` | barcoding how-to | The label sheet dialog |  |
+| `dealer-to-dealer-1.png` | scenario, barcoding how-to | The Label section of a record: QR, short code, Label attached, Print label | |
 | `selling-a-stack-1.jpg` | scenario, barcoding how-to | Scan a Stack with labels in the camera and the asking total | **Reuse store 05** (five books, $34). Scenario caption says two labels and $12; change the caption and alt, the prose is number-free |
-| `after-the-show-1.jpg` | scenario | Box menu with Audit box | Fix `BoxAuditView` first |
+| `after-the-show-1.jpg` | scenario | Box menu with Audit box |  |
 | `after-the-show-2.jpg` | scenario, accuracy how-to | Audit mid-scan: camera on a label, here / arriving / unseen | |
 | `after-the-show-3.jpg` | scenario, accuracy how-to | The audit summary | Store 07 shows 4 confirmed, 1 not seen; the scenario tells a 107-book story, so retake on a big box |
 | `after-the-show-4.jpg` | scenario | Collections menu, Review inventory issues with a count | |
@@ -193,7 +188,7 @@ clean. A retake made before the fix bakes the old text into the site.
 
 | File | Pages | Shoot | Notes |
 |---|---|---|---|
-| `listing-desk-1.jpg` | scenario, how-to | The For Sale dialog with the price prefilled | Fix `SellDialog` and `SellSheet` first |
+| `listing-desk-1.jpg` | scenario, how-to | The For Sale dialog with the price prefilled |  |
 | `listing-desk-2.jpg` | scenario | The For Sale tab with a listing pill | |
 | `listing-desk-3.jpg` | scenario, how-to | The For Sale tab's menu, Export auction pack | |
 | `listing-desk-4.jpg` | scenario, how-to | The auction pack export sheet | |
@@ -205,16 +200,16 @@ clean. A retake made before the fix bakes the old text into the site.
 | `export-1.jpg` | how-to | Selection mode, three checked, Export 3 selected | |
 | `export-2.jpg` | how-to | The Export sheet | **Reuse store 09** |
 | `airdrop-receive-1.jpg` | how-to | The arrived .cbshare on the receiving phone | Needs a second phone |
-| `airdrop-receive-2.jpg` | how-to | The Import sheet with the sender's-appraisals choice | Fix `ImportOptionsSheet` first; second phone |
-| `backup-reminder.jpg` | how-to | Collections screen with the Backup due banner | Fix `BackupSettingsSection` first; the banner appears when a backup is overdue |
+| `airdrop-receive-2.jpg` | how-to | The Import sheet with the sender's-appraisals choice | second phone |
+| `backup-reminder.jpg` | how-to | Collections screen with the Backup due banner | the banner appears when a backup is overdue |
 | `settings-backup.jpg` | how-to | Settings, the Backup section | |
 
 ### H. Browse, Hot Books (`scenarios/back-issue-bin`, `scenarios/hot-books`, `howto/hot-books`)
 
 | File | Pages | Shoot | Notes |
 |---|---|---|---|
-| `back-issue-bin-1.png` | scenario | All Comics with the collection picker, search, filter chips, and the book count | Caption says 841 books; the count is now about 1,275, so the caption and the alt change. Fix `ComicBrowseView` first |
-| `hot-books-1.png` | scenario, how-to | Hot Books, one story mapped to its key issues and a matched owned book | **Reuse store 08** (the Lanterns story). Caption and alt describe the Shang-Chi story; rewrite. Fix `HotBooksView` first if a fresh shot is wanted |
+| `back-issue-bin-1.png` | scenario | All Comics with the collection picker, search, filter chips, and the book count | Caption says 841 books; the count is now about 1,275, so the caption and the alt change.  |
+| `hot-books-1.png` | scenario, how-to | Hot Books, one story mapped to its key issues and a matched owned book | **Reuse store 08** (the Lanterns story). Caption and alt describe the Shang-Chi story; rewrite.  |
 | `credits-screen.png` | FAQ, credits how-to | Done 2026-09-07 from store 10 | |
 
 ### I. Admin review (`howto/admin-review`), desktop
