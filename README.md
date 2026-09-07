@@ -116,7 +116,7 @@ delete the raw. One copy per picture.
 
 | File | Pages | What is stale | Shoot |
 |---|---|---|---|
-| `admin-review.jpg` | admin how-to | "the AMAZING SPIDER-MAN" beside "The Amazing Spider-Man"; and the page gained series rows on 2026-09-07 | Desktop: export Admin review, open on the Mac, screenshot the grid with a series row open. Resize to about 1400 wide. The how-to has no paragraph on series rows yet |
+| `admin-review.jpg` | admin how-to | **Done 2026-09-07**: 1,279 books, consistent titles, the new filter row, the side panel on All-Star Comics #63 | The how-to still has no paragraph on series rows |
 | `after-the-show-1.jpg` | after-the-show scenario | "BATMAN" under "Fantastic Four" and "Green Lantern" | Box menu open over a box list, Audit box visible |
 | `after-the-show-3.jpg` | after-the-show scenario, accuracy how-to | Not-seen list mixes "BATMAN #515" with "Green Lantern #49" | Audit summary on a big box, so the not-seen list is long (the scenario tells a 107-book story) |
 | `after-the-show-5.jpg` | after-the-show scenario | "BATMAN" row at the bottom of the issues list | Inventory Issues list with covers, grades, values |
