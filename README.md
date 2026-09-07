@@ -98,125 +98,40 @@ sources organized so any one image can be replaced in five minutes.
 
 ## Screenshot retake list (2026-09-07)
 
-Every phone screenshot on the site except `credits-screen.png` was taken
-with **Display Zoom on** (the 750 × 1624 ratio is the tell; a regular
-15 Pro frame lands at 750 × 1626). Regular zoom shows more of each screen
-per frame and matches the App Store set, and several screens have new
-copy since these were shot (the em-dash sweep). Five desktop shots
-(`barcoding-3`, `convention-table-1/2/3`, `listing-desk-5`) are
-unaffected and stay; `admin-review.jpg` is a retake for a different
-reason (section I).
+The criterion is **not current**, not "shot with Display Zoom on" (they
+all were, and that alone is not a reason). An image is stale when it
+shows something the app no longer does. Checked 2026-09-07 against every
+image on the site: the one visible change is the title rules, which
+landed after these were shot, so any list that mixes "BATMAN" with
+"Batman" or "THE TOMB OF DRACULA" with "The Tomb of Dracula" is showing
+a library the app has since cleaned up. Ten images do; one more is a
+bad file. Everything else stays, `credits-screen.png` included (redone
+2026-09-07).
 
-**How each retake lands:** Display Zoom off, shoot, AirDrop the original
-to Downloads, hand over the IMG number. Processing is: resize to 750
-wide (750 × 1626), JPEG for camera-heavy frames and PNG for flat UI, crop
-any stray bottom text, update the `width`/`height` attributes and the alt
-text on every page that uses it, then delete the raw. One copy per
-picture.
+**How each retake lands:** AirDrop the original to Downloads, hand over
+the IMG number. Processing is: resize to 750 wide, JPEG for camera-heavy
+frames and PNG for flat UI, crop any stray bottom text, update the
+`width`/`height` attributes and the alt text on every page that uses it,
+delete the raw. One copy per picture.
 
-**Reuse before reshoot.** Seven App Store frames in
-`CBInventory/docs/AppStore-Legal/screenshots/` are the same screens at
-regular zoom on public-domain books; downscaling them to 750 wide is a
-retake for free. Where the page's copy quotes numbers from the old
-picture, the copy changes with it (noted per row).
-
-**Em dashes in app strings are not a gate for these retakes** (Jim,
-2026-09-07). Some screens still show them; shoot anyway, and any later
-app fix will simply make the next retake read differently.
-
-### A. Capture and review (`howto/scanning-your-first-box`, `index`)
-
-| File | Pages | Shoot | Notes |
+| File | Pages | What is stale | Shoot |
 |---|---|---|---|
-| `capture-screen.jpg` | index hero, scanning how-to | **Reuse store 01** (Fight Comics #1 under the camera, box "Golden Age") | Alt and caption on both pages name Werewolf by Night #13; change to Fight Comics #1 |
-| `voice-scan-1.jpg` | scanning how-to | Voice scan mid-session: New comic badge, a spoken comment transcribed beneath the book | Only 360 × 778 today, the weakest file on the site. |
-| `capture-review.png` | scanning how-to | A book's record right after capture: collection and box, then the Identity fields | |
-| `zoom-in.jpg` | scanning how-to | Full-screen photo viewer, "Cover, photo 1 of 1" | A Fight Comics cover keeps the page consistent with the new hero |
+| `admin-review.jpg` | admin how-to | "the AMAZING SPIDER-MAN" beside "The Amazing Spider-Man"; and the page gained series rows on 2026-09-07 | Desktop: export Admin review, open on the Mac, screenshot the grid with a series row open. Resize to about 1400 wide. The how-to has no paragraph on series rows yet |
+| `after-the-show-1.jpg` | after-the-show scenario | "BATMAN" under "Fantastic Four" and "Green Lantern" | Box menu open over a box list, Audit box visible |
+| `after-the-show-3.jpg` | after-the-show scenario, accuracy how-to | Not-seen list mixes "BATMAN #515" with "Green Lantern #49" | Audit summary on a big box, so the not-seen list is long (the scenario tells a 107-book story) |
+| `after-the-show-5.jpg` | after-the-show scenario | "BATMAN" row at the bottom of the issues list | Inventory Issues list with covers, grades, values |
+| `after-the-show-6.jpg` | after-the-show scenario, accuracy how-to | Every row reads "BATMAN" | The resolve menu (Clear issue, Undo sale, Mark sold, Delete) over a selected issue |
+| `ballpark-run-1.jpg` | ballpark how-to | "The Tomb of Dracula" then "THE TOMB OF DRACULA", "Marvel Comics Group" then "MARVEL" | A freshly scanned box, graded, unpriced |
+| `barcoding-1.jpg` | barcoding how-to | "WEREWOLF BY NIGHT" rows behind the menu | Box menu open with Print box labels and Mark box as labeled |
+| `backup-reminder.jpg` | sharing how-to | "WEREWOLF BY NIGHT" above "Werewolf By Night", and a 50,000-book test library | Collections screen with the Backup due banner; a real collection behind it |
+| `convention-table-2.jpg` | convention-table scenario | Kiosk cards read "THE TOMB OF DRACULA", publishers "MARVEL COMICS GROUP" and "MARVEL" | Desktop: re-export the kiosk (it also gained label QR codes on 2026-08-29), search "Tomb", screenshot |
+| `export-1.jpg` | sharing how-to | "KNIGHT · MARVEL COMICS GROUP" beside "Meta-morpho The Element Man" | Selection mode, three checked, menu open on Export 3 selected |
+| `voice-scan-1.jpg` | scanning how-to | Not stale, just 360 × 778: the weakest file on the site | Voice scan mid-session, New comic badge, a spoken comment transcribed under the book |
 
-### B. Ballpark values (`howto/ballpark-values`, `faq`)
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `ballpark-run-1.jpg` | ballpark how-to | A freshly scanned box, graded but unpriced |  |
-| `ballpark-run-3.jpg` | ballpark how-to | The Instant Ballpark Value sheet with N selected and the Estimate button | |
-| `ballpark-run-4.jpg` | ballpark how-to | The run in progress, "Priced 20 of 110" | |
-| `ballpark-run-5.jpg` | ballpark how-to | The finished run with the total | |
-| `ballpark-run-6.jpg` | ballpark how-to | A record after the run: grading service, grade, grader, Instant Ballpark | |
-| `ballpark-value.png` | FAQ | The Instant Ballpark panel with reasoning, date, and disclaimer | |
-
-### C. Advanced Grading (`scenarios/professional-grading`, `howto/advanced-grading`)
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `professional-grading-1.jpg` | scenario | The intro: 16-point checklist, the views that help most | |
-| `professional-grading-2.jpg` | scenario | The sheet with only the cover attached and its warning | |
-| `professional-grading-3.jpg` | scenario | Retaking the cover photo, square in frame | Camera frame |
-| `professional-grading-4.jpg` | scenario | Long-press menu, Use as Cover | |
-| `professional-grading-5.jpg` | scenario | Photographing the back cover | Camera frame |
-| `professional-grading-6.jpg` | scenario | Photographing an interior page | Camera frame |
-| `professional-grading-7.jpg` | scenario | Close-up of the corner crease | Camera frame |
-| `professional-grading-8.jpg` | scenario, how-to | Eight photos attached, Start assessment | |
-| `professional-grading-9.jpg` | scenario, how-to | The verdict | **Reuse store 03** |
-| `professional-grading-10.jpg` | scenario | Assessed checks: spine, corners, creases | Regular zoom fits more rows per frame; 10 to 12 may collapse to two frames |
-| `professional-grading-11.jpg` | scenario | Surface, discoloration, writing | |
-| `professional-grading-12.jpg` | scenario | Staples, bindery, pages, restoration | |
-| `professional-grading-13.jpg` | scenario, how-to | Annotated photo, paper loss ringed | **Reuse store 04** |
-| `professional-grading-14.jpg` | scenario | Annotated photo, the handling bend | |
-
-### D. Labels, Scan a Stack, Audit Box (`howto/barcoding-your-books`, `howto/keeping-inventory-accurate`, `scenarios/selling-a-stack`, `scenarios/after-the-show`, `scenarios/dealer-to-dealer`)
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `barcoding-1.jpg` | barcoding how-to | A box's menu open: Export, Report, Audit box, Print box labels… | |
-| `barcoding-2.jpg` | barcoding how-to | The label sheet dialog |  |
-| `dealer-to-dealer-1.png` | scenario, barcoding how-to | The Label section of a record: QR, short code, Label attached, Print label | |
-| `selling-a-stack-1.jpg` | scenario, barcoding how-to | Scan a Stack with labels in the camera and the asking total | **Reuse store 05** (five books, $34). Scenario caption says two labels and $12; change the caption and alt, the prose is number-free |
-| `after-the-show-1.jpg` | scenario | Box menu with Audit box |  |
-| `after-the-show-2.jpg` | scenario, accuracy how-to | Audit mid-scan: camera on a label, here / arriving / unseen | |
-| `after-the-show-3.jpg` | scenario, accuracy how-to | The audit summary | Store 07 shows 4 confirmed, 1 not seen; the scenario tells a 107-book story, so retake on a big box |
-| `after-the-show-4.jpg` | scenario | Collections menu, Review inventory issues with a count | |
-| `after-the-show-5.jpg` | scenario | The Inventory Issues list | |
-| `after-the-show-6.jpg` | scenario, accuracy how-to | Resolving an issue: clear, undo sale, mark sold, delete | |
-
-### E. Evaluate a Stack (`scenarios/buying-a-stack`, `howto/evaluating-a-stack`)
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `buying-a-stack-2.jpg` | scenario, how-to | Evaluate mid-session with the Mine total and an ownership row | **Reuse store 06** ("Mine $500 · 1 of 3", "You own 1 · VG $500"). Both pages quote "Mine $22" and "VF $6" in captions and alt; update them |
-
-### F. Selling and export (`scenarios/listing-desk`, `howto/selling-and-exporting`)
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `listing-desk-1.jpg` | scenario, how-to | The For Sale dialog with the price prefilled |  |
-| `listing-desk-2.jpg` | scenario | The For Sale tab with a listing pill | |
-| `listing-desk-3.jpg` | scenario, how-to | The For Sale tab's menu, Export auction pack | |
-| `listing-desk-4.jpg` | scenario, how-to | The auction pack export sheet | |
-
-### G. Sharing, backup, restore (`howto/sharing-backup-restore`)
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `export-1.jpg` | how-to | Selection mode, three checked, Export 3 selected | |
-| `export-2.jpg` | how-to | The Export sheet | **Reuse store 09** |
-| `airdrop-receive-1.jpg` | how-to | The arrived .cbshare on the receiving phone | Needs a second phone |
-| `airdrop-receive-2.jpg` | how-to | The Import sheet with the sender's-appraisals choice | second phone |
-| `backup-reminder.jpg` | how-to | Collections screen with the Backup due banner | the banner appears when a backup is overdue |
-| `settings-backup.jpg` | how-to | Settings, the Backup section | |
-
-### H. Browse, Hot Books (`scenarios/back-issue-bin`, `scenarios/hot-books`, `howto/hot-books`)
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `back-issue-bin-1.png` | scenario | All Comics with the collection picker, search, filter chips, and the book count | Caption says 841 books; the count is now about 1,275, so the caption and the alt change.  |
-| `hot-books-1.png` | scenario, how-to | Hot Books, one story mapped to its key issues and a matched owned book | **Reuse store 08** (the Lanterns story). Caption and alt describe the Shang-Chi story; rewrite.  |
-| `credits-screen.png` | FAQ, credits how-to | Done 2026-09-07 from store 10 | |
-
-### I. Admin review (`howto/admin-review`), desktop
-
-| File | Pages | Shoot | Notes |
-|---|---|---|---|
-| `admin-review.jpg` | admin how-to | Export Admin review from the app, open the page in a Mac browser, screenshot the grid with a series row open | The page changed on 2026-09-07 (series rows that rename a volume, scope by publisher, show how spellings differ, and outline the covers that would change). Not a phone frame: capture at the browser's size, then resize to about 1400 wide like the current file. Check the how-to's prose against the new rows; it may need a paragraph |
+Close calls that stay: `ballpark-run-3/4/5` show only the "The Tomb of
+Dracula" rows behind their sheets; `back-issue-bin-1` shows three
+"Action Comics" rows (its caption's "841 books" is out of date, the
+picture is not); `after-the-show-4` is a menu with no titles.
 
 ## Binary assets
 
