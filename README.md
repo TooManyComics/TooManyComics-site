@@ -96,6 +96,126 @@ search-by-image); Jim's own photos are fine for grid and browse
 screens; swap the sample seeder's real series names first; and keep
 sources organized so any one image can be replaced in five minutes.
 
+## Screenshot retake list (2026-09-07)
+
+Every phone screenshot on the site except `credits-screen.png` was taken
+with **Display Zoom on** (the 750 × 1624 ratio is the tell; a regular
+15 Pro frame lands at 750 × 1626). Regular zoom shows more of each screen
+per frame and matches the App Store set, and several screens have new
+copy since these were shot (the em-dash sweep). The six desktop shots
+(`admin-review`, `barcoding-3`, `convention-table-1/2/3`, `listing-desk-5`)
+are unaffected and stay.
+
+**How each retake lands:** Display Zoom off, shoot, AirDrop the original
+to Downloads, hand over the IMG number. Processing is: resize to 750
+wide (750 × 1626), JPEG for camera-heavy frames and PNG for flat UI, crop
+any stray bottom text, update the `width`/`height` attributes and the alt
+text on every page that uses it, then delete the raw. One copy per
+picture.
+
+**Reuse before reshoot.** Seven App Store frames in
+`CBInventory/docs/AppStore-Legal/screenshots/` are the same screens at
+regular zoom on public-domain books; downscaling them to 750 wide is a
+retake for free. Where the page's copy quotes numbers from the old
+picture, the copy changes with it (noted per row).
+
+**Fix the copy before the camera comes out.** These screens still carry
+em dashes in user-visible strings (counts are string literals per file):
+`BatchPricingSheet` 13, `ComicDetailView` 17, `ShowSaleView` 10,
+`ReviewHomeView` 9, `BoxAuditView` 7, `ComicBrowseView` 6, `SellSheet` 5,
+`LabelPrintSheet` 4, `ExportSheet` 4, `HotBooksView` 4, `SettingsView` 4,
+`SellDialog` 3, `ImportOptionsSheet` 3, `BackupSettingsSection` 3. The
+app-wide count is 207; the capture flow and the grading sheet are already
+clean. A retake made before the fix bakes the old text into the site.
+
+### A. Capture and review (`howto/scanning-your-first-box`, `index`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `capture-screen.jpg` | index hero, scanning how-to | **Reuse store 01** (Fight Comics #1 under the camera, box "Golden Age") | Alt and caption on both pages name Werewolf by Night #13; change to Fight Comics #1 |
+| `voice-scan-1.jpg` | scanning how-to | Voice scan mid-session: New comic badge, a spoken comment transcribed beneath the book | Only 360 × 778 today, the weakest file on the site. Status line now reads "Saved. Will analyze when online." |
+| `capture-review.png` | scanning how-to | A book's record right after capture: collection and box, then the Identity fields | Alt text carries an em dash of its own; rewrite it |
+| `zoom-in.jpg` | scanning how-to | Full-screen photo viewer, "Cover, photo 1 of 1" | A Fight Comics cover keeps the page consistent with the new hero |
+
+### B. Ballpark values (`howto/ballpark-values`, `faq`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `ballpark-run-1.jpg` | ballpark how-to | A freshly scanned box, graded but unpriced | Fix `BatchPricingSheet` first |
+| `ballpark-run-3.jpg` | ballpark how-to | The Instant Ballpark Value sheet with N selected and the Estimate button | Same |
+| `ballpark-run-4.jpg` | ballpark how-to | The run in progress, "Priced 20 of 110" | The batch note under the bar has an em dash today |
+| `ballpark-run-5.jpg` | ballpark how-to | The finished run with the total | |
+| `ballpark-run-6.jpg` | ballpark how-to | A record after the run: grading service, grade, grader, Instant Ballpark | |
+| `ballpark-value.png` | FAQ | The Instant Ballpark panel with reasoning, date, and disclaimer | The disclaimer line in `ComicDetailView` has an em dash; fix first, it is the point of the picture |
+
+### C. Advanced Grading (`scenarios/professional-grading`, `howto/advanced-grading`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `professional-grading-1.jpg` | scenario | The intro: 16-point checklist, the views that help most | Intro copy changed in the em-dash sweep |
+| `professional-grading-2.jpg` | scenario | The sheet with only the cover attached and its warning | Warning copy changed |
+| `professional-grading-3.jpg` | scenario | Retaking the cover photo, square in frame | Camera frame |
+| `professional-grading-4.jpg` | scenario | Long-press menu, Use as Cover | |
+| `professional-grading-5.jpg` | scenario | Photographing the back cover | Camera frame |
+| `professional-grading-6.jpg` | scenario | Photographing an interior page | Camera frame |
+| `professional-grading-7.jpg` | scenario | Close-up of the corner crease | Camera frame |
+| `professional-grading-8.jpg` | scenario, how-to | Eight photos attached, Start assessment | |
+| `professional-grading-9.jpg` | scenario, how-to | The verdict | **Reuse store 03** (keeps the em-dash caption by decision) |
+| `professional-grading-10.jpg` | scenario | Assessed checks: spine, corners, creases | Regular zoom fits more rows per frame; 10 to 12 may collapse to two frames |
+| `professional-grading-11.jpg` | scenario | Surface, discoloration, writing | |
+| `professional-grading-12.jpg` | scenario | Staples, bindery, pages, restoration | |
+| `professional-grading-13.jpg` | scenario, how-to | Annotated photo, paper loss ringed | **Reuse store 04** |
+| `professional-grading-14.jpg` | scenario | Annotated photo, the handling bend | |
+
+### D. Labels, Scan a Stack, Audit Box (`howto/barcoding-your-books`, `howto/keeping-inventory-accurate`, `scenarios/selling-a-stack`, `scenarios/after-the-show`, `scenarios/dealer-to-dealer`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `barcoding-1.jpg` | barcoding how-to | A box's menu open: Export, Report, Audit box, Print box labels… | |
+| `barcoding-2.jpg` | barcoding how-to | The label sheet dialog | Fix `LabelPrintSheet` first |
+| `dealer-to-dealer-1.png` | scenario, barcoding how-to | The Label section of a record: QR, short code, Label attached, Print label | The explainer under the code has an em dash today |
+| `selling-a-stack-1.jpg` | scenario, barcoding how-to | Scan a Stack with labels in the camera and the asking total | **Reuse store 05** (five books, $34). Scenario caption says two labels and $12; change the caption and alt, the prose is number-free |
+| `after-the-show-1.jpg` | scenario | Box menu with Audit box | Fix `BoxAuditView` first |
+| `after-the-show-2.jpg` | scenario, accuracy how-to | Audit mid-scan: camera on a label, here / arriving / unseen | |
+| `after-the-show-3.jpg` | scenario, accuracy how-to | The audit summary | Store 07 shows 4 confirmed, 1 not seen; the scenario tells a 107-book story, so retake on a big box |
+| `after-the-show-4.jpg` | scenario | Collections menu, Review inventory issues with a count | |
+| `after-the-show-5.jpg` | scenario | The Inventory Issues list | |
+| `after-the-show-6.jpg` | scenario, accuracy how-to | Resolving an issue: clear, undo sale, mark sold, delete | |
+
+### E. Evaluate a Stack (`scenarios/buying-a-stack`, `howto/evaluating-a-stack`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `buying-a-stack-2.jpg` | scenario, how-to | Evaluate mid-session with the Mine total and an ownership row | **Reuse store 06** ("Mine $500 · 1 of 3", "You own 1 · VG $500"). Both pages quote "Mine $22" and "VF $6" in captions and alt; update them |
+
+### F. Selling and export (`scenarios/listing-desk`, `howto/selling-and-exporting`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `listing-desk-1.jpg` | scenario, how-to | The For Sale dialog with the price prefilled | Fix `SellDialog` and `SellSheet` first |
+| `listing-desk-2.jpg` | scenario | The For Sale tab with a listing pill | |
+| `listing-desk-3.jpg` | scenario, how-to | The For Sale tab's menu, Export auction pack | |
+| `listing-desk-4.jpg` | scenario, how-to | The auction pack export sheet | |
+
+### G. Sharing, backup, restore (`howto/sharing-backup-restore`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `export-1.jpg` | how-to | Selection mode, three checked, Export 3 selected | |
+| `export-2.jpg` | how-to | The Export sheet | **Reuse store 09** |
+| `airdrop-receive-1.jpg` | how-to | The arrived .cbshare on the receiving phone | Needs a second phone |
+| `airdrop-receive-2.jpg` | how-to | The Import sheet with the sender's-appraisals choice | Fix `ImportOptionsSheet` first; second phone |
+| `backup-reminder.jpg` | how-to | Collections screen with the Backup due banner | Fix `BackupSettingsSection` first; the banner appears when a backup is overdue |
+| `settings-backup.jpg` | how-to | Settings, the Backup section | |
+
+### H. Browse, Hot Books (`scenarios/back-issue-bin`, `scenarios/hot-books`, `howto/hot-books`)
+
+| File | Pages | Shoot | Notes |
+|---|---|---|---|
+| `back-issue-bin-1.png` | scenario | All Comics with the collection picker, search, filter chips, and the book count | Caption says 841 books; the count is now about 1,275, so the caption and the alt change. Fix `ComicBrowseView` first |
+| `hot-books-1.png` | scenario, how-to | Hot Books, one story mapped to its key issues and a matched owned book | **Reuse store 08** (the Lanterns story). Caption and alt describe the Shang-Chi story; rewrite. Fix `HotBooksView` first if a fresh shot is wanted |
+| `credits-screen.png` | FAQ, credits how-to | Done 2026-09-07 from store 10 | |
+
 ## Binary assets
 
 `logo.png` (256), `apple-touch-icon.png` (180), `favicon-32.png`,
