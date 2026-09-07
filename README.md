@@ -121,7 +121,7 @@ delete the raw. One copy per picture.
 | `after-the-show-2.jpg` (was -3) | after-the-show scenario, accuracy how-to | **Done 2026-09-07**: CB-2, 115 confirmed, 3 not seen. The old mid-scan -2 is deleted; the set is now 1 menu, 2 result, 3 resolve, 4 menu count, 5 list | |
 | `after-the-show-5.jpg` | after-the-show scenario | **Done 2026-09-07** | |
 | `after-the-show-3.jpg` (was -6) | after-the-show scenario, accuracy how-to | **Done 2026-09-07** | |
-| `ballpark-run-1.jpg` | ballpark how-to | **Done 2026-09-07**: the whole loop reshot as -1 to -6 on CB-8 (menu frame -2 shows two debug rows) | |
+| `ballpark-run-1.jpg` | ballpark how-to | **Done 2026-09-07**: the whole loop reshot as -1 to -6 on CB-8; -2 retaken without the debug rows | |
 | `barcoding-1.jpg` | barcoding how-to | "WEREWOLF BY NIGHT" rows behind the menu | Box menu open with Print box labels and Mark box as labeled |
 | `backup-reminder.jpg` | sharing how-to | "WEREWOLF BY NIGHT" above "Werewolf By Night", and a 50,000-book test library | Collections screen with the Backup due banner; a real collection behind it |
 | `convention-table-2.jpg` | convention-table scenario | Kiosk cards read "THE TOMB OF DRACULA", publishers "MARVEL COMICS GROUP" and "MARVEL" | Desktop: re-export the kiosk (it also gained label QR codes on 2026-08-29), search "Tomb", screenshot |
