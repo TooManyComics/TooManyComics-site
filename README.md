@@ -118,9 +118,9 @@ delete the raw. One copy per picture.
 |---|---|---|---|
 | `admin-review.jpg` | admin how-to | **Done 2026-09-07**: 1,279 books, consistent titles, the new filter row, the side panel on All-Star Comics #63 | The how-to still has no paragraph on series rows |
 | `after-the-show-1.jpg` | after-the-show scenario | **Done 2026-09-07** | |
-| `after-the-show-3.jpg` | after-the-show scenario, accuracy how-to | **Done 2026-09-07**: CB-2, 115 confirmed, 3 not seen (and -2 retaken with it) | |
+| `after-the-show-2.jpg` (was -3) | after-the-show scenario, accuracy how-to | **Done 2026-09-07**: CB-2, 115 confirmed, 3 not seen. The old mid-scan -2 is deleted; the set is now 1 menu, 2 result, 3 resolve, 4 menu count, 5 list | |
 | `after-the-show-5.jpg` | after-the-show scenario | **Done 2026-09-07** | |
-| `after-the-show-6.jpg` | after-the-show scenario, accuracy how-to | **Done 2026-09-07** | |
+| `after-the-show-3.jpg` (was -6) | after-the-show scenario, accuracy how-to | **Done 2026-09-07** | |
 | `ballpark-run-1.jpg` | ballpark how-to | "The Tomb of Dracula" then "THE TOMB OF DRACULA", "Marvel Comics Group" then "MARVEL" | A freshly scanned box, graded, unpriced |
 | `barcoding-1.jpg` | barcoding how-to | "WEREWOLF BY NIGHT" rows behind the menu | Box menu open with Print box labels and Mark box as labeled |
 | `backup-reminder.jpg` | sharing how-to | "WEREWOLF BY NIGHT" above "Werewolf By Night", and a 50,000-book test library | Collections screen with the Backup due banner; a real collection behind it |
