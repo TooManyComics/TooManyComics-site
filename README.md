@@ -16,19 +16,25 @@ The release plan that drives this site is Functions repo
 two of these URLs become **permanent App Store Connect fields**
 (Support, Privacy Policy), which is the real deadline for de-stubbing.
 
-## Pages and stub status
+## Pages and status
+
+Audited 2026-09-14. Every page is real; the only remaining `stub-note`
+on the site is the deliberate "YOUR TURN" invitation at the foot of
+the scenarios page. The site is NOT yet hosted (Pages not enabled, DNS
+still at the registrar's parking addresses), which is the actual gate
+for the App Store Connect URLs.
 
 | Page | Becomes | Status |
 |---|---|---|
-| `index.html` | Marketing / landing | **Mostly real**: hero, the eight key features, the organized-collecting warning, and the measured storage section. Still needs screenshots, the App Store badge + link, and hero art |
-| `scenarios.html` | Collector scenarios | Seven stories. Six are grounded in built features (kiosk, Scan a Stack, dealer transfer, box audit, auction pack, search-by-image). **LAUNCH BLOCKER on the seventh:** the buying scenario describes **Evaluate a stack**, DESIGNED but not built (app repo `docs/features/evaluations-and-offers.md`). The page promises no hypotheticals, so that feature ships before the site goes public or the paragraph comes out. |
-| `about.html` | The origin story | **REAL**: thousands of comics, three questions, three requirements, plus the BigBrainCorp mission verbatim |
-| `faq.html` | FAQ | **Part real**: capacity, grading accuracy, and pricing answered; privacy and accounts still stubs |
-| `support.html` | **ASC Support URL** | Contact live (Info@BigBrainCorp.com); intro stub |
-| `help.html` | The user guide (How To) | Stub, section skeleton only |
-| `privacy.html` | **ASC Privacy Policy URL** | **REAL** (2026-08-24): written against what the code actually does, verified claim by claim. Worth a lawyer's read before launch; the App Privacy questionnaire answers must match it |
-| `terms.html` | Terms / EULA | Stub, and OPTIONAL: Apple's Standard EULA governs by default. Kept for the estimates disclaimer and credit terms |
-| `release-notes.html` | Changelog | Stub, starts real at the first TestFlight build |
+| `index.html` | Marketing / landing | Real: hero, features, the organized-collecting warning, storage section, and the twelve-scenario teaser. Still wants the App Store badge + link once the app is listed |
+| `scenarios.html` + `scenarios/` | Collector scenarios | Real: twelve stories, each on a built feature. The former launch blocker (the buying scenario describing Evaluate a stack) is CLEARED: the feature shipped (app repo `EvaluationStackSession.swift`) and has its own how-to |
+| `about.html` | The origin story | Real |
+| `faq.html` | FAQ | Real: seven questions answered, privacy and accounts included (both point at the policy); the FAQ schema carries all seven |
+| `support.html` | **ASC Support URL** | Real: contact (Info@BigBrainCorp.com), what to include, the Advanced Grading escalation |
+| `help.html` + `howto/` | The user guide (How To) | Real: the index plus twelve how-tos |
+| `privacy.html` | **ASC Privacy Policy URL** | Real, re-audited 2026-09-14 against the deployed Phase 2 code (batch re-pricing sends book details; the activity list names a scanned book's title; failed-estimate records; refusal timestamps; Apple refund notifications). Worth a lawyer's read before launch; the App Privacy questionnaire answers must match it |
+| `terms.html` | Terms / EULA | Real: estimates disclaimer, credit terms, acceptable use. OPTIONAL for Apple (Standard EULA governs unless linked); kept for the non-Apple reasons |
+| `release-notes.html` | Changelog | Real: the 1.0 TestFlight entry |
 | `blog/` | Same as OSSScan-site | Empty |
 
 ## Contacts
