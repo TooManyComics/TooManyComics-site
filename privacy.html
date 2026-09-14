@@ -196,15 +196,17 @@
 
 
     <h1>Privacy Policy</h1>
-    <p class="page-note">Effective 2026-08-24. Too Many Comics is published by
+    <p class="page-note">Effective 2026-09-14. Too Many Comics is published by
     BigBrainCorp LLC.</p>
 
     <h2>The short version</h2>
     <p>Your comic collection lives on your phone. There are no accounts and no
-    logins, so we do not know who you are. We never receive a list of what you
-    own, what it is worth, or what you sold. The only thing that leaves your
-    device is an individual photograph you ask us to analyze, along with any
-    comments you attached to it, and we do not keep those photographs.</p>
+    logins, so we do not know who you are. We never receive your collection,
+    your sale records, or what you paid. What leaves your device is only what a
+    single request needs: a photograph you ask us to analyze, with any comments
+    you attached to it, or the details of the books you ask us to re-price, a
+    few at a time. We do not keep the photographs. We keep a book's details in
+    exactly two narrow cases, both described below.</p>
     <p>The app contains no analytics, no advertising, no crash reporting, and no
     third-party tracking code of any kind.</p>
 
@@ -246,7 +248,11 @@
         transcribed on your device by iOS; we receive text, never audio.</li>
       <li><strong>Existing details of the book</strong> when you ask for a
         correction or a re-price, so the analysis can improve on what it said
-        before instead of starting over.</li>
+        before instead of starting over: the title, issue, publisher, cover
+        date, condition, and the previous estimate. A batch re-price sends
+        those details for each book in the batch, ten books per request, so
+        refreshing a whole box sends them for every book in it, one batch at
+        a time.</li>
       <li><strong>Your anonymous device token</strong>, so we can check your
         credit balance.</li>
     </ul>
@@ -257,8 +263,10 @@
     <p>All of it keyed to the anonymous identifier described above, never to
     you:</p>
     <ul>
-      <li><strong>Your credit balance</strong> and a short recent-activity list,
-        so the app can show you where your credits went.</li>
+      <li><strong>Your credit balance</strong> and your last twenty credit
+        events, so the app can show you where your credits went. For a scan
+        or a grading, the event names the book's title, the same way the
+        app's own activity list does.</li>
       <li><strong>Usage counts per request</strong>: a timestamp, which
         operation ran, which AI model answered, and how many tokens it used.
         This is how we reconcile our own bill and notice if somebody is abusing
@@ -266,17 +274,26 @@
         nothing about the comic.</li>
       <li><strong>Rate limiting counters</strong>, so no single device can run
         away with the service.</li>
+      <li><strong>Details of a book whose batch price estimate failed</strong>:
+        the title, issue, publisher, cover date, and condition we priced from,
+        and the reason the estimate came back empty. This is kept so that
+        retrying the same book unchanged costs you nothing, and it is deleted
+        the moment a retry succeeds.</li>
       <li><strong>The attested public key</strong> for your installation, and a
         counter that prevents replay.</li>
-      <li><strong>A count of content-filter refusals</strong> per installation.
-        If a device repeatedly submits material the AI service refuses, that
-        matters to our standing with our provider. We store a count, not the
-        content.</li>
+      <li><strong>A record of content-filter refusals</strong> per
+        installation. If a device repeatedly submits material the AI service
+        refuses, that matters to our standing with our provider. We store when
+        each refusal happened and the photo's internal identifier, never the
+        photo or anything in it, and old entries expire.</li>
       <li><strong>Redeemed purchase identifiers</strong>, so a credit pack
-        cannot be redeemed twice.</li>
+        cannot be redeemed twice, and whether Apple later refunded each one,
+        so the credits it bought can be taken back.</li>
     </ul>
-    <p>None of this includes your photographs, your comics, your collection, or
-    any personal detail about you.</p>
+    <p>None of this includes your photographs, your collection, or any
+    personal detail about you. The two places a book's details appear on our
+    side are the activity list and the failed-estimate record above, both
+    keyed to the anonymous identifier and nothing else.</p>
 
     <h2>Who else is involved</h2>
     <p><strong>Microsoft Azure</strong> hosts our service and provides the AI
@@ -287,8 +304,10 @@
     <p><strong>Apple</strong> handles every purchase. We never see your payment
     details, billing address, or Apple ID. We receive only a signed confirmation
     that a specific credit pack was bought, which is what tells us to add the
-    credits. Apple's App Attest also provides the anonymous device
-    verification described above.</p>
+    credits. Apple also tells us, in the same signed form, when a purchase has
+    been refunded, so that we can remove the credits it bought. Apple's App
+    Attest also provides the anonymous device verification described
+    above.</p>
     <p>We do not sell, rent, or share your data with anyone else, because we do
     not have anything worth selling.</p>
 
@@ -300,8 +319,8 @@
     <h2>Your control</h2>
     <p>Delete the app and your collection is gone, because it only ever lived on
     your device. Back it up first if you want to keep it. What remains on our
-    side is the anonymous credit balance and the usage counts, which contain
-    nothing that identifies you. If you would like that record deleted anyway,
+    side is the anonymous credit balance, its activity list, and the usage
+    counts, none of which identifies you. If you would like that record deleted anyway,
     write to us and we will remove it; note that this also removes any credits
     you have purchased.</p>
 
