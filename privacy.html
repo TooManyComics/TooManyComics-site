@@ -8,12 +8,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <meta name="description" content="Your comic collection stays on your phone. No accounts, no tracking, no analytics. Exactly what is sent for AI analysis, and what we store." />
+  <meta name="description" content="Your comic collection stays on your phone. No passwords, no email, no tracking, no analytics. Exactly what is sent for AI analysis, and what we store." />
   <meta name="theme-color" content="#2b1650" />
   <link rel="canonical" href="https://www.toomanycomics.app/privacy.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Privacy Policy | Too Many Comics" />
-  <meta property="og:description" content="Your comic collection stays on your phone. No accounts, no tracking, no analytics. Exactly what is sent for AI analysis, and what we store." />
+  <meta property="og:description" content="Your comic collection stays on your phone. No passwords, no email, no tracking, no analytics. Exactly what is sent for AI analysis, and what we store." />
   <meta property="og:url" content="https://www.toomanycomics.app/privacy.html" />
   <meta property="og:site_name" content="Too Many Comics" />
   <meta property="og:image" content="https://www.toomanycomics.app/og-image.png" />
@@ -21,7 +21,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy Policy | Too Many Comics" />
-  <meta name="twitter:description" content="Your comic collection stays on your phone. No accounts, no tracking, no analytics. Exactly what is sent for AI analysis, and what we store." />
+  <meta name="twitter:description" content="Your comic collection stays on your phone. No passwords, no email, no tracking, no analytics. Exactly what is sent for AI analysis, and what we store." />
   <meta name="twitter:image" content="https://www.toomanycomics.app/og-image.png" />
   <script type="application/ld+json">
 {
@@ -196,12 +196,14 @@
 
 
     <h1>Privacy Policy</h1>
-    <p class="page-note">Effective 2026-09-14. Too Many Comics is published by
+    <p class="page-note">Effective 2026-10-19. Too Many Comics is published by
     BigBrainCorp LLC.</p>
 
     <h2>The short version</h2>
-    <p>Your comic collection lives on your phone. There are no accounts and no
-    logins, so we do not know who you are. We never receive your collection,
+    <p>Your comic collection lives on your phone, and nothing in the app needs
+    an account except AI credits. If you use them, you sign in once with Sign in
+    with Apple, which gives us an opaque identifier and no name or email, so we
+    still do not know who you are. We never receive your collection,
     your sale records, or what you paid. What leaves your device is only what a
     single request needs: a photograph you ask us to analyze, with any comments
     you attached to it, or the details of the books you ask us to re-price, a
@@ -210,17 +212,31 @@
     <p>The app contains no analytics, no advertising, no crash reporting, and no
     third-party tracking code of any kind.</p>
 
-    <h2>There is no account</h2>
-    <p>Too Many Comics has no sign-up, no login, no password, and no profile. We
+    <h2>Your install, and your credits account</h2>
+    <p>Too Many Comics has no password, no email sign-up, and no profile. We
     never ask for your name, email address, phone number, date of birth, or
     location, so we do not have them.</p>
-    <p>To stop strangers from running up our AI bill, the app proves it is a
-    genuine copy running on a real iPhone, using Apple's App Attest. That
-    produces an anonymous key that is generated inside your device's secure
-    hardware and never leaves it. We store the resulting public identifier so we
-    can keep track of a credit balance. It is a random string. It is not linked
-    to your Apple ID, your name, or anything else about you, and it cannot be
-    used to identify you.</p>
+    <p><strong>Your install.</strong> To stop strangers from running up our AI
+    bill, the app proves it is a genuine copy running on a real iPhone, using
+    Apple's App Attest. That produces a key generated inside your device's
+    secure hardware that never leaves it. We store the resulting public
+    identifier for your installation. It is a random string that says nothing
+    about you, and we use it for rate limits and abuse protection.</p>
+    <p><strong>Your credits account, only if you use AI credits.</strong> AI
+    features spend credits, and credits belong to an account so that one weekly
+    allowance and one purchased balance work on every device you use. The first
+    time you use an AI feature or buy credits, the app asks you to Sign in with
+    Apple. We ask Apple for no name and no email, so the "hide my email" choice
+    never appears. What we receive is an opaque identifier for you within our
+    apps, the same on every device signed into your Apple Account. We keep that
+    identifier, which installations are signed in to it, a token we use only to
+    end the sign-in with Apple if you delete the account, and, if Apple supplies
+    it on your first sign-in, Apple's indication of whether the account looks
+    genuine, which we use only in aggregate to spot abuse. <strong>Your credit
+    balance and activity are linked to this account.</strong></p>
+    <p>If you never use an AI credit, you never create an account, and the only
+    identifier we hold is your installation's. Signing out on a device signs out
+    that device only.</p>
 
     <h2>What stays on your device</h2>
     <p>All of it, essentially:</p>
@@ -253,25 +269,31 @@
         those details for each book in the batch, ten books per request, so
         refreshing a whole box sends them for every book in it, one batch at
         a time.</li>
-      <li><strong>Your anonymous device token</strong>, so we can check your
-        credit balance.</li>
+      <li><strong>Your device token</strong>, which identifies your installation
+        and, once you have signed in, your credits account, so we can check
+        your balance.</li>
     </ul>
     <p>We use these to produce the result and return it. <strong>We do not store
     your photographs.</strong> They are processed and discarded.</p>
 
     <h2>What we do store</h2>
-    <p>All of it keyed to the anonymous identifier described above, never to
-    you:</p>
+    <p>Keyed to your credits account or to your installation, never to your
+    name or email, which we do not have:</p>
     <ul>
-      <li><strong>Your credit balance</strong> and your last twenty credit
-        events, so the app can show you where your credits went. For a scan
-        or a grading, the event names the book's title, the same way the
-        app's own activity list does.</li>
+      <li><strong>Your credits account</strong>: your Sign in with Apple
+        identifier, the installations signed in to it, your weekly allowance
+        (one per account, shared by your devices), your purchased balance and
+        rank, and your last twenty credit events, so the app can show you where
+        your credits went. For a scan or a grading, the event names the book's
+        title, the same way the app's own activity list does.</li>
+      <li><strong>Your credit history</strong>: every spend, refund, and
+        purchase on the account, so the app can total your day and export a
+        receipt.</li>
       <li><strong>Usage counts per request</strong>: a timestamp, which
         operation ran, which AI model answered, and how many tokens it used.
         This is how we reconcile our own bill and notice if somebody is abusing
-        the service. It records a truncated form of the anonymous identifier and
-        nothing about the comic.</li>
+        the service. It records which credits account (or, before you sign in,
+        which installation) made the request, and nothing about the comic.</li>
       <li><strong>Rate limiting counters</strong>, so no single device can run
         away with the service.</li>
       <li><strong>Details of a book whose batch price estimate failed</strong>:
@@ -290,10 +312,9 @@
         cannot be redeemed twice, and whether Apple later refunded each one,
         so the credits it bought can be taken back.</li>
     </ul>
-    <p>None of this includes your photographs, your collection, or any
-    personal detail about you. The two places a book's details appear on our
-    side are the activity list and the failed-estimate record above, both
-    keyed to the anonymous identifier and nothing else.</p>
+    <p>None of this includes your photographs, your collection, your name, or
+    your email. The two places a book's details appear on our side are the
+    activity list and the failed-estimate record above.</p>
 
     <h2>Who else is involved</h2>
     <p><strong>Microsoft Azure</strong> hosts our service and provides the AI
@@ -303,26 +324,47 @@
     them to train models.</p>
     <p><strong>Apple</strong> handles every purchase. We never see your payment
     details, billing address, or Apple ID. We receive only a signed confirmation
-    that a specific credit pack was bought, which is what tells us to add the
-    credits. Apple also tells us, in the same signed form, when a purchase has
-    been refunded, so that we can remove the credits it bought. Apple's App
-    Attest also provides the anonymous device verification described
-    above.</p>
+    that a specific credit pack was bought for your credits account, which is
+    what tells us to add the credits. Apple also tells us, in the same signed
+    form, when a purchase has been refunded, so that we can remove the credits
+    it bought. Apple's App Attest provides the device verification, and Sign in
+    with Apple the credits account, both described above. Apple also tells us
+    if you stop using Sign in with Apple with our app or delete your Apple
+    Account, so we can delete your credits account.</p>
     <p>We do not sell, rent, or share your data with anyone else, because we do
     not have anything worth selling.</p>
 
     <h2>Children</h2>
     <p>Too Many Comics is not directed at children under 13, and we do not
-    knowingly collect information from them. We do not knowingly collect
-    information from anyone, which is rather the point.</p>
+    knowingly collect information from them. A credits account holds an opaque
+    identifier and credit activity, never a name or email; if you believe a
+    child has created one, it can be deleted in the app, or write to us.</p>
 
     <h2>Your control</h2>
     <p>Delete the app and your collection is gone, because it only ever lived on
-    your device. Back it up first if you want to keep it. What remains on our
-    side is the anonymous credit balance, its activity list, and the usage
-    counts, none of which identifies you. If you would like that record deleted anyway,
-    write to us and we will remove it; note that this also removes any credits
-    you have purchased.</p>
+    your device. Back it up first if you want to keep it.</p>
+    <p><strong>Deleting your credits account.</strong> In the app, open Credits
+    (the battery meter) and choose <strong>Delete credits account</strong>.
+    Anyone can do this, wherever they live. It deletes the account and the
+    activity linked to it on our servers: the account record, its balances and
+    rank, the link from every device signed in to it, and its Sign in with
+    Apple token, and it ends the sign-in with Apple. <strong>Any unspent credits
+    are forfeited</strong>; we cannot refund them, and Apple's own refund
+    process for App Store purchases still applies. What we keep: the Apple
+    transaction identifiers of your purchases, detached from the account, for
+    as long as Apple can still refund or reverse that purchase, so a refund is
+    recorded once and never charged to anyone; and your past credit activity
+    only as totals under a new random identifier with no link back to you.
+    Deletion takes effect at once; if Apple is briefly unreachable, the app
+    shows "deletion pending" until Apple confirms the sign-in has ended. Signing
+    in again later starts a new account with that week's allowance and no
+    earlier balance.</p>
+    <p>If you stop using Sign in with Apple for Too Many Comics, or delete your
+    Apple Account, Apple tells us and we delete your credits account the same
+    way, including any remaining credits.</p>
+    <p>Because we hold no name or email, we cannot find your account from an
+    email to us; the in-app button is the way to delete it, because it knows
+    which account is yours.</p>
 
     <h2>Changes to this policy</h2>
     <p>If this policy changes we will update the effective date at the top and
@@ -330,7 +372,7 @@
     release notes.</p>
 
     <h2>Contact</h2>
-    <p>Questions about privacy, or a deletion request:
+    <p>Questions about privacy, or help with a deletion:
     <a href="mailto:Info@BigBrainCorp.com">Info@BigBrainCorp.com</a>.</p>
   </main>
 
