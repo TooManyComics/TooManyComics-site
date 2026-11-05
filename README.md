@@ -30,7 +30,7 @@ for the App Store Connect URLs.
 | `scenarios.html` + `scenarios/` | Collector scenarios | Real: twelve stories, each on a built feature. The former launch blocker (the buying scenario describing Evaluate a stack) is CLEARED: the feature shipped (app repo `EvaluationStackSession.swift`) and has its own how-to |
 | `about.html` | The origin story | Real |
 | `faq.html` | FAQ | Real: seven questions answered, privacy and accounts included (both point at the policy); the FAQ schema carries all seven |
-| `support.html` | **ASC Support URL** | Real: contact (Info@BigBrainCorp.com), what to include, the Advanced Grading escalation |
+| `support.html` | **ASC Support URL** | Real: contact (Jim@BigBrainCorp.com), what to include, the Advanced Grading escalation |
 | `help.html` + `howto/` | The user guide (How To) | Real: the index plus twelve how-tos |
 | `privacy.html` | **ASC Privacy Policy URL** | Real, re-audited 2026-09-14 against the deployed Phase 2 code (batch re-pricing sends book details; the activity list names a scanned book's title; failed-estimate records; refusal timestamps; Apple refund notifications). Worth a lawyer's read before launch; the App Privacy questionnaire answers must match it |
 | `terms.html` | Terms / EULA | Real: estimates disclaimer, credit terms, acceptable use. OPTIONAL for Apple (Standard EULA governs unless linked); kept for the non-Apple reasons |
@@ -39,10 +39,11 @@ for the App Store Connect URLs.
 
 ## Contacts
 
-No toomanycomics.app mailboxes exist, deliberately: public contact is
-**Info@BigBrainCorp.com** (on support.html); **Jim@BigBrainCorp.com**
-is the App Store Connect / registrar / internal contact. Same pattern
-as the parent site.
+No toomanycomics.app mailboxes exist, deliberately: every public
+contact on the site is **Jim@BigBrainCorp.com** (changed from
+Info@BigBrainCorp.com on 2026-11-05, release day, so support mail
+reaches Jim directly). The same address is the App Store Connect
+support contact.
 
 ## Mobile and SEO
 
